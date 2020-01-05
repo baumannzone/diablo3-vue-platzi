@@ -1,4 +1,5 @@
 import { post } from 'axios'
+import store from '../store'
 
 const region = 'eu'
 const clientId = '7958e6cf4d9d4cb6b0d1db97ae284df1'
@@ -23,6 +24,10 @@ function getToken () {
     }
   }
   return post(`${API_URL}`, body, config)
+    .then(res => {
+      console.log('GUARDANDO TOKEN.....')
+      store.dispatch('setAccessToken', res.data.access_token)
+    })
 }
 
 export {
