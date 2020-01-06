@@ -7,11 +7,12 @@ const clientSecret = '6eGrIFuSGWb3Zgi0H9EctYPVE6fscbNP'
 const API_URL = `https://${region}.battle.net/oauth/token`
 
 /**
- * Retrieving an access token.
+ * Retrieving an access token. Valid for 24 hours.
  * After an application retrieves an access token, it provides that token when making requests to API resources.
- * @returns {*}
+ * @returns {Promise<any> | Promise<void> | PromiseLike<any>}
  */
 function getToken () {
+  console.log('OBTENIENDO TOKEN...')
   const body = new FormData()
   body.append('grant_type', 'client_credentials')
   const config = {
@@ -23,10 +24,11 @@ function getToken () {
       password: clientSecret
     }
   }
+
   return post(`${API_URL}`, body, config)
-    .then(res => {
-      console.log('GUARDANDO TOKEN.....')
-      store.dispatch('setAccessToken', res.data.access_token)
+    .then(({ data }) => {
+      console.log('TOKEN GUARDADO!')
+      store.dispatch('setAccessToken', data.access_token)
     })
 }
 
