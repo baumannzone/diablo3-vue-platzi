@@ -1,4 +1,11 @@
-# diablo3-vue-platzi
+# Curso Vue: Diablo 3 APIs
+
+---
+
+## Diablo 3 Developer Portal
+- https://develop.battle.net/documentation/guides/getting-started
+
+---
 
 ## Project setup
 ```
