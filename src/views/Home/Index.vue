@@ -1,6 +1,23 @@
 <template>
   <div class="home">
-    <h1>Hola</h1>
+    <div class="profile-body">
+      <div class="grid-container">
+        <div class="block-left">
+          <div class="top-heroes">Top Heroes</div>
+          <div class="list-heroes">Heores list</div>
+          <div class="progression">Progression</div>
+        </div>
+        <div class="block-right">
+          <div class="stats">
+            <div class="kill"></div>
+            <div class="time"></div>
+          </div>
+        </div>
+      </div>
+      <div class="full-block">
+        <div class="artisans">Artesanos 1 2 y 3</div>
+      </div>
+    </div>
   </div>
 </template>
 
