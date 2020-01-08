@@ -12,7 +12,6 @@ const API_URL = `https://${region}.battle.net/oauth/token`
  * @returns {Promise<any> | Promise<void> | PromiseLike<any>}
  */
 function getToken () {
-  console.log('OBTENIENDO TOKEN...')
   const body = new FormData()
   body.append('grant_type', 'client_credentials')
   const config = {
@@ -27,7 +26,6 @@ function getToken () {
 
   return post(`${API_URL}`, body, config)
     .then(({ data }) => {
-      console.log('TOKEN GUARDADO!')
       store.dispatch('setAccessToken', data.access_token)
     })
 }
