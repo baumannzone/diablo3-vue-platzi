@@ -8,7 +8,7 @@ export default new Vuex.Store({
     isLoading: false,
     accessToken: null,
     config: {
-      battleTag: null,
+      battleTag: null, // BattleTag#1234
       region: null,
       locale: null
     }
