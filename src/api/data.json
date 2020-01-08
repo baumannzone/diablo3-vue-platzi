@@ -1,0 +1,192 @@
+{
+  "battleTag": "SuperRambo#2613",
+  "paragonLevel": 828,
+  "paragonLevelHardcore": 0,
+  "paragonLevelSeason": 0,
+  "paragonLevelSeasonHardcore": 0,
+  "guildName": "",
+  "heroes": [
+    {
+      "id": 107579938,
+      "name": "ElMicroYyo",
+      "class": "crusader",
+      "classSlug": "crusader",
+      "gender": 0,
+      "level": 70,
+      "kills": {
+        "elites": 3489
+      },
+      "paragonLevel": 828,
+      "hardcore": false,
+      "seasonal": false,
+      "dead": false,
+      "last-updated": 1529307610
+    },
+    {
+      "id": 106588658,
+      "name": "JavatoJones",
+      "class": "necromancer",
+      "classSlug": "necromancer",
+      "gender": 0,
+      "level": 70,
+      "kills": {
+        "elites": 3035
+      },
+      "paragonLevel": 828,
+      "hardcore": false,
+      "seasonal": false,
+      "dead": false,
+      "last-updated": 1525881841
+    },
+    {
+      "id": 93305787,
+      "name": "wtfBerto",
+      "class": "witch-doctor",
+      "classSlug": "witch-doctor",
+      "gender": 0,
+      "level": 70,
+      "kills": {
+        "elites": 2227
+      },
+      "paragonLevel": 828,
+      "hardcore": false,
+      "seasonal": false,
+      "dead": false,
+      "last-updated": 1532112646
+    }
+  ],
+  "lastHeroPlayed": 93305787,
+  "lastUpdated": 1532112701,
+  "kills": {
+    "monsters": 262259,
+    "elites": 22842,
+    "hardcoreMonsters": 452
+  },
+  "highestHardcoreLevel": 11,
+  "timePlayed": {
+    "demon-hunter": 0.448,
+    "barbarian": 0.058,
+    "witch-doctor": 0.333,
+    "necromancer": 0.238,
+    "wizard": 0.108,
+    "monk": 1,
+    "crusader": 0.419
+  },
+  "progression": {
+    "act1": true,
+    "act3": true,
+    "act2": true,
+    "act5": true,
+    "act4": true
+  },
+  "seasonalProfiles": {
+    "season14": {
+      "seasonId": 14,
+      "paragonLevel": 35,
+      "paragonLevelHardcore": 0,
+      "kills": {
+        "monsters": 28,
+        "elites": 122,
+        "hardcoreMonsters": 0
+      },
+      "timePlayed": {
+        "demon-hunter": 0,
+        "barbarian": 0,
+        "witch-doctor": 0.004,
+        "necromancer": 0,
+        "wizard": 0,
+        "monk": 0,
+        "crusader": 0
+      },
+      "highestHardcoreLevel": 0
+    },
+    "season13": {
+      "seasonId": 13,
+      "paragonLevel": 819,
+      "paragonLevelHardcore": 0,
+      "kills": {
+        "monsters": 62163,
+        "elites": 6244,
+        "hardcoreMonsters": 0
+      },
+      "timePlayed": {
+        "demon-hunter": 0,
+        "barbarian": 0,
+        "witch-doctor": 0,
+        "necromancer": 0.201,
+        "wizard": 0,
+        "monk": 0,
+        "crusader": 0.221
+      },
+      "highestHardcoreLevel": 0
+    },
+    "season0": {
+      "seasonId": 0,
+      "paragonLevel": 828,
+      "paragonLevelHardcore": 0,
+      "kills": {
+        "monsters": 262259,
+        "elites": 22842,
+        "hardcoreMonsters": 452
+      },
+      "timePlayed": {
+        "demon-hunter": 0.448,
+        "barbarian": 0.058,
+        "witch-doctor": 0.333,
+        "necromancer": 0.238,
+        "wizard": 0.108,
+        "monk": 1,
+        "crusader": 0.419
+      },
+      "highestHardcoreLevel": 11
+    }
+  },
+  "blacksmithSeason": {
+    "slug": "blacksmith",
+    "level": 12
+  },
+  "jewelerSeason": {
+    "slug": "jeweler",
+    "level": 1
+  },
+  "mysticSeason": {
+    "slug": "mystic",
+    "level": 1
+  },
+  "blacksmithHardcore": {
+    "slug": "blacksmith",
+    "level": 0
+  },
+  "jewelerHardcore": {
+    "slug": "jeweler",
+    "level": 0
+  },
+  "mysticHardcore": {
+    "slug": "mystic",
+    "level": 0
+  },
+  "blacksmithSeasonHardcore": {
+    "slug": "blacksmith",
+    "level": 0
+  },
+  "jewelerSeasonHardcore": {
+    "slug": "jeweler",
+    "level": 0
+  },
+  "mysticSeasonHardcore": {
+    "slug": "mystic",
+    "level": 0
+  },
+  "blacksmith": {
+    "slug": "blacksmith",
+    "level": 12
+  },
+  "jeweler": {
+    "slug": "jeweler",
+    "level": 12
+  },
+  "mystic": {
+    "slug": "mystic",
+    "level": 12
+  }
+}
