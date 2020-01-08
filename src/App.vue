@@ -17,7 +17,7 @@
 <script>
 import { mapState } from 'vuex'
 import LoadingIcon from '@/components/Loading'
-import HeaderBar from '@/components/HeaderBar'
+import HeaderBar from '@/components/HeaderBar/Index'
 
 export default {
   name: 'App',

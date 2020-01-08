@@ -2,12 +2,7 @@
   <div class="header-bar">
     <div>
       <b-navbar toggleable="lg" type="dark" variant="dark">
-        <b-navbar-brand>
-          <span class="mr-1 font-diablo">{{ playerName }}</span>
-          <small class="text-muted">
-            <b>#{{playerNumber}}</b>
-          </small>
-        </b-navbar-brand>
+        <BrandTitle :player-name="playerName" :player-number="playerNumber"/>
 
         <b-navbar-toggle target="nav-collapse"/>
 
@@ -15,6 +10,7 @@
 
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
+            <!-- Region -->
             <b-nav-item-dropdown :text="regionText" right>
               <b-dropdown-item
                 v-for="region in regions"
@@ -25,6 +21,7 @@
               </b-dropdown-item>
             </b-nav-item-dropdown>
 
+            <!-- Locale -->
             <b-nav-item-dropdown right>
               <!-- Using 'button-content' slot -->
               <template v-slot:button-content>
@@ -65,9 +62,11 @@
 
 <script>
 import { mapGetters, mapMutations } from 'vuex'
+import BrandTitle from './BrandTitle'
 
 export default {
   name: 'HeaderBar',
+  components: { BrandTitle },
   data () {
     return {
       regions: ['us', 'eu', 'kr', 'tw'],
@@ -91,7 +90,7 @@ export default {
       return `Region [${this.selectedRegion.toUpperCase()}]`
     },
     localeText () {
-      return `Locale [${this.selectedLocale.split('_')[1]}]`
+      return this.selectedLocale === null ? 'Locale [ ]' : `Locale [${this.selectedLocale.split('_')[1]}]`
     }
   },
   methods: {
@@ -99,13 +98,13 @@ export default {
       'SET_CONFIG'
     ]),
     changeRegion (val) {
-      this.SET_CONFIG({ region: val })
+      this.SET_CONFIG({ region: val, locale: null })
     },
     changeLocale (val) {
       this.SET_CONFIG({ locale: val })
     },
     submitForm () {
-      console.log('v-on:keyup.enter="submit"', this.searchText)
+      console.log('BattleTag::: ', this.searchText)
     }
   }
 }
