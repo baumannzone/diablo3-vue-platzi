@@ -37,11 +37,11 @@ new Vue({
       getToken()
         .then(() => {
           // OK
-          console.log('OK')
+          // console.log('OK')
         })
         .catch((err) => {
           // KO
-          console.log('KO')
+          // console.log('KO')
           console.log(err)
         })
         .finally(() => {
