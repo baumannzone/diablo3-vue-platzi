@@ -1,11 +1,11 @@
 <template>
   <div class="header-bar">
     <div>
-      <b-navbar toggleable="md" type="dark" variant="dark">
-        <b-navbar-brand href="#">
-          <span class="mr-2">SuperRambo</span>
+      <b-navbar toggleable="lg" type="dark" variant="dark">
+        <b-navbar-brand>
+          <span class="mr-1 font-diablo">{{ playerName }}</span>
           <small class="text-muted">
-            <b>#2613</b>
+            <b>#{{playerNumber}}</b>
           </small>
         </b-navbar-brand>
 
@@ -30,19 +30,28 @@
               <template v-slot:button-content>
                 {{ localeText }}
               </template>
-              <b-dropdown-item v-for="locale in locales[selectedRegion]" :key="locale" @click="changeLocale(locale)"> {{
-                locale }}
+              <b-dropdown-item
+                v-for="locale in locales[selectedRegion]"
+                :key="locale"
+                @click="changeLocale(locale)">
+                {{ locale }}
               </b-dropdown-item>
             </b-nav-item-dropdown>
 
-            <b-nav-form>
+            <b-nav-form v-on:submit.prevent="submitForm">
               <b-input-group size="sm">
                 <template v-slot:prepend>
-                  <b-input-group-text>
+                  <b-input-group-text class="sm">
                     <font-awesome-icon icon="search"/>
                   </b-input-group-text>
                 </template>
-                <b-form-input size="sm" class="mr-sm-2" placeholder="User#1234" v-model="searchText"/>
+                <b-form-input
+                  size="sm"
+                  class="mr-sm-2"
+                  placeholder="User#1234"
+                  v-model="searchText"
+                  autocomplete="off"
+                />
               </b-input-group>
               <b-button size="sm" class="my-2 my-sm-0" variant="primary" type="submit">Search</b-button>
             </b-nav-form>
@@ -74,7 +83,9 @@ export default {
   computed: {
     ...mapGetters([
       'selectedRegion',
-      'selectedLocale'
+      'selectedLocale',
+      'playerName',
+      'playerNumber'
     ]),
     regionText () {
       return `Region [${this.selectedRegion.toUpperCase()}]`
@@ -92,6 +103,9 @@ export default {
     },
     changeLocale (val) {
       this.SET_CONFIG({ locale: val })
+    },
+    submitForm () {
+      console.log('v-on:keyup.enter="submit"', this.searchText)
     }
   }
 }
