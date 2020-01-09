@@ -1,6 +1,6 @@
 <template>
   <div class="hero-portrait-wrapper">
-    <div class="heroe-barbarian female"></div>
+    <div :class="heroClass"></div>
     <div class="p-2 bg-dark">
       <h5 class="m-0 text-center title-name">{{ hero.name }}</h5>
       <div class="d-flex justify-content-between border-top border-secondary pt-2 align-items-center mt-2">
@@ -21,6 +21,12 @@ export default {
     hero: {
       type: Object,
       required: true
+    }
+  },
+  computed: {
+    heroClass () {
+      const gender = this.hero.gender === 0 ? 'male' : 'female'
+      return `heroe-${this.hero.class} ${gender}`
     }
   }
 }
