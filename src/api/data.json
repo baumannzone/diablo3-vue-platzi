@@ -53,6 +53,102 @@
       "seasonal": false,
       "dead": false,
       "last-updated": 1532112646
+    },
+    {
+      "id": 106588658,
+      "name": "JavatoJones",
+      "class": "necromancer",
+      "classSlug": "necromancer",
+      "gender": 0,
+      "level": 70,
+      "kills": {
+        "elites": 3035
+      },
+      "paragonLevel": 828,
+      "hardcore": false,
+      "seasonal": false,
+      "dead": false,
+      "last-updated": 1525881841
+    },
+    {
+      "id": 107579938,
+      "name": "ElMicroYyo",
+      "class": "crusader",
+      "classSlug": "crusader",
+      "gender": 0,
+      "level": 70,
+      "kills": {
+        "elites": 3489
+      },
+      "paragonLevel": 828,
+      "hardcore": false,
+      "seasonal": false,
+      "dead": false,
+      "last-updated": 1529307610
+    },
+    {
+      "id": 106588658,
+      "name": "JavatoJones",
+      "class": "necromancer",
+      "classSlug": "necromancer",
+      "gender": 0,
+      "level": 70,
+      "kills": {
+        "elites": 3035
+      },
+      "paragonLevel": 828,
+      "hardcore": false,
+      "seasonal": false,
+      "dead": false,
+      "last-updated": 1525881841
+    },
+    {
+      "id": 106588658,
+      "name": "JavatoJones",
+      "class": "necromancer",
+      "classSlug": "necromancer",
+      "gender": 0,
+      "level": 70,
+      "kills": {
+        "elites": 3035
+      },
+      "paragonLevel": 828,
+      "hardcore": false,
+      "seasonal": false,
+      "dead": false,
+      "last-updated": 1525881841
+    },
+    {
+      "id": 107579938,
+      "name": "ElMicroYyo",
+      "class": "crusader",
+      "classSlug": "crusader",
+      "gender": 0,
+      "level": 70,
+      "kills": {
+        "elites": 3489
+      },
+      "paragonLevel": 828,
+      "hardcore": false,
+      "seasonal": false,
+      "dead": false,
+      "last-updated": 1529307610
+    },
+    {
+      "id": 93305787,
+      "name": "wtfBerto",
+      "class": "witch-doctor",
+      "classSlug": "witch-doctor",
+      "gender": 0,
+      "level": 70,
+      "kills": {
+        "elites": 2227
+      },
+      "paragonLevel": 828,
+      "hardcore": false,
+      "seasonal": false,
+      "dead": false,
+      "last-updated": 1532112646
     }
   ],
   "lastHeroPlayed": 93305787,

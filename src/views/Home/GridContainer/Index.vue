@@ -1,8 +1,11 @@
 <template>
   <div class="grid-container">
     <div class="grid-item item-left">
-      <TopHeroes :heroes="topHeroes"/>
-      <div class="list-heroes my-5">Heores list</div>
+
+      <TopHeroes v-if="hasHeroes" :heroes="topHeroes"/>
+
+      <HeroesList v-if="hasHeroesList" :heroes="heroesList"/>
+
       <div class="progression my-5">Progression</div>
     </div>
     <div class="grid-item item-right">
@@ -17,18 +20,28 @@
 <script>
 import data from '../../../api/data'
 import TopHeroes from './TopHeroes'
+import HeroesList from './HeroesList'
 
 export default {
   name: 'GridContainer',
-  components: { TopHeroes },
+  components: { HeroesList, TopHeroes },
   data () {
     return {
       data: data
     }
   },
   computed: {
+    hasHeroes () {
+      return data.heroes.length > 0
+    },
+    hasHeroesList () {
+      return data.heroes.length > 3
+    },
     topHeroes () {
       return this.data.heroes.slice(0, 3)
+    },
+    heroesList () {
+      return this.data.heroes.slice(3, this.data.heroes.length)
     }
   }
 }
