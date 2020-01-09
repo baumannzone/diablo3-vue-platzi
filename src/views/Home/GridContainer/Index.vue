@@ -38,7 +38,12 @@ export default {
       return data.heroes.length > 3
     },
     topHeroes () {
-      return this.data.heroes.slice(0, 3)
+      return this.data.heroes.slice(0, 3).map(h => {
+        return {
+          ...h,
+          kills: h.kills.elites
+        }
+      })
     },
     heroesList () {
       return this.data.heroes.slice(3, this.data.heroes.length)
