@@ -1,14 +1,125 @@
+// Import font
 @font-face
-  font-family: "DiabloHeavy"
-  src: url("../fonts/diabloh.eot")
-  src: url("../fonts/diabloh.eot?#iefix") format("embedded-opentype"),
-       url("../fonts/diabloh.otf") format("opentype"),
-       url("../fonts/diabloh.svg") format("svg"),
-       url("../fonts/diabloh.ttf") format("truetype"),
-       url("../fonts/diabloh.woff") format("woff"),
-       url("../fonts/diabloh.woff2") format("woff2")
-  font-weight: normal
-  font-style: normal
+  font-family "DiabloHeavy"
+  src url("../fonts/diabloh.eot")
+  src url("../fonts/diabloh.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/diabloh.otf") format("opentype"),
+      url("../fonts/diabloh.svg") format("svg"),
+      url("../fonts/diabloh.ttf") format("truetype"),
+      url("../fonts/diabloh.woff") format("woff"),
+      url("../fonts/diabloh.woff2") format("woff2")
+  font-style normal
+  font-weight normal
 
+// Diablo-Like Font · DiabloHeavy Font
 .font-diablo
   font-family "DiabloHeavy", sans-serif
+
+// Sprite image · Heroes faces
+.heroe-barbarian,
+.heroe-witch-doctor,
+.heroe-demon-hunter,
+.heroe-wizard,
+.heroe-monk,
+.heroe-necromancer,
+.heroe-crusader
+  background-image: url('../img/heroes-faces.png')
+  background-size 203%
+  width 136px
+  height 106px
+
+.heroe-barbarian
+  &.male
+    background-position 0 0
+
+  &.female
+    background-position 100% 0
+
+.heroe-witch-doctor
+  &.male
+    background-position 0 16.538462%
+
+  &.female
+    background-position 100% 16.538462%
+
+.heroe-demon-hunter
+  &.male
+    background-position 0 33.247754%
+
+  &.female
+    background-position 100% 33.247754%
+
+.heroe-wizard
+  &.male
+    background-position 0 50%
+
+  &.female
+    background-position 100% 50%
+
+.heroe-monk
+  &.male
+    background-position 0 66.666667%
+
+  &.female
+    background-position 100% 66.666667%
+
+.heroe-necromancer
+  &.male
+    background-position 0 83.333333%
+
+  &.female
+    background-position 100% 83.333333%
+
+.heroe-crusader
+  &.male
+    background-position 0 100%
+
+  &.female
+    background-position 100% 100%
+
+
+//// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px)
+  .heroe-barbarian,
+  .heroe-witch-doctor,
+  .heroe-demon-hunter,
+  .heroe-wizard,
+  .heroe-monk,
+  .heroe-necromancer,
+  .heroe-crusader
+    background-size 200%
+    width 100%
+    height 115px
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px)
+  .heroe-barbarian,
+  .heroe-witch-doctor,
+  .heroe-demon-hunter,
+  .heroe-wizard,
+  .heroe-monk,
+  .heroe-necromancer,
+  .heroe-crusader
+    height 161px
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px)
+  .heroe-barbarian,
+  .heroe-witch-doctor,
+  .heroe-demon-hunter,
+  .heroe-wizard,
+  .heroe-monk,
+  .heroe-necromancer,
+  .heroe-crusader
+    height 143px
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px)
+  .heroe-barbarian,
+  .heroe-witch-doctor,
+  .heroe-demon-hunter,
+  .heroe-wizard,
+  .heroe-monk,
+  .heroe-necromancer,
+  .heroe-crusader
+    height 174px
