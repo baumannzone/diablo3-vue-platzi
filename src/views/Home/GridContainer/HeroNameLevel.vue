@@ -2,7 +2,7 @@
   <div class="hero-name-level">
     <span class=""> {{ classToName(hero.class) }} </span>
     <span>·</span>
-    <span class="text-monospace"> {{ hero.level }} <small>lvl</small></span>
+    <span class="text-monospace font-weight-bold"> {{ hero.level }} </span>
   </div>
 </template>
 
