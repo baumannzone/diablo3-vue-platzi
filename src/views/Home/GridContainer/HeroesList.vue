@@ -7,14 +7,16 @@
       :items="heroes"
       :fields="fields"
       small
+      borderless
       responsive>
       <template v-slot:cell(name)="data">
         <HeroIco :hero="data.item"/>
       </template>
 
       <template v-slot:cell(class)="data">
-        <span class="font-weight-bold">{{ data.item.level }} </span>
-        <span> {{ data.item.class }}</span>
+        <span class="font-weight-bold"> {{ data.item.class }} </span>
+        <span>·</span>
+        <span> {{ data.item.level }} </span>
 
       </template>
 
@@ -46,7 +48,8 @@ export default {
         },
         {
           key: 'class',
-          label: 'Class'
+          label: 'Class',
+          sortable: true
         },
         {
           key: 'kills',
