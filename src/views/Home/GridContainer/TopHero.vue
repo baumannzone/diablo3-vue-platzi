@@ -2,7 +2,10 @@
   <div class="hero-portrait-wrapper">
     <div :class="heroClass"></div>
     <div class="p-2 bg-dark">
-      <h5 class="m-0 text-center title-name">{{ hero.name }}</h5>
+      <h5 class="m-0 text-center title-name font-diablo" :class="{'text-danger': hero.dead}">
+        {{ hero.name }}
+        <img v-if="hero.seasonal" src="@/assets/img/leaf.png" width="12px" class="">
+      </h5>
       <div class="d-flex justify-content-between border-top border-secondary pt-2 align-items-center mt-2">
         <small class="elite-kills">
           <span class="text-monospace">{{ hero.kills.elites }}</span>
@@ -25,6 +28,7 @@ export default {
   },
   computed: {
     heroClass () {
+      console.log(this.hero)
       const gender = this.hero.gender === 0 ? 'male' : 'female'
       return `heroe-${this.hero.class} ${gender}`
     }
