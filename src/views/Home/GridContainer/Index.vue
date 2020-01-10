@@ -9,7 +9,7 @@
       <ProgressBosses :acts="data.progression"/>
     </div>
     <div class="grid-item item-right">
-      <MultiStats/>
+      <MultiStats :stats="statsData"/>
     </div>
   </div>
 </template>
@@ -40,6 +40,10 @@ export default {
     },
     heroesList () {
       return this.data.heroes.slice(3, this.data.heroes.length)
+    },
+    statsData () {
+      const { paragonLevel, kills, timePlayed } = this.data
+      return { paragonLevel, kills, timePlayed }
     }
   }
 }

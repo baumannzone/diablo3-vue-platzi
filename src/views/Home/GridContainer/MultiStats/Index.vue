@@ -1,10 +1,24 @@
 <template>
   <div class="multi-stats pl-lg-4">
     <h2 class="font-diablo my-4">Stats</h2>
-    <div class="stats d-flex flex-column flex-md-row flex-lg-column bg-dark p-3">
-      <SingleStat ico-name="skull"/>
-      <SingleStat ico-name="crown"/>
-      <SingleStat ico-name="award"/>
+    <div class="stats d-flex flex-column bg-dark p-3">
+      <SingleStat
+        class="mb-3"
+        ico-name="skull"
+        ico-color="#000000"
+        :info="{value: stats.kills.monsters, text:'Lifetime Kills'}" />
+
+      <SingleStat
+        class="mb-3"
+        ico-name="crown"
+        ico-color="#ffc107"
+        :info="{value: stats.kills.elites, text:'Elite Kills'}"/>
+
+      <SingleStat
+        ico-name="award"
+        ico-color="#4caf50"
+        :info="{value: stats.paragonLevel, text:'Paragon Level'}"/>
+
     </div>
     <div class="time-played"></div>
   </div>
@@ -15,6 +29,20 @@ import SingleStat from './SingleStat'
 
 export default {
   name: 'MultiStats',
-  components: { SingleStat }
+  components: { SingleStat },
+  props: {
+    stats: {
+      required: true,
+      type: Object
+    }
+  },
+  directives: {
+    focus: {
+      // directive definition
+      inserted (el) {
+        console.log(el)
+      }
+    }
+  }
 }
 </script>
