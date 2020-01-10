@@ -11,7 +11,7 @@
           <span class="text-monospace">{{ hero.kills.elites }}</span>
           Elite <span class="d-none d-sm-inline-block">kills</span>
         </small>
-        <small class="level-circle"> {{ hero.level }} </small>
+        <small class="level-circle" :class="{'text-danger': hero.dead}"> {{ hero.level }} </small>
       </div>
     </div>
   </div>
