@@ -9,23 +9,20 @@
       <ProgressBosses :acts="data.progression"/>
     </div>
     <div class="grid-item item-right">
-      <h1>Stats</h1>
-      <div class="stats">
-        <div class="kill"></div>
-        <div class="time"></div>
-      </div>
+      <MultiStats/>
     </div>
   </div>
 </template>
 <script>
 import data from '../../../api/data'
-import TopHeroes from './TopHeroes'
-import HeroesList from './HeroesList'
+import TopHeroes from './TopHeroes/Index'
+import HeroesList from './HeroesList/Index'
 import ProgressBosses from './ProgressBoss'
+import MultiStats from './MultiStats/Index'
 
 export default {
   name: 'GridContainer',
-  components: { ProgressBosses, HeroesList, TopHeroes },
+  components: { MultiStats, ProgressBosses, HeroesList, TopHeroes },
   data () {
     return {
       data: data

@@ -1,6 +1,6 @@
 <template>
   <div class="top-heroes">
-    <h2 class="my-4">Top Heroes</h2>
+    <h2 class="my-4 font-diablo">Top Heroes</h2>
     <b-row>
       <b-col cols="4" v-for="hero in heroes" :key="hero.id">
         <TopHero :hero="hero"/>
@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import TopHero from './TopHero'
+import TopHero from './HeroItem'
 
 export default {
   name: 'TopHeroes',
