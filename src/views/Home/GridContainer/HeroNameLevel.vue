@@ -1,8 +1,8 @@
 <template>
   <div class="hero-name-level">
-    <span class="font-weight-bold"> {{ classToName(hero.name) }} </span>
+    <span class=""> {{ classToName(hero.class) }} </span>
     <span>·</span>
-    <span> {{ hero.level }} </span>
+    <span class="text-monospace"> {{ hero.level }} <small>lvl</small></span>
   </div>
 </template>
 

@@ -1,4 +1,4 @@
-const items = {
+const classes = {
   barbarian: 'Barbarian',
   monk: 'Monk',
   wizard: 'Wizard',
@@ -8,9 +8,9 @@ const items = {
 }
 
 export default {
-  computed: {
+  methods: {
     classToName (classSlug) {
-      return items[classSlug]
+      return classes[classSlug]
     }
   }
 }
