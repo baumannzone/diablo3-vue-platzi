@@ -299,9 +299,9 @@
   "progression": {
     "act1": true,
     "act3": true,
-    "act2": false,
-    "act5": false,
-    "act4": false
+    "act2": true,
+    "act5": true,
+    "act4": true
   },
   "seasonalProfiles": {
     "season19": {
