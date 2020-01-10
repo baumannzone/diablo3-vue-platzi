@@ -5,7 +5,7 @@
       <SingleStat
         class="mb-3"
         ico-name="skull"
-        ico-color="#000000"
+        ico-color="#9E9E9E"
         :info="{value: stats.kills.monsters, text:'Lifetime Kills'}" />
 
       <SingleStat
@@ -15,8 +15,8 @@
         :info="{value: stats.kills.elites, text:'Elite Kills'}"/>
 
       <SingleStat
-        ico-name="award"
-        ico-color="#4caf50"
+        ico-name="dungeon"
+        ico-color="#795548"
         :info="{value: stats.paragonLevel, text:'Paragon Level'}"/>
 
     </div>

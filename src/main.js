@@ -3,7 +3,7 @@ import BootstrapVue from 'bootstrap-vue'
 
 // Vue font-awesome
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faSpinner, faSearch, faSkull, faCrown, faAward } from '@fortawesome/free-solid-svg-icons'
+import { faSpinner, faSearch, faSkull, faCrown, faDungeon } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import App from './App.vue'
@@ -23,7 +23,7 @@ library.add(
   faSearch,
   faSkull,
   faCrown,
-  faAward
+  faDungeon
 )
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
