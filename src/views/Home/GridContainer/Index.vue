@@ -6,7 +6,7 @@
 
       <HeroesList v-if="hasHeroesList" :heroes="heroesList"/>
 
-      <div class="progression my-5">Progression</div>
+      <ProgressBosses :acts="data.progression"/>
     </div>
     <div class="grid-item item-right">
       <h1>Stats</h1>
@@ -21,10 +21,11 @@
 import data from '../../../api/data'
 import TopHeroes from './TopHeroes'
 import HeroesList from './HeroesList'
+import ProgressBosses from './ProgressBoss'
 
 export default {
   name: 'GridContainer',
-  components: { HeroesList, TopHeroes },
+  components: { ProgressBosses, HeroesList, TopHeroes },
   data () {
     return {
       data: data
