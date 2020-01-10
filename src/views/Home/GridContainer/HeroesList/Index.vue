@@ -24,7 +24,7 @@
 
 <script>
 import HeroIco from './HeroIco'
-import HeroNameLevel from './HeroNameLevel'
+import HeroNameLevel from './HeroName'
 
 export default {
   name: 'HeroesList',
