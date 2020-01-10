@@ -19,7 +19,7 @@
       "paragonLevel": 2580,
       "hardcore": false,
       "seasonal": true,
-      "dead": false,
+      "dead": true,
       "last-updated": 1578358532
     },
     {
@@ -34,7 +34,7 @@
       },
       "paragonLevel": 3323,
       "hardcore": false,
-      "seasonal": false,
+      "seasonal": true,
       "dead": false,
       "last-updated": 1578316934
     },
@@ -83,7 +83,7 @@
       "paragonLevel": 3323,
       "hardcore": false,
       "seasonal": false,
-      "dead": false,
+      "dead": true,
       "last-updated": 1573061454
     },
     {
@@ -114,7 +114,7 @@
       },
       "paragonLevel": 3323,
       "hardcore": false,
-      "seasonal": false,
+      "seasonal": true,
       "dead": false,
       "last-updated": 1573498411
     },
