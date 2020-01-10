@@ -3,18 +3,20 @@
   font-family "DiabloHeavy"
   src url("../fonts/diabloh.eot")
   src url("../fonts/diabloh.eot?#iefix") format("embedded-opentype"),
-      url("../fonts/diabloh.otf") format("opentype"),
-      url("../fonts/diabloh.svg") format("svg"),
-      url("../fonts/diabloh.ttf") format("truetype"),
-      url("../fonts/diabloh.woff") format("woff"),
-      url("../fonts/diabloh.woff2") format("woff2")
+  url("../fonts/diabloh.otf") format("opentype"),
+  url("../fonts/diabloh.svg") format("svg"),
+  url("../fonts/diabloh.ttf") format("truetype"),
+  url("../fonts/diabloh.woff") format("woff"),
+  url("../fonts/diabloh.woff2") format("woff2")
   font-style normal
   font-weight normal
 
+// ---------------------
 // Diablo-Like Font · DiabloHeavy Font
 .font-diablo
   font-family "DiabloHeavy", sans-serif
 
+// ---------------------
 // Sprite image · Heroes faces
 .heroe-barbarian,
 .heroe-witch-doctor,
@@ -123,3 +125,51 @@
   .heroe-necromancer,
   .heroe-crusader
     height 174px
+
+
+// ---------------------
+// Acts
+
+.act
+  &.act1,
+  &.act2,
+  &.act3,
+  &.act4,
+  &.act5
+    background-image: url('../img/progress.png')
+    background-size 500%
+
+  &.act1
+    &.pending
+      background-position 0 0
+
+    &.done
+      background-position 0 55px
+
+  &.act2
+    &.pending
+      background-position 50px 0
+
+    &.done
+      background-position 50px 50px
+
+  &.act3
+    &.pending
+      background-position 100px 0
+
+    &.done
+      background-position 50px 100px
+
+  &.act4
+    &.pending
+      background-position 150px 0
+
+    &.done
+      background-position 50px 150px
+
+  &.act5
+    &.pending
+      background-position 200px 0
+
+    &.done
+      background-position 50px 200px
