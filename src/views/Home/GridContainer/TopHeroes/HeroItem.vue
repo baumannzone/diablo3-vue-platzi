@@ -2,13 +2,13 @@
   <div class="hero-portrait-wrapper">
     <div :class="heroClass"></div>
     <div class="p-2 bg-dark">
-      <h5 class="m-0 text-center title-name font-diablo" :class="{'text-danger': hero.dead}">
+      <h5 class="text-truncate m-0 text-center title-name font-diablo" :class="{'text-danger': hero.dead}">
         {{ hero.name }}
         <img v-if="hero.seasonal" src="@/assets/img/leaf.png" width="12px" class="">
       </h5>
       <div class="d-flex justify-content-between border-top border-secondary pt-2 align-items-center mt-2">
         <small class="elite-kills">
-          <span class="text-monospace">{{ hero.kills.elites }}</span>
+          <span class="text-monospace">{{ hero.kills.elites | formatNumber }}</span>
           Elite <span class="d-none d-sm-inline-block">kills</span>
         </small>
         <small class="level-circle" :class="{'text-danger': hero.dead}"> {{ hero.level }} </small>
@@ -18,8 +18,13 @@
 </template>
 
 <script>
+import { formatNumber } from '@/filters/numeral'
+
 export default {
   name: 'TopHero',
+  filters: {
+    formatNumber
+  },
   props: {
     hero: {
       type: Object,

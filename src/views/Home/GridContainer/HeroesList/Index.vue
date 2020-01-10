@@ -16,18 +16,23 @@
       </template>
 
       <template v-slot:cell(kills)="data">
-        <span>{{ data.item.kills.elites }}</span>
+        <span>{{ data.item.kills.elites | formatNumber }}</span>
       </template>
     </b-table>
   </div>
 </template>
 
 <script>
+import { formatNumber } from '@/filters/numeral'
+
 import HeroIco from './HeroIco'
 import HeroNameLevel from './HeroName'
 
 export default {
   name: 'HeroesList',
+  filters: {
+    formatNumber
+  },
   components: { HeroNameLevel, HeroIco },
   props: {
     heroes: {

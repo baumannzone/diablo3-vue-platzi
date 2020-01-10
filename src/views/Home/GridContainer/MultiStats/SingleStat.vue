@@ -8,7 +8,7 @@
           </div>
         </div>
         <div class="flex-grow-1">
-          <h4 class="font-weight-bold mb-0">{{ info.value }}</h4>
+          <h4 class="font-weight-bold mb-0">{{ info.value | formatNumber }}</h4>
           <span class="text-muted font-weight-light mb-0">{{ info.text }}</span>
         </div>
       </div>
@@ -17,8 +17,13 @@
 </template>
 
 <script>
+import { formatNumber } from '@/filters/numeral'
+
 export default {
   name: 'SingleStat',
+  filters: {
+    formatNumber
+  },
   props: {
     icoName: {
       required: true,
