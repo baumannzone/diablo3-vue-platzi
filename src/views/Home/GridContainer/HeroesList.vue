@@ -1,23 +1,18 @@
 <template>
   <div class="heroes-list border-top border-secondary mt-5 pt-5">
     <b-table
-      striped
       hover
       dark
       :items="heroes"
       :fields="fields"
       small
-      borderless
       responsive>
       <template v-slot:cell(name)="data">
         <HeroIco :hero="data.item"/>
       </template>
 
       <template v-slot:cell(class)="data">
-        <span class="font-weight-bold"> {{ data.item.class }} </span>
-        <span>·</span>
-        <span> {{ data.item.level }} </span>
-
+        <HeroNameLevel :hero="{ class: data.item.class, level: data.item.level}"/>
       </template>
 
       <template v-slot:cell(kills)="data">
@@ -29,10 +24,11 @@
 
 <script>
 import HeroIco from './HeroIco'
+import HeroNameLevel from './HeroNameLevel'
 
 export default {
   name: 'HeroesList',
-  components: { HeroIco },
+  components: { HeroNameLevel, HeroIco },
   props: {
     heroes: {
       required: true,
