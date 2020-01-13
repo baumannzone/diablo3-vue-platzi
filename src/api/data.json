@@ -1,521 +1,528 @@
 {
-  "battleTag": "kasen#2586",
-  "paragonLevel": 3323,
-  "paragonLevelHardcore": 44,
-  "paragonLevelSeason": 2580,
+  "battleTag": "darkangeluz#2735",
+  "paragonLevel": 1861,
+  "paragonLevelHardcore": 1335,
+  "paragonLevelSeason": 0,
   "paragonLevelSeasonHardcore": 0,
-  "guildName": "WarHalla Clan ",
+  "guildName": "",
   "heroes": [
     {
-      "id": 126689577,
-      "name": "Aorus",
-      "class": "crusader",
-      "classSlug": "crusader",
-      "gender": 0,
-      "level": 70,
-      "kills": {
-        "elites": 27365
-      },
-      "paragonLevel": 2580,
-      "hardcore": false,
-      "seasonal": true,
-      "dead": true,
-      "last-updated": 1578358532
-    },
-    {
-      "id": 126671422,
-      "name": "Avalon",
-      "class": "barbarian",
-      "classSlug": "barbarian",
-      "gender": 0,
-      "level": 70,
-      "kills": {
-        "elites": 1278
-      },
-      "paragonLevel": 3323,
-      "hardcore": false,
-      "seasonal": true,
-      "dead": false,
-      "last-updated": 1578316934
-    },
-    {
-      "id": 120581408,
-      "name": "Comenabos",
-      "class": "demon-hunter",
-      "classSlug": "demon-hunter",
-      "gender": 1,
-      "level": 70,
-      "kills": {
-        "elites": 34086
-      },
-      "paragonLevel": 3323,
-      "hardcore": false,
-      "seasonal": false,
-      "dead": false,
-      "last-updated": 1573161760
-    },
-    {
-      "id": 122755553,
-      "name": "Darksoul",
-      "class": "wizard",
-      "classSlug": "wizard",
-      "gender": 1,
-      "level": 70,
-      "kills": {
-        "elites": 1137
-      },
-      "paragonLevel": 3323,
-      "hardcore": false,
-      "seasonal": false,
-      "dead": false,
-      "last-updated": 1573499609
-    },
-    {
-      "id": 100966952,
-      "name": "Edea",
-      "class": "wizard",
-      "classSlug": "wizard",
-      "gender": 1,
-      "level": 70,
-      "kills": {
-        "elites": 33131
-      },
-      "paragonLevel": 3323,
-      "hardcore": false,
-      "seasonal": false,
-      "dead": true,
-      "last-updated": 1573061454
-    },
-    {
-      "id": 104401550,
-      "name": "Kheeper",
-      "class": "demon-hunter",
-      "classSlug": "demon-hunter",
-      "gender": 0,
-      "level": 70,
-      "kills": {
-        "elites": 450
-      },
-      "paragonLevel": 3323,
-      "hardcore": false,
-      "seasonal": false,
-      "dead": false,
-      "last-updated": 1573230866
-    },
-    {
-      "id": 104343681,
-      "name": "Lulú",
-      "class": "wizard",
-      "classSlug": "wizard",
-      "gender": 1,
-      "level": 70,
-      "kills": {
-        "elites": 771
-      },
-      "paragonLevel": 3323,
-      "hardcore": false,
-      "seasonal": true,
-      "dead": false,
-      "last-updated": 1573498411
-    },
-    {
-      "id": 123690285,
-      "name": "Nathalie",
-      "class": "crusader",
-      "classSlug": "crusader",
-      "gender": 1,
-      "level": 70,
-      "kills": {
-        "elites": 32413
-      },
-      "paragonLevel": 3323,
-      "hardcore": false,
-      "seasonal": false,
-      "dead": false,
-      "last-updated": 1575382173
-    },
-    {
-      "id": 108376997,
-      "name": "Nikkita",
-      "class": "crusader",
-      "classSlug": "crusader",
-      "gender": 1,
-      "level": 70,
-      "kills": {
-        "elites": 14284
-      },
-      "paragonLevel": 3323,
-      "hardcore": false,
-      "seasonal": false,
-      "dead": false,
-      "last-updated": 1575382189
-    },
-    {
-      "id": 58610656,
-      "name": "Nikko",
-      "class": "demon-hunter",
-      "classSlug": "demon-hunter",
-      "gender": 0,
-      "level": 70,
-      "kills": {
-        "elites": 34891
-      },
-      "paragonLevel": 3323,
-      "hardcore": false,
-      "seasonal": false,
-      "dead": false,
-      "last-updated": 1573230439
-    },
-    {
-      "id": 101360993,
-      "name": "OsoAlakandro",
+      "id": 68265136,
+      "name": "Ana",
       "class": "monk",
       "classSlug": "monk",
-      "gender": 0,
+      "gender": 1,
       "level": 70,
       "kills": {
-        "elites": 11252
+        "elites": 11836
       },
-      "paragonLevel": 3323,
-      "hardcore": false,
+      "paragonLevel": 1335,
+      "hardcore": true,
       "seasonal": false,
       "dead": false,
-      "last-updated": 1573231590
+      "last-updated": 1540044707
     },
     {
-      "id": 102951478,
-      "name": "Sepul",
+      "id": 51866601,
+      "name": "Aranel",
+      "class": "demon-hunter",
+      "classSlug": "demon-hunter",
+      "gender": 1,
+      "level": 70,
+      "kills": {
+        "elites": 6713
+      },
+      "paragonLevel": 1335,
+      "hardcore": true,
+      "seasonal": false,
+      "dead": false,
+      "last-updated": 1520346699
+    },
+    {
+      "id": 99628245,
+      "name": "Darkangeluz",
       "class": "demon-hunter",
       "classSlug": "demon-hunter",
       "gender": 0,
       "level": 70,
       "kills": {
-        "elites": 5300
+        "elites": 27033
       },
-      "paragonLevel": 3323,
+      "paragonLevel": 1861,
       "hardcore": false,
       "seasonal": false,
       "dead": false,
-      "last-updated": 1566252968
+      "last-updated": 1558886537
     },
     {
-      "id": 127270134,
-      "name": "Sophie",
+      "id": 97920142,
+      "name": "Darklight",
+      "class": "necromancer",
+      "classSlug": "necromancer",
+      "gender": 0,
+      "level": 70,
+      "kills": {
+        "elites": 6527
+      },
+      "paragonLevel": 1861,
+      "hardcore": false,
+      "seasonal": false,
+      "dead": false,
+      "last-updated": 1552633527
+    },
+    {
+      "id": 74496858,
+      "name": "Dharani",
+      "class": "demon-hunter",
+      "classSlug": "demon-hunter",
+      "gender": 1,
+      "level": 70,
+      "kills": {
+        "elites": 3652
+      },
+      "paragonLevel": 1335,
+      "hardcore": true,
+      "seasonal": false,
+      "dead": false,
+      "last-updated": 1512578331
+    },
+    {
+      "id": 102570749,
+      "name": "Engla",
       "class": "barbarian",
       "classSlug": "barbarian",
       "gender": 1,
       "level": 70,
       "kills": {
-        "elites": 58127
+        "elites": 5964
       },
-      "paragonLevel": 2580,
-      "hardcore": false,
-      "seasonal": true,
-      "dead": false,
-      "last-updated": 1578354751
-    },
-    {
-      "id": 67032343,
-      "name": "Söhei",
-      "class": "monk",
-      "classSlug": "monk",
-      "gender": 0,
-      "level": 70,
-      "kills": {
-        "elites": 19874
-      },
-      "paragonLevel": 3323,
+      "paragonLevel": 1861,
       "hardcore": false,
       "seasonal": false,
       "dead": false,
-      "last-updated": 1573691434
+      "last-updated": 1547396205
     },
     {
-      "id": 106366506,
-      "name": "Turbookill",
-      "class": "monk",
-      "classSlug": "monk",
+      "id": 73379755,
+      "name": "Jhonathan",
+      "class": "crusader",
+      "classSlug": "crusader",
       "gender": 0,
       "level": 70,
       "kills": {
-        "elites": 2355
+        "elites": 6980
       },
-      "paragonLevel": 3323,
+      "paragonLevel": 1335,
+      "hardcore": true,
+      "seasonal": false,
+      "dead": false,
+      "last-updated": 1528822120
+    },
+    {
+      "id": 113457732,
+      "name": "Kabel",
+      "class": "witch-doctor",
+      "classSlug": "witch-doctor",
+      "gender": 1,
+      "level": 70,
+      "kills": {
+        "elites": 283
+      },
+      "paragonLevel": 1861,
       "hardcore": false,
       "seasonal": false,
       "dead": false,
-      "last-updated": 1573231678
+      "last-updated": 1552632712
     },
     {
-      "id": 91224142,
-      "name": "Yunalesca",
+      "id": 102458737,
+      "name": "Marisela",
       "class": "wizard",
       "classSlug": "wizard",
       "gender": 1,
       "level": 70,
       "kills": {
-        "elites": 23370
+        "elites": 4255
       },
-      "paragonLevel": 3323,
+      "paragonLevel": 1861,
       "hardcore": false,
       "seasonal": false,
       "dead": false,
-      "last-updated": 1573061391
+      "last-updated": 1552573873
     },
     {
-      "id": 74880891,
-      "name": "fkngAnimals",
+      "id": 73308489,
+      "name": "Martha",
+      "class": "demon-hunter",
+      "classSlug": "demon-hunter",
+      "gender": 1,
+      "level": 70,
+      "kills": {
+        "elites": 17027
+      },
+      "paragonLevel": 1335,
+      "hardcore": true,
+      "seasonal": false,
+      "dead": false,
+      "last-updated": 1537097016
+    },
+    {
+      "id": 108325260,
+      "name": "Nguyhen",
+      "class": "monk",
+      "classSlug": "monk",
+      "gender": 0,
+      "level": 70,
+      "kills": {
+        "elites": 16802
+      },
+      "paragonLevel": 1861,
+      "hardcore": false,
+      "seasonal": false,
+      "dead": false,
+      "last-updated": 1561566163
+    },
+    {
+      "id": 102509991,
+      "name": "Shield",
+      "class": "crusader",
+      "classSlug": "crusader",
+      "gender": 0,
+      "level": 70,
+      "kills": {
+        "elites": 5898
+      },
+      "paragonLevel": 1861,
+      "hardcore": false,
+      "seasonal": false,
+      "dead": false,
+      "last-updated": 1558886687
+    },
+    {
+      "id": 89280427,
+      "name": "Vero",
+      "class": "monk",
+      "classSlug": "monk",
+      "gender": 1,
+      "level": 70,
+      "kills": {
+        "elites": 32121
+      },
+      "paragonLevel": 1861,
+      "hardcore": false,
+      "seasonal": false,
+      "dead": false,
+      "last-updated": 1565540829
+    },
+    {
+      "id": 79718101,
+      "name": "Zulu",
       "class": "witch-doctor",
       "classSlug": "witch-doctor",
       "gender": 0,
       "level": 70,
       "kills": {
-        "elites": 64086
+        "elites": 869
       },
-      "paragonLevel": 3323,
-      "hardcore": false,
+      "paragonLevel": 1335,
+      "hardcore": true,
       "seasonal": false,
       "dead": false,
-      "last-updated": 1573231202
+      "last-updated": 1521246151
     }
   ],
-  "lastHeroPlayed": 126689577,
-  "lastUpdated": 1578358602,
+  "lastHeroPlayed": 89280427,
+  "lastUpdated": 1565540829,
   "kills": {
-    "monsters": 10867416,
-    "elites": 666075,
-    "hardcoreMonsters": 61
+    "monsters": 9921780,
+    "elites": 680957,
+    "hardcoreMonsters": 3285690
   },
   "highestHardcoreLevel": 70,
   "timePlayed": {
-    "demon-hunter": 0.618,
-    "barbarian": 0.235,
-    "witch-doctor": 1,
-    "necromancer": 0.233,
-    "wizard": 0.418,
-    "monk": 0.468,
-    "crusader": 0.364
+    "demon-hunter": 1,
+    "barbarian": 0.233,
+    "witch-doctor": 0.189,
+    "necromancer": 0.026,
+    "wizard": 0.591,
+    "monk": 0.968,
+    "crusader": 0.081
   },
   "progression": {
     "act1": true,
     "act3": true,
-    "act2": false,
+    "act2": true,
     "act5": false,
-    "act4": false
+    "act4": true
   },
+  "fallenHeroes": [
+    {
+      "heroId": 71620775,
+      "name": "Astorath",
+      "class": "monk",
+      "level": 70,
+      "elites": 2097,
+      "hardcore": true,
+      "death": {
+        "killer": 219702,
+        "time": 1453164471
+      },
+      "gender": 0
+    },
+    {
+      "heroId": 72394035,
+      "name": "Silvia",
+      "class": "demon-hunter",
+      "level": 70,
+      "elites": 3352,
+      "hardcore": true,
+      "death": {
+        "killer": 343759,
+        "time": 1453714278
+      },
+      "gender": 1
+    },
+    {
+      "heroId": 72816340,
+      "name": "Marx",
+      "class": "crusader",
+      "level": 70,
+      "elites": 989,
+      "hardcore": true,
+      "death": {
+        "killer": 219702,
+        "time": 1453755197
+      },
+      "gender": 0
+    },
+    {
+      "heroId": 73851066,
+      "name": "Scatha",
+      "class": "wizard",
+      "level": 70,
+      "elites": 3579,
+      "hardcore": true,
+      "death": {
+        "killer": 5347,
+        "time": 1455363930
+      },
+      "gender": 1
+    },
+    {
+      "heroId": 74493658,
+      "name": "RainDeath",
+      "class": "demon-hunter",
+      "level": 70,
+      "elites": 3194,
+      "hardcore": true,
+      "death": {
+        "killer": 5393,
+        "time": 1462323183
+      },
+      "gender": 1
+    },
+    {
+      "heroId": 74515563,
+      "name": "Darkangeluz",
+      "class": "demon-hunter",
+      "level": 27,
+      "elites": 25150,
+      "hardcore": true,
+      "death": {
+        "killer": 434,
+        "time": 1470426513
+      },
+      "gender": 0
+    },
+    {
+      "heroId": 79075121,
+      "name": "Kabel",
+      "class": "witch-doctor",
+      "level": 70,
+      "elites": 2376,
+      "hardcore": true,
+      "death": {
+        "killer": 6356,
+        "time": 1464200175
+      },
+      "gender": 1
+    },
+    {
+      "heroId": 79445992,
+      "name": "Silvia",
+      "class": "monk",
+      "level": 70,
+      "elites": 4138,
+      "hardcore": true,
+      "death": {
+        "killer": 5275,
+        "time": 1466334955
+      },
+      "gender": 1
+    },
+    {
+      "heroId": 80218906,
+      "name": "Dark",
+      "class": "demon-hunter",
+      "level": 70,
+      "elites": 1417,
+      "hardcore": true,
+      "death": {
+        "killer": 4760,
+        "time": 1512671803
+      },
+      "gender": 1
+    }
+  ],
   "seasonalProfiles": {
-    "season19": {
-      "seasonId": 19,
-      "paragonLevel": 2580,
-      "paragonLevelHardcore": 0,
-      "kills": {
-        "monsters": 1731938,
-        "elites": 85492,
-        "hardcoreMonsters": 0
-      },
-      "timePlayed": {
-        "demon-hunter": 0,
-        "barbarian": 0.188,
-        "witch-doctor": 0,
-        "necromancer": 0,
-        "wizard": 0,
-        "monk": 0,
-        "crusader": 0.1
-      },
-      "highestHardcoreLevel": 0
-    },
-    "season18": {
-      "seasonId": 18,
-      "paragonLevel": 1705,
-      "paragonLevelHardcore": 0,
-      "kills": {
-        "monsters": 671573,
-        "elites": 32117,
-        "hardcoreMonsters": 0
-      },
-      "timePlayed": {
-        "demon-hunter": 0,
-        "barbarian": 0,
-        "witch-doctor": 0,
-        "necromancer": 0,
-        "wizard": 0,
-        "monk": 0,
-        "crusader": 0.123
-      },
-      "highestHardcoreLevel": 0
-    },
     "season17": {
       "seasonId": 17,
-      "paragonLevel": 1656,
+      "paragonLevel": 331,
       "paragonLevelHardcore": 0,
       "kills": {
-        "monsters": 794627,
-        "elites": 36291,
+        "monsters": 9744,
+        "elites": 741,
         "hardcoreMonsters": 0
       },
       "timePlayed": {
-        "demon-hunter": 0.134,
+        "demon-hunter": 0,
         "barbarian": 0,
-        "witch-doctor": 0.001,
-        "necromancer": 0.005,
-        "wizard": 0.005,
-        "monk": 0,
+        "witch-doctor": 0,
+        "necromancer": 0,
+        "wizard": 0,
+        "monk": 0.002,
         "crusader": 0
       },
       "highestHardcoreLevel": 0
     },
     "season16": {
       "seasonId": 16,
-      "paragonLevel": 1052,
+      "paragonLevel": 653,
       "paragonLevelHardcore": 0,
       "kills": {
-        "monsters": 176596,
-        "elites": 10786,
+        "monsters": 55323,
+        "elites": 2540,
         "hardcoreMonsters": 0
       },
       "timePlayed": {
-        "demon-hunter": 0.041,
+        "demon-hunter": 0,
         "barbarian": 0,
         "witch-doctor": 0,
         "necromancer": 0,
         "wizard": 0,
-        "monk": 0,
-        "crusader": 0
-      },
-      "highestHardcoreLevel": 0
-    },
-    "season11": {
-      "seasonId": 11,
-      "paragonLevel": 1384,
-      "paragonLevelHardcore": 0,
-      "kills": {
-        "monsters": 521311,
-        "elites": 31301,
-        "hardcoreMonsters": 0
-      },
-      "timePlayed": {
-        "demon-hunter": 0.001,
-        "barbarian": 0,
-        "witch-doctor": 0.004,
-        "necromancer": 0.159,
-        "wizard": 0,
-        "monk": 0.02,
+        "monk": 0.008,
         "crusader": 0
       },
       "highestHardcoreLevel": 0
     },
     "season15": {
       "seasonId": 15,
-      "paragonLevel": 738,
+      "paragonLevel": 674,
       "paragonLevelHardcore": 0,
       "kills": {
-        "monsters": 77941,
-        "elites": 4641,
+        "monsters": 70371,
+        "elites": 3862,
         "hardcoreMonsters": 0
       },
       "timePlayed": {
-        "demon-hunter": 0.022,
+        "demon-hunter": 0,
         "barbarian": 0,
-        "witch-doctor": 0,
+        "witch-doctor": 0.002,
         "necromancer": 0,
         "wizard": 0,
-        "monk": 0,
+        "monk": 0.009,
         "crusader": 0
       },
       "highestHardcoreLevel": 0
     },
     "season14": {
       "seasonId": 14,
-      "paragonLevel": 1038,
+      "paragonLevel": 945,
       "paragonLevelHardcore": 0,
       "kills": {
-        "monsters": 206771,
-        "elites": 14395,
-        "hardcoreMonsters": 0
-      },
-      "timePlayed": {
-        "demon-hunter": 0.01,
-        "barbarian": 0,
-        "witch-doctor": 0,
-        "necromancer": 0,
-        "wizard": 0,
-        "monk": 0,
-        "crusader": 0.052
-      },
-      "highestHardcoreLevel": 0
-    },
-    "season13": {
-      "seasonId": 13,
-      "paragonLevel": 1530,
-      "paragonLevelHardcore": 0,
-      "kills": {
-        "monsters": 356549,
-        "elites": 34812,
+        "monsters": 225496,
+        "elites": 12404,
         "hardcoreMonsters": 0
       },
       "timePlayed": {
         "demon-hunter": 0,
         "barbarian": 0,
-        "witch-doctor": 0.027,
-        "necromancer": 0.01,
+        "witch-doctor": 0,
+        "necromancer": 0.006,
         "wizard": 0,
-        "monk": 0.072,
-        "crusader": 0.049
+        "monk": 0.03,
+        "crusader": 0.001
+      },
+      "highestHardcoreLevel": 0
+    },
+    "season13": {
+      "seasonId": 13,
+      "paragonLevel": 1030,
+      "paragonLevelHardcore": 0,
+      "kills": {
+        "monsters": 328004,
+        "elites": 17930,
+        "hardcoreMonsters": 0
+      },
+      "timePlayed": {
+        "demon-hunter": 0,
+        "barbarian": 0.002,
+        "witch-doctor": 0.003,
+        "necromancer": 0,
+        "wizard": 0,
+        "monk": 0.045,
+        "crusader": 0
       },
       "highestHardcoreLevel": 0
     },
     "season12": {
       "seasonId": 12,
-      "paragonLevel": 1860,
+      "paragonLevel": 1474,
       "paragonLevelHardcore": 0,
       "kills": {
-        "monsters": 636768,
-        "elites": 50812,
+        "monsters": 1101954,
+        "elites": 64921,
         "hardcoreMonsters": 0
       },
       "timePlayed": {
-        "demon-hunter": 0.024,
-        "barbarian": 0,
-        "witch-doctor": 0,
-        "necromancer": 0.003,
-        "wizard": 0.179,
-        "monk": 0.059,
-        "crusader": 0
+        "demon-hunter": 0.051,
+        "barbarian": 0.009,
+        "witch-doctor": 0.02,
+        "necromancer": 0.01,
+        "wizard": 0.009,
+        "monk": 0.068,
+        "crusader": 0.011
       },
       "highestHardcoreLevel": 0
     },
     "season0": {
       "seasonId": 0,
-      "paragonLevel": 3323,
-      "paragonLevelHardcore": 44,
+      "paragonLevel": 1861,
+      "paragonLevelHardcore": 1335,
       "kills": {
-        "monsters": 10867416,
-        "elites": 666075,
-        "hardcoreMonsters": 61
+        "monsters": 9921780,
+        "elites": 680957,
+        "hardcoreMonsters": 3285690
       },
       "timePlayed": {
-        "demon-hunter": 0.618,
-        "barbarian": 0.235,
-        "witch-doctor": 1,
-        "necromancer": 0.233,
-        "wizard": 0.418,
-        "monk": 0.468,
-        "crusader": 0.364
+        "demon-hunter": 1,
+        "barbarian": 0.233,
+        "witch-doctor": 0.189,
+        "necromancer": 0.026,
+        "wizard": 0.591,
+        "monk": 0.968,
+        "crusader": 0.081
       },
       "highestHardcoreLevel": 70
     }
   },
-  "blacksmith": {
-    "slug": "blacksmith",
-    "level": 12
-  },
-  "jeweler": {
+  "jewelerSeasonHardcore": {
     "slug": "jeweler",
-    "level": 12
+    "level": 0
   },
-  "mystic": {
+  "mysticSeasonHardcore": {
     "slug": "mystic",
-    "level": 12
+    "level": 0
   },
   "blacksmithSeason": {
     "slug": "blacksmith",
@@ -531,26 +538,30 @@
   },
   "blacksmithHardcore": {
     "slug": "blacksmith",
-    "level": 0
+    "level": 12
   },
   "jewelerHardcore": {
     "slug": "jeweler",
-    "level": 0
+    "level": 12
   },
   "mysticHardcore": {
     "slug": "mystic",
-    "level": 0
+    "level": 12
   },
   "blacksmithSeasonHardcore": {
     "slug": "blacksmith",
     "level": 0
   },
-  "jewelerSeasonHardcore": {
-    "slug": "jeweler",
-    "level": 0
+  "blacksmith": {
+    "slug": "blacksmith",
+    "level": 12
   },
-  "mysticSeasonHardcore": {
+  "jeweler": {
+    "slug": "jeweler",
+    "level": 12
+  },
+  "mystic": {
     "slug": "mystic",
-    "level": 0
+    "level": 12
   }
 }
