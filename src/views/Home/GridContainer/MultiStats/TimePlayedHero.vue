@@ -1,12 +1,12 @@
 <template>
   <div class="progress-time-played">
     <div class="d-flex justify-content-between">
-      <h5 class="mb-0"> {{heroTime.hero}} </h5>
+      <h5 class="mb-0 font-weight-lighter"> {{heroTime.hero}} </h5>
       <span>
-        <b-badge>{{(heroTime.time * 100).toFixed(2)}}</b-badge>
+        <b-badge class="w-50p">{{(heroTime.time * 100).toFixed(2)}}</b-badge>
       </span>
     </div>
-    <b-progress :max="1" height="12px" class="mb-3 rounded-0">
+    <b-progress :max="1" height="14px" class="mb-3 rounded-0">
       <b-progress-bar :value="heroTime.time" :class="classHeroBg">
         {{heroTime.hero}}
       </b-progress-bar>
@@ -46,6 +46,17 @@ export default {
   }
 
   .progress-time-played
+
+    h5.title
+      color #000
+
+    .w-50p
+      position relative
+      width 50px
+      bottom -2px
+      border-bottom-left-radius 0
+      border-bottom-right-radius 0
+
     for hero, bg in $heroesBg
       .hero-bg-color-{hero}
         background-color bg
