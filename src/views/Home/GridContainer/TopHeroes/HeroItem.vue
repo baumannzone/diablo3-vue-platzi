@@ -2,7 +2,7 @@
   <div class="hero-portrait-wrapper">
     <div :class="heroClass"></div>
     <div class="p-2 bg-dark">
-      <h5 class="text-truncate m-0 text-center title-name font-diablo" :class="{'text-danger': hero.dead}">
+      <h5 class="text-truncate m-0 text-center title-name font-diablo" :class="{'bg-danger': hero.hardcore}">
         {{ hero.name }}
         <img v-if="hero.seasonal" src="@/assets/img/leaf.png" width="12px" class="">
       </h5>
