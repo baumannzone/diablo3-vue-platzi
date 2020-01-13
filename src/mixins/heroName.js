@@ -1,12 +1,4 @@
-const classes = {
-  barbarian: 'Barbarian',
-  monk: 'Monk',
-  wizard: 'Wizard',
-  crusader: 'Crusader',
-  necromancer: 'Necromancer',
-  'witch-doctor': 'Witch Doctor',
-  'demon-hunter': 'Demon Hunter'
-}
+import classes from '../utils/heroClasses'
 
 export default {
   methods: {
