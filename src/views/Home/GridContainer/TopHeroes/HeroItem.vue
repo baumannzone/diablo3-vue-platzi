@@ -1,6 +1,9 @@
 <template>
-  <div class="hero-portrait-wrapper">
-    <div :class="heroClass"></div>
+  <div class="hero-portrait-wrapper mb-5 mb-sm-0">
+    <div class="avatar bg-secondary d-flex justify-content-center p-3 p-sm-0">
+      <!-- Bg Img -->
+      <div :class="heroClass"></div>
+    </div>
     <div class="p-2 bg-dark">
       <h5 class="text-truncate m-0 text-center title-name font-diablo" :class="{'bg-danger': hero.hardcore}">
         {{ hero.name }}
@@ -9,7 +12,7 @@
       <div class="d-flex justify-content-between border-top border-secondary pt-2 align-items-center mt-2">
         <small class="elite-kills">
           <span class="text-monospace">{{ hero.kills.elites | formatNumber }}</span>
-          Elite <span class="d-none d-sm-inline-block">kills</span>
+          Elite kills
         </small>
         <small class="level-circle" :class="{'text-danger': hero.dead}"> {{ hero.level }} </small>
       </div>

@@ -2,11 +2,12 @@
   <div class="heroes-list border-top border-secondary mt-5 pt-5">
     <b-table
       hover
+      striped
       dark
       :items="heroes"
       :fields="fields"
-      small
-      responsive>
+      stacked="sm"
+      small="sm">
       <template v-slot:cell(name)="data">
         <HeroIco :hero="data.item"/>
       </template>
@@ -45,7 +46,8 @@ export default {
       fields: [
         {
           key: 'name',
-          label: 'Name'
+          label: 'Name',
+          stickyColumn: true
         },
         {
           key: 'class',
