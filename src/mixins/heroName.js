@@ -3,6 +3,7 @@ const classes = {
   monk: 'Monk',
   wizard: 'Wizard',
   crusader: 'Crusader',
+  necromancer: 'Necromancer',
   'witch-doctor': 'Witch Doctor',
   'demon-hunter': 'Demon Hunter'
 }
