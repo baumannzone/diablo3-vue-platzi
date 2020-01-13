@@ -1,6 +1,6 @@
 <template>
   <div class="progression-bosses pt-4 mt-5 border-top">
-    <h4 class="font-diablo mb-4">Progression</h4>
+    <h2 class="font-diablo mb-4">Progression</h2>
     <b-row>
       <b-col v-for="(val, key) in sortedActs" :key="key" class="col-12 col-md-2">
         <div class="bg-dark rounded mb-2">

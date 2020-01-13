@@ -3,7 +3,7 @@
     <div class="boss-img pt-2">
       <div class="act" :class="actClass"></div>
     </div>
-    <div class="d-block text-center">{{ fullActName }}</div>
+    <p class="d-block text-center m-0 lead font-weight-bold">{{ fullActName }}</p>
   </div>
 </template>
 
