@@ -2,9 +2,7 @@
   <div class="home">
     <div class="profile-body">
       <GridContainer />
-      <div class="full-block">
-        <div class="artisans">Artesanos 1 2 y 3</div>
-      </div>
+      <ArtisansBlock/>
     </div>
   </div>
 </template>
@@ -13,10 +11,11 @@
 // import { getAccount } from '@/api'
 
 import GridContainer from './GridContainer/Index'
+import ArtisansBlock from './ArtisansBlock'
 
 export default {
   name: 'HomeView',
-  components: { GridContainer },
+  components: { ArtisansBlock, GridContainer },
   created () {
     // getAccount()
     //   .then(res => {
