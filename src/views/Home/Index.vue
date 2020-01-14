@@ -2,7 +2,7 @@
   <div class="home">
     <div class="profile-body">
       <GridContainer />
-      <ArtisansBlock/>
+      <ArtisansBlock artisans="{}"/>
     </div>
   </div>
 </template>
@@ -11,7 +11,7 @@
 // import { getAccount } from '@/api'
 
 import GridContainer from './GridContainer/Index'
-import ArtisansBlock from './ArtisansBlock'
+import ArtisansBlock from './ArtisansBlock/Index'
 
 export default {
   name: 'HomeView',
