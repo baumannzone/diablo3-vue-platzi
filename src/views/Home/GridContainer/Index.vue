@@ -13,6 +13,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import data from '../../../api/data'
 import TopHeroes from './TopHeroes/Index'
