@@ -4,8 +4,12 @@
     <HeroDetailHeader :detail="detailHeader"/>
 
     <b-row>
-      <GearBonuses/>
-      <b-col class="border">2</b-col>
+      <b-col md="12" lg="8" order-lg="2" class="border">Items</b-col>
+
+      <b-col md="12" lg="4" order-lg="1">
+        <GearBonuses :stats="detailStats"/>
+      </b-col>
+
     </b-row>
   </div>
 </template>
@@ -37,6 +41,9 @@ export default {
         alive,
         seasonCreated
       }
+    },
+    detailStats () {
+      return h.stats
     }
   }
 }
