@@ -29,21 +29,21 @@ export default {
         {
           name: 'blacksmith',
           icon: 'hammer',
-          color: 'blue',
+          color: '#ffb74d',
           normal: data.blacksmith,
           hardcore: data.blacksmithHardcore
         },
         {
           name: 'jeweler',
           icon: 'gem',
-          color: 'pink',
+          color: '#4dd0e1',
           normal: data.jeweler,
           hardcore: data.jewelerHardcore
         },
         {
           name: 'mystic',
           icon: 'hat-wizard',
-          color: 'red',
+          color: '#ba68c8',
           normal: data.mystic,
           hardcore: data.mysticHardcore
         }
