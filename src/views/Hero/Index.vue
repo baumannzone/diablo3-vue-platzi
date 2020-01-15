@@ -1,5 +1,6 @@
 <template>
   <div class="hero-view">
+
     <HeroDetailHeader :detail="detailHeader"/>
 
     <b-row>
@@ -24,7 +25,7 @@ export default {
   },
   computed: {
     detailHeader () {
-      const { name, class: classSlug, gender, level, hardcore, seasonal, paragonLevel, alive } = h
+      const { name, class: classSlug, gender, level, hardcore, seasonal, paragonLevel, alive, seasonCreated } = h
       return {
         name,
         classSlug,
@@ -33,7 +34,8 @@ export default {
         hardcore,
         seasonal,
         paragonLevel,
-        alive
+        alive,
+        seasonCreated
       }
     }
   }
