@@ -1,10 +1,20 @@
 <template>
-  <b-col class="border">
-    <h2>Gear Bonuses</h2>
+  <b-col>
+    <h2 class="font-diablo">Gear Bonuses</h2>
+
+    <hr class="bg-white">
+
   </b-col>
 </template>
+
 <script>
 export default {
-  name: 'GearBonuses'
+  name: 'GearBonuses',
+  props: {
+    stats: {
+      type: Object,
+      required: true
+    }
+  }
 }
 </script>
