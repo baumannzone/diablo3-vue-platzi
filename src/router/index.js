@@ -4,14 +4,9 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 const routerOptions = [
-  {
-    path: '/',
-    name: 'Home'
-  },
-  {
-    path: '/about',
-    name: 'About'
-  }
+  { path: '/', name: 'Home' },
+  { path: '/hero/:heroId', name: 'Hero' },
+  { path: '/about', name: 'About' }
 ]
 
 const routes = routerOptions.map(r => {
