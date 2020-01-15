@@ -1,7 +1,8 @@
 <template>
   <div class="artisan-item d-flex bg-dark p-3">
     <div class="icon d-flex justify-content-center align-items-center rounded-circle mr-2">
-      <font-awesome-icon :icon="artisan.icon" class="fa-2x" :style="{color: artisan.color}"/>
+      <!--<font-awesome-icon :icon="artisan.icon" class="fa-2x" :style="{color: artisan.color}"/>-->
+      <span class="display-4">{{ artisan.emoji}}</span>
     </div>
     <div class="content">
       <h5 class="font-weight-bold text-capitalize"> {{ artisan.name }} </h5>
@@ -31,6 +32,6 @@ export default {
   .artisan-item
     .icon
       width 80px
-      background-color #2b3239
+      background-color #404850
 
 </style>
