@@ -7,7 +7,7 @@
       :items="heroes"
       :fields="fields"
       stacked="sm"
-      small="sm">
+      small>
       <template v-slot:cell(name)="data">
         <HeroIco :hero="data.item"/>
       </template>
