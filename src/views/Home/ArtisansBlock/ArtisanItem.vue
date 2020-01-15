@@ -6,7 +6,12 @@
     <div class="content">
       <h5 class="font-weight-bold text-capitalize"> {{ artisan.name }} </h5>
       <p class="m-0 font-weight-normal">Level {{artisan.normal.level}} (normal) </p>
-      <p class="mb-0 font-weight-normal text-muted">Level {{ artisan.hardcore.level }} <span class="text-danger">(hardcore)</span> </p>
+      <p
+        v-if="artisan.hardcore.level"
+        class="mb-0 font-weight-normal text-muted">
+        Level {{ artisan.hardcore.level }}
+        <span class="text-danger">(hardcore)</span>
+      </p>
     </div>
   </div>
 </template>
@@ -23,9 +28,9 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.artisan-item
-  .icon
-    width 80px
-    background-color #2b3239
+  .artisan-item
+    .icon
+      width 80px
+      background-color #2b3239
 
 </style>
