@@ -1,22 +1,41 @@
 <template>
   <div class="hero-view">
-    <HeroDetailHeader/>
+    <HeroDetailHeader :detail="detailHeader"/>
 
     <b-row>
-      <b-col class="border">1</b-col>
+      <GearBonuses/>
       <b-col class="border">2</b-col>
     </b-row>
   </div>
 </template>
 
 <script>
+import h from '@/api/heroDetail.json'
 import HeroDetailHeader from './HeroDetailHeader'
+import GearBonuses from './GearBonuses'
 
 export default {
   name: 'HeroView',
-  components: { HeroDetailHeader },
+  components: { GearBonuses, HeroDetailHeader },
   data () {
-    return {}
+    return {
+      h
+    }
+  },
+  computed: {
+    detailHeader () {
+      const { name, class: classSlug, gender, level, hardcore, seasonal, paragonLevel, alive } = h
+      return {
+        name,
+        classSlug,
+        gender,
+        level,
+        hardcore,
+        seasonal,
+        paragonLevel,
+        alive
+      }
+    }
   }
 }
 </script>
