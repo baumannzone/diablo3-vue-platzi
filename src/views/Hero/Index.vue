@@ -1,29 +1,22 @@
 <template>
   <div class="hero-view">
-    <b-breadcrumb :items="items" class="bg-transparent"/>
+    <HeroDetailHeader/>
+
+    <b-row>
+      <b-col class="border">1</b-col>
+      <b-col class="border">2</b-col>
+    </b-row>
   </div>
 </template>
 
 <script>
+import HeroDetailHeader from './HeroDetailHeader'
+
 export default {
   name: 'HeroView',
+  components: { HeroDetailHeader },
   data () {
-    return {
-      items: [
-        {
-          text: 'SuperRambo#2613',
-          to: { name: 'Home' }
-        },
-        {
-          text: '[CR] ElMicroYyo',
-          active: true
-        }
-      ]
-    }
+    return {}
   }
 }
 </script>
-
-<style scoped>
-
-</style>
