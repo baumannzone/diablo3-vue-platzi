@@ -22,7 +22,7 @@ export default {
     heroClassImg () {
       const gender = this.hero.gender === 1 ? 'female' : 'male'
       const dead = this.hero.hardcore ? 'border-danger' : ''
-      return `heroe-${this.hero.class} ${gender} ${dead}`
+      return `hero-${this.hero.class} ${gender} ${dead}`
     }
   }
 }

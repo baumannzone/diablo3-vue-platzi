@@ -37,7 +37,7 @@ export default {
   computed: {
     heroClass () {
       const gender = this.hero.gender === 0 ? 'male' : 'female'
-      return `heroe-${this.hero.class} ${gender}`
+      return `hero-${this.hero.class} ${gender}`
     }
   }
 }
