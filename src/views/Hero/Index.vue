@@ -43,7 +43,7 @@ export default {
       }
     },
     detailStats () {
-      return h.stats
+      return { ...h.stats, classSlug: h.class }
     }
   }
 }
