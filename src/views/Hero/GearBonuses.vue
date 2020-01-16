@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="gear-bonuses">
     <h2 class="font-diablo">Attributes</h2>
 
     <hr class="bg-white">
@@ -7,17 +7,13 @@
     <div class="attributes">
 
       <div class="core">
-        <ul v-for="attr in coreAttributes" :key="attr.name">
-          <li>{{ attr }}</li>
-        </ul>
+        <AttributeList :attributes="coreAttributes"/>
       </div>
 
       <hr>
 
       <div class="secondary">
-        <ul v-for="attr in secondaryAttributes" :key="attr.name">
-          <li>{{ attr }}</li>
-        </ul>
+        <AttributeList :attributes="secondaryAttributes"/>
       </div>
 
     </div>
@@ -25,21 +21,23 @@
     <hr>
 
     <div class="resources">
-      <ul v-for="res in resources" :key="res.name">
-        <li>{{ res }}</li>
-      </ul>
+      <HeroResources :resources="resources"/>
     </div>
 
   </div>
 </template>
 
 <script>
+import AttributeList from './AttributeList'
+import HeroResources from './HeroResources'
+
 const coreAttributes = ['strength', 'dexterity', 'vitality', 'intelligence']
 const secondaryAttributes = ['damage', 'toughness', 'healing']
 const resources = ['life', 'primaryResource', 'secondaryResource']
 
 export default {
   name: 'GearBonuses',
+  components: { HeroResources, AttributeList },
   props: {
     stats: {
       type: Object,
@@ -54,7 +52,10 @@ export default {
       return secondaryAttributes.map(item => ({ name: item, val: this.stats[item] }))
     },
     resources () {
-      return resources.map(item => ({ name: item, val: this.stats[item] }))
+      return {
+        classSlug: this.stats.classSlug,
+        resources: resources.map(item => ({ name: item, val: this.stats[item] }))
+      }
     }
   }
 }
