@@ -1,18 +1,25 @@
 <template>
-  <div class="text-center">
+  <div class="text-center bg-dark h-100 pt-3">
 
-    <div v-if="item" class="item-image">
-      <img :src="itemUrl" alt="Img">
+    <div class="d-flex flex-column justify-content-between h-100">
+      <div>
+        <div v-if="item" class="item-image">
+          <p class="text-muted">{{ item.name }}</p>
+          <img :src="itemUrl" alt="Img">
+        </div>
+      </div>
+
+      <div>
+        <template v-if="itemHasGems">
+          <small >Gems:</small>
+          <ul class="list-inline">
+            <li v-for="(gem, index) in item.gems" :key="index" class="list-inline-item">
+              <GemItem :gem="gem"/>
+            </li>
+          </ul>
+        </template>
+      </div>
     </div>
-
-    <template v-if="itemHasGems">
-      <h6>Gems:</h6>
-      <ul class="list-inline">
-        <li v-for="(gem, index) in item.gems" :key="index" class="list-inline-item">
-          <GemItem :gem="gem"/>
-        </li>
-      </ul>
-    </template>
 
   </div>
 
