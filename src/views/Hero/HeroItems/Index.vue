@@ -1,5 +1,5 @@
 <template>
-  <section class="hero-items">
+  <section class="hero-items mb-5">
 
     <b-row>
       <b-col cols="4" offset="4">
