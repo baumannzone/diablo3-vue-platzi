@@ -1,16 +1,19 @@
 <template>
   <div class="text-center">
-    <div class="item-image">
+
+    <div v-if="item" class="item-image">
       <img :src="itemUrl" alt="Img">
     </div>
-    <template v-if="item.gems.length > 0">
-      <h5>Gems:</h5>
+
+    <template v-if="itemHasGems">
+      <h6>Gems:</h6>
       <ul class="list-inline">
-        <li v-for="(gem, idx) in item.gems" :key="idx">
-          <img :src="gemUrl(gem)" :alt="gem[idx].item.name" :title="gem[idx].item.name">
-        </li>
+<!--        <li v-for="(gem, idx) in item.gems" :key="idx">-->
+<!--          <img :src="gemUrl(gem)" :alt="gem[idx].item.name" :title="gem[idx].item.name">-->
+<!--        </li>-->
       </ul>
     </template>
+
   </div>
 
 </template>
@@ -28,6 +31,9 @@ export default {
     itemUrl () {
       const host = 'http://media.blizzard.com/d3/icons/items/large/'
       return `${host}${this.item.icon}.png`
+    },
+    itemHasGems () {
+      return this.item.hasOwnProperty('gems')
     }
   },
   methods: {
