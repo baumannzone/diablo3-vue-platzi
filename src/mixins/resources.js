@@ -1,11 +1,21 @@
-const resourcesByHero = {
+const resourceClassName = {
   barbarian: 'fury',
   crusader: 'wrath',
   monk: 'spirit',
-  wizard: 'arcane power',
+  wizard: 'arcane-power',
   'witch-doctor': 'mana',
   necromancer: 'essence',
-  'demon-hunter': ['hatred', 'discipline']
+  'demon-hunter': 'hatred-discipline'
+}
+
+const resourceDisplayName = {
+  barbarian: 'Fury',
+  crusader: 'Wrath',
+  monk: 'Spirit',
+  wizard: 'Arcane Power',
+  'witch-doctor': 'Mana',
+  necromancer: 'Essence',
+  'demon-hunter': 'Hatred / Discipline'
 }
 
 export default {
@@ -13,10 +23,18 @@ export default {
     /**
      * Get the name of the primary resource
      * @param classSlug {String}
-     * @returns {*}
+     * @returns {String}
      */
-    resourceName (classSlug) {
-      return resourcesByHero[classSlug]
+    resourceClassName (classSlug) {
+      return resourceClassName[classSlug]
+    },
+    /**
+     *
+     * @param classSlug {String}
+     * @returns {String}
+     */
+    resourceDisplayName (classSlug) {
+      return resourceDisplayName[classSlug]
     }
   }
 }
