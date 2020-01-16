@@ -8,9 +8,9 @@
     <template v-if="itemHasGems">
       <h6>Gems:</h6>
       <ul class="list-inline">
-<!--        <li v-for="(gem, idx) in item.gems" :key="idx">-->
-<!--          <img :src="gemUrl(gem)" :alt="gem[idx].item.name" :title="gem[idx].item.name">-->
-<!--        </li>-->
+        <li v-for="(gem, index) in item.gems" :key="index" class="list-inline-item">
+          <GemItem :gem="gem"/>
+        </li>
       </ul>
     </template>
 
@@ -19,8 +19,11 @@
 </template>
 
 <script>
+import GemItem from './GemItem'
+
 export default {
   name: 'ItemDetail',
+  components: { GemItem },
   props: {
     item: {
       type: Object,
@@ -34,17 +37,6 @@ export default {
     },
     itemHasGems () {
       return this.item.hasOwnProperty('gems')
-    }
-  },
-  methods: {
-    /**
-     * Return gem Url
-     * @param gem {Object}
-     * @returns {string}
-     */
-    gemUrl (gem) {
-      const host = 'http://media.blizzard.com/d3/icons/items/small/'
-      return `${host}${gem.item.icon}.png`
     }
   }
 }
