@@ -52,10 +52,14 @@ export default {
       return secondaryAttributes.map(item => ({ name: item, val: this.stats[item] }))
     },
     resources () {
-      return {
+      const data = {
         classSlug: this.stats.classSlug,
-        resources: resources.map(item => ({ name: item, val: this.stats[item] }))
+        resources: {}
       }
+      resources.forEach(item => {
+        data.resources[item] = { name: item, val: this.stats[item] }
+      })
+      return data
     }
   }
 }
