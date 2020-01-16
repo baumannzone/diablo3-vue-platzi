@@ -10,6 +10,7 @@
 
       <b-col md="12" lg="4" order-lg="1">
         <GearBonuses :stats="detailStats"/>
+        <Skills :skills="h.skills"/>
       </b-col>
 
     </b-row>
@@ -23,10 +24,11 @@ import items from '@/api/heroItems.json'
 import HeroDetailHeader from './HeroDetailHeader'
 import GearBonuses from './GearBonuses/Index'
 import HeroItems from './HeroItems/Index'
+import Skills from './Skills/Index'
 
 export default {
   name: 'HeroView',
-  components: { GearBonuses, HeroDetailHeader, HeroItems },
+  components: { Skills, GearBonuses, HeroDetailHeader, HeroItems },
   data () {
     return {
       h,

@@ -1,5 +1,8 @@
 <template>
   <section class="hero-items mb-5">
+    <h2 class="font-diablo">Items</h2>
+
+    <hr class="bg-white">
 
     <b-row>
       <b-col cols="4" offset="4">
