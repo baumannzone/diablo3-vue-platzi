@@ -17,7 +17,7 @@
 <script>
 import h from '@/api/heroDetail.json'
 import HeroDetailHeader from './HeroDetailHeader'
-import GearBonuses from './GearBonuses'
+import GearBonuses from './GearBonuses/Index'
 
 export default {
   name: 'HeroView',
