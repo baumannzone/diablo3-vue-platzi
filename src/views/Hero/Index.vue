@@ -4,7 +4,9 @@
     <HeroDetailHeader :detail="detailHeader"/>
 
     <b-row>
-      <b-col md="12" lg="8" order-lg="2" class="border">Items</b-col>
+      <b-col md="12" lg="8" order-lg="2">
+        <HeroItems :items="items"/>
+      </b-col>
 
       <b-col md="12" lg="4" order-lg="1">
         <GearBonuses :stats="detailStats"/>
@@ -16,15 +18,19 @@
 
 <script>
 import h from '@/api/heroDetail.json'
+import items from '@/api/heroItems.json'
+
 import HeroDetailHeader from './HeroDetailHeader'
 import GearBonuses from './GearBonuses/Index'
+import HeroItems from './HeroItems/Index'
 
 export default {
   name: 'HeroView',
-  components: { GearBonuses, HeroDetailHeader },
+  components: { GearBonuses, HeroDetailHeader, HeroItems },
   data () {
     return {
-      h
+      h,
+      items
     }
   },
   computed: {
