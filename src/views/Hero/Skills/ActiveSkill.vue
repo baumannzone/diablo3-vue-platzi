@@ -29,7 +29,7 @@ export default {
       required: true,
       type: Object
     },
-    slot: {
+    slotNum: {
       required: true,
       type: Number || String
     }

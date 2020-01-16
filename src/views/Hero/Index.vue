@@ -14,6 +14,9 @@
       </b-col>
 
     </b-row>
+
+    <KanaisCube :powers="h.legendaryPowers"/>
+
   </div>
 </template>
 
@@ -25,10 +28,11 @@ import HeroDetailHeader from './HeroDetailHeader'
 import GearBonuses from './GearBonuses/Index'
 import HeroItems from './HeroItems/Index'
 import Skills from './Skills/Index'
+import KanaisCube from './KanaisCube'
 
 export default {
   name: 'HeroView',
-  components: { Skills, GearBonuses, HeroDetailHeader, HeroItems },
+  components: { KanaisCube, Skills, GearBonuses, HeroDetailHeader, HeroItems },
   data () {
     return {
       h,
