@@ -15,43 +15,43 @@
         <ItemDetail :item="items.torso"/>
       </b-col>
       <b-col>
-        <div class="text-center">Neck</div>
+        <ItemDetail :item="items.neck"/>
       </b-col>
     </b-row>
 
     <b-row>
       <b-col>
-        <div class="text-center">Hands</div>
+        <ItemDetail :item="items.hands"/>
       </b-col>
       <b-col>
-        <div class="text-center">Waist</div>
+        <ItemDetail :item="items.waist"/>
       </b-col>
       <b-col>
-        <div class="text-center">Bracers</div>
-      </b-col>
-    </b-row>
-
-    <b-row>
-      <b-col>
-        <div class="text-center">slot-rightFinger</div>
-      </b-col>
-      <b-col>
-        <div class="text-center">Legs</div>
-      </b-col>
-      <b-col>
-        <div class="text-center">slot-leftFinger</div>
+        <ItemDetail :item="items.bracers"/>
       </b-col>
     </b-row>
 
     <b-row>
       <b-col>
-        <div class="text-center">mainHand</div>
+        <ItemDetail :item="items.leftFinger"/>
       </b-col>
       <b-col>
-        <div class="text-center">Feet</div>
+        <ItemDetail :item="items.legs"/>
       </b-col>
       <b-col>
-        <div class="text-center">offHand</div>
+        <ItemDetail :item="items.rightFinger"/>
+      </b-col>
+    </b-row>
+
+    <b-row>
+      <b-col>
+        <ItemDetail :item="items.mainHand"/>
+      </b-col>
+      <b-col>
+        <ItemDetail :item="items.feet"/>
+      </b-col>
+      <b-col>
+        <ItemDetail :item="items.offHand"/>
       </b-col>
     </b-row>
 
