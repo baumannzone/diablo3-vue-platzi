@@ -2,10 +2,12 @@
   <section class="hero-items">
 
     <b-row>
-      <b-col>
+      <b-col cols="4" offset="4">
         <ItemDetail :item="items.head"/>
       </b-col>
     </b-row>
+
+    <hr>
 
     <b-row>
       <b-col>
@@ -19,6 +21,8 @@
       </b-col>
     </b-row>
 
+    <hr>
+
     <b-row>
       <b-col>
         <ItemDetail :item="items.hands"/>
@@ -31,6 +35,8 @@
       </b-col>
     </b-row>
 
+    <hr>
+
     <b-row>
       <b-col>
         <ItemDetail :item="items.leftFinger"/>
@@ -42,6 +48,8 @@
         <ItemDetail :item="items.rightFinger"/>
       </b-col>
     </b-row>
+
+    <hr>
 
     <b-row>
       <b-col>
