@@ -36,7 +36,7 @@
 <script>
 const coreAttributes = ['strength', 'dexterity', 'vitality', 'intelligence']
 const secondaryAttributes = ['damage', 'toughness', 'healing']
-const resources = ['life', 'primaryResource']
+const resources = ['life', 'primaryResource', 'secondaryResource']
 
 export default {
   name: 'GearBonuses',
