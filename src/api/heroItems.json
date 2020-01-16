@@ -1,0 +1,864 @@
+{
+  "head": {
+    "id": "Unique_Helm_Set_12_x1",
+    "name": "Crown of the Invoker",
+    "icon": "unique_helm_set_12_x1_demonhunter_male",
+    "displayColor": "green",
+    "tooltipParams": "/item/crown-of-the-invoker-Unique_Helm_Set_12_x1",
+    "requiredLevel": 70,
+    "itemLevel": 1,
+    "stackSizeMax": 0,
+    "accountBound": true,
+    "flavorText": "\"Evil continued to test my defenses. Soon after entering the swamplands, I was caught in an unnatural fog. As I lost sight of the path, I spotted a being in the distance crowned in thorns. I was not alone.\" -- Olenna's journal",
+    "typeName": "Ancient Set Helm",
+    "type": {
+      "twoHanded": false,
+      "id": "helm"
+    },
+    "armor": 706,
+    "attacksPerSecond": 0,
+    "minDamage": 0,
+    "maxDamage": 0,
+    "slots": "head",
+    "augmentation": "+250 Strength (Caldesann's Despair Rank 50)",
+    "attributes": {
+      "primary": [
+        "+989 Strength",
+        "+937 Vitality",
+        "+10,896 Life per Hit",
+        "+250 Strength (Caldesann's Despair Rank 50)"
+      ],
+      "secondary": [
+        "+192 Poison Resistance",
+        "+3124 Thorns Damage"
+      ]
+    },
+    "attributesHtml": {
+      "primary": [
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+989 Strength</span>",
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+937 Vitality</span>",
+        "<span class=\"tooltip-icon-enchant\"></span> <span class=\"d3-color-ff6969ff\">+10,896 Life per Hit</span>",
+        "<span class=\"d3-color-ff6969ff\"><span class=\"tooltip-icon-bullet\"></span> +250 Strength <span class=\"d3-color-blue\">(Caldesann's Despair Rank 50)</span></span>"
+      ],
+      "secondary": [
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+192 Poison Resistance</span>",
+        "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">+3124 Thorns Damage</span>"
+      ]
+    },
+    "openSockets": 0,
+    "gems": [
+      {
+        "item": {
+          "id": "x1_Diamond_10",
+          "slug": "flawless-royal-diamond",
+          "name": "Flawless Royal Diamond",
+          "icon": "x1_diamond_10_demonhunter_male",
+          "path": "item/flawless-royal-diamond-x1_Diamond_10"
+        },
+        "attributes": [
+          "Reduces cooldown of all skills by 12.5%."
+        ],
+        "isGem": true,
+        "isJewel": false
+      }
+    ],
+    "set": {
+      "name": "Thorns of the Invoker",
+      "slug": "thorns-of-the-invoker",
+      "description": "Thorns of the Invoker    Burden of the Invoker (Shoulders)    Renewal of the Invoker (Legs)    Zeal of the Invoker (Feet)    Shackles of the Invoker (Wrists)    Pride of the Invoker (Hands)    Crown of the Invoker (Head)(2) Set:     \n Your Thorns damage now hits all enemies in a 15 yard radius around you. Each time you hit an enemy with Punish, Slash, or block an attack your Thorns is increased by 140% for 2 seconds. (Crusader Only)(4) Set:     \n You take 50% less damage for 20 seconds after damaging an enemy with Bombardment. (Crusader Only)(6) Set:     \n The attack speed of Punish and Slash are increased by 50% and deal 5400% of your Thorns damage to the first enemy hit. (Crusader Only)",
+      "descriptionHtml": "<span class=\"d3-color-ff00ff00\">Thorns of the Invoker</span><br /><span class=\"d3-color-ffffffff\">    Burden of the Invoker (Shoulders)</span><br /><span class=\"d3-color-ffffffff\">    Renewal of the Invoker (Legs)</span><br /><span class=\"d3-color-ffffffff\">    Zeal of the Invoker (Feet)</span><br /><span class=\"d3-color-ffffffff\">    Shackles of the Invoker (Wrists)</span><br /><span class=\"d3-color-ffffffff\">    Pride of the Invoker (Hands)</span><br /><span class=\"d3-color-ffffffff\">    Crown of the Invoker (Head)</span><br /><span class=\"d3-color-ff00ff00\">(2) Set: <br />    <span class=\"tooltip-icon-bullet\"></span> Your Thorns damage now hits all enemies in a 15 yard radius around you. Each time you hit an enemy with Punish, Slash, or block an attack your Thorns is increased by 140% for 2 seconds. <span class=\"d3-color-ffff0000\">(Crusader Only)</span></span><br /><span class=\"d3-color-ff00ff00\">(4) Set: <br />    <span class=\"tooltip-icon-bullet\"></span> You take 50% less damage for 20 seconds after damaging an enemy with Bombardment. <span class=\"d3-color-ffff0000\">(Crusader Only)</span></span><br /><span class=\"d3-color-ff00ff00\">(6) Set: <br />    <span class=\"tooltip-icon-bullet\"></span> The attack speed of Punish and Slash are increased by 50% and deal 5400% of your Thorns damage to the first enemy hit. <span class=\"d3-color-ffff0000\">(Crusader Only)</span></span><br />"
+    },
+    "seasonRequiredToDrop": -1,
+    "isSeasonRequiredToDrop": false
+  },
+  "neck": {
+    "id": "Unique_Amulet_008_x1",
+    "name": "The Traveler's Pledge",
+    "icon": "unique_amulet_008_x1_demonhunter_male",
+    "displayColor": "green",
+    "tooltipParams": "/item/the-travelers-pledge-Unique_Amulet_008_x1",
+    "requiredLevel": 70,
+    "itemLevel": 1,
+    "stackSizeMax": 0,
+    "accountBound": true,
+    "flavorText": "Adventure's call cannot be denied.",
+    "typeName": "Set Amulet",
+    "type": {
+      "twoHanded": false,
+      "id": "amulet"
+    },
+    "armor": 0,
+    "attacksPerSecond": 0,
+    "minDamage": 0,
+    "maxDamage": 0,
+    "slots": "neck",
+    "attributes": {
+      "primary": [
+        "+711 Strength",
+        "+645 Vitality",
+        "Reduces all resource costs by 5.0%."
+      ],
+      "secondary": [
+        "+153 Fire Resistance",
+        "Health Globes and Potions Grant +21,672 Life."
+      ]
+    },
+    "attributesHtml": {
+      "primary": [
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+711 Strength</span>",
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+645 Vitality</span>",
+        "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">Reduces all resource costs by 5.0%.</span>"
+      ],
+      "secondary": [
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+153 Fire Resistance</span>",
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">Health Globes and Potions Grant +21,672 Life.</span>"
+      ]
+    },
+    "openSockets": 0,
+    "gems": [
+      {
+        "item": {
+          "id": "Unique_Gem_002_x1",
+          "slug": "bane-of-the-trapped",
+          "name": "Bane of the Trapped",
+          "icon": "unique_gem_002_x1_demonhunter_male",
+          "path": "item/bane-of-the-trapped-Unique_Gem_002_x1"
+        },
+        "jewelRank": 85,
+        "jewelSecondaryUnlockRank": 25,
+        "attributes": [
+          "Bane of the Trapped - Rank 85\n\n Increase damage against enemies under the effects of control-impairing effects by 40.50%.\n\n Gain an aura that reduces the movement speed of enemies within 15 yards by 30%."
+        ],
+        "isGem": false,
+        "isJewel": true
+      }
+    ],
+    "set": {
+      "name": "Endless Walk",
+      "slug": "endless-walk",
+      "description": "Endless Walk    The Compass Rose (Finger)    The Traveler's Pledge (Neck)(2) Set:     \n While moving, damage taken is reduced by up to 50%.    \n While standing still, damage dealt is increased by up to 100%.",
+      "descriptionHtml": "<span class=\"d3-color-ff00ff00\">Endless Walk</span><br /><span class=\"d3-color-ffffffff\">    The Compass Rose (Finger)</span><br /><span class=\"d3-color-ffffffff\">    The Traveler's Pledge (Neck)</span><br /><span class=\"d3-color-ff00ff00\">(2) Set: <br />    <span class=\"tooltip-icon-bullet\"></span> While moving, damage taken is reduced by up to 50%.<br />    <span class=\"tooltip-icon-bullet\"></span> While standing still, damage dealt is increased by up to 100%.</span><br />"
+    },
+    "seasonRequiredToDrop": -1,
+    "isSeasonRequiredToDrop": false
+  },
+  "torso": {
+    "id": "P4_Unique_Chest_012",
+    "name": "Aquila Cuirass",
+    "icon": "p4_unique_chest_012_demonhunter_male",
+    "displayColor": "orange",
+    "tooltipParams": "/item/aquila-cuirass-P4_Unique_Chest_012",
+    "requiredLevel": 70,
+    "itemLevel": 1,
+    "stackSizeMax": 0,
+    "accountBound": true,
+    "flavorText": "Ceremonial armor commemorating the chieftain Ghaold's victory over the wild men from the east.",
+    "typeName": "Ancient Legendary Chest Armor",
+    "type": {
+      "twoHanded": false,
+      "id": "chestarmor"
+    },
+    "armor": 712,
+    "attacksPerSecond": 0,
+    "minDamage": 0,
+    "maxDamage": 0,
+    "slots": "torso",
+    "attributes": {
+      "primary": [
+        "+646 Strength",
+        "+127 Resistance to All Elements",
+        "+15% Life"
+      ],
+      "secondary": [
+        "Monster kills grant +237 experience.",
+        "While above 90% primary resource, all damage taken is reduced by 50%."
+      ]
+    },
+    "attributesHtml": {
+      "primary": [
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+646 Strength</span>",
+        "<span class=\"tooltip-icon-enchant\"></span> <span class=\"d3-color-ff6969ff\">+127 Resistance to All Elements</span>",
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+15% Life</span>"
+      ],
+      "secondary": [
+        "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">Monster kills grant +237 experience.</span>",
+        "<span class=\"d3-color-ffff8000\"> While above <span class=\"d3-color-magic\">90%</span> primary resource, all damage taken is reduced by 50%.</span>"
+      ]
+    },
+    "openSockets": 0,
+    "gems": [
+      {
+        "item": {
+          "id": "x1_Diamond_10",
+          "slug": "flawless-royal-diamond",
+          "name": "Flawless Royal Diamond",
+          "icon": "x1_diamond_10_demonhunter_male",
+          "path": "item/flawless-royal-diamond-x1_Diamond_10"
+        },
+        "attributes": [
+          "+78 Resistance to All Elements"
+        ],
+        "isGem": true,
+        "isJewel": false
+      },
+      {
+        "item": {
+          "id": "x1_Diamond_10",
+          "slug": "flawless-royal-diamond",
+          "name": "Flawless Royal Diamond",
+          "icon": "x1_diamond_10_demonhunter_male",
+          "path": "item/flawless-royal-diamond-x1_Diamond_10"
+        },
+        "attributes": [
+          "+78 Resistance to All Elements"
+        ],
+        "isGem": true,
+        "isJewel": false
+      },
+      {
+        "item": {
+          "id": "x1_Diamond_10",
+          "slug": "flawless-royal-diamond",
+          "name": "Flawless Royal Diamond",
+          "icon": "x1_diamond_10_demonhunter_male",
+          "path": "item/flawless-royal-diamond-x1_Diamond_10"
+        },
+        "attributes": [
+          "+78 Resistance to All Elements"
+        ],
+        "isGem": true,
+        "isJewel": false
+      }
+    ],
+    "seasonRequiredToDrop": -1,
+    "isSeasonRequiredToDrop": false
+  },
+  "shoulders": {
+    "id": "Unique_Shoulder_Set_12_x1",
+    "name": "Burden of the Invoker",
+    "icon": "unique_shoulder_set_12_x1_demonhunter_male",
+    "displayColor": "green",
+    "tooltipParams": "/item/burden-of-the-invoker-Unique_Shoulder_Set_12_x1",
+    "requiredLevel": 70,
+    "itemLevel": 1,
+    "stackSizeMax": 0,
+    "accountBound": true,
+    "flavorText": "\"My trial grew more harrowing with each passing day. The thorned figure continued to ambush from the mist, armor adorned with monstrous, heavy barbs that retaliated against my attacks and threatened to impale me.\" -- Olenna's journal",
+    "typeName": "Set Shoulders",
+    "type": {
+      "twoHanded": false,
+      "id": "shoulders"
+    },
+    "armor": 609.6667,
+    "attacksPerSecond": 0,
+    "minDamage": 0,
+    "maxDamage": 0,
+    "slots": "shoulders",
+    "attributes": {
+      "primary": [
+        "+467 Strength",
+        "Chance to Deal 20% Area Damage on Hit.",
+        "Reduces cooldown of all skills by 8.0%.",
+        "Reduces all resource costs by 8.0%."
+      ],
+      "secondary": [
+        "+144 Lightning Resistance",
+        "+6929 Thorns Damage"
+      ]
+    },
+    "attributesHtml": {
+      "primary": [
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+467 Strength</span>",
+        "<span class=\"tooltip-icon-enchant\"></span> <span class=\"d3-color-ff6969ff\">Chance to Deal 20% Area Damage on Hit.</span>",
+        "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">Reduces cooldown of all skills by 8.0%.</span>",
+        "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">Reduces all resource costs by 8.0%.</span>"
+      ],
+      "secondary": [
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+144 Lightning Resistance</span>",
+        "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">+6929 Thorns Damage</span>"
+      ]
+    },
+    "openSockets": 0,
+    "set": {
+      "name": "Thorns of the Invoker",
+      "slug": "thorns-of-the-invoker",
+      "description": "Thorns of the Invoker    Burden of the Invoker (Shoulders)    Renewal of the Invoker (Legs)    Zeal of the Invoker (Feet)    Shackles of the Invoker (Wrists)    Pride of the Invoker (Hands)    Crown of the Invoker (Head)(2) Set:     \n Your Thorns damage now hits all enemies in a 15 yard radius around you. Each time you hit an enemy with Punish, Slash, or block an attack your Thorns is increased by 140% for 2 seconds. (Crusader Only)(4) Set:     \n You take 50% less damage for 20 seconds after damaging an enemy with Bombardment. (Crusader Only)(6) Set:     \n The attack speed of Punish and Slash are increased by 50% and deal 5400% of your Thorns damage to the first enemy hit. (Crusader Only)",
+      "descriptionHtml": "<span class=\"d3-color-ff00ff00\">Thorns of the Invoker</span><br /><span class=\"d3-color-ffffffff\">    Burden of the Invoker (Shoulders)</span><br /><span class=\"d3-color-ffffffff\">    Renewal of the Invoker (Legs)</span><br /><span class=\"d3-color-ffffffff\">    Zeal of the Invoker (Feet)</span><br /><span class=\"d3-color-ffffffff\">    Shackles of the Invoker (Wrists)</span><br /><span class=\"d3-color-ffffffff\">    Pride of the Invoker (Hands)</span><br /><span class=\"d3-color-ffffffff\">    Crown of the Invoker (Head)</span><br /><span class=\"d3-color-ff00ff00\">(2) Set: <br />    <span class=\"tooltip-icon-bullet\"></span> Your Thorns damage now hits all enemies in a 15 yard radius around you. Each time you hit an enemy with Punish, Slash, or block an attack your Thorns is increased by 140% for 2 seconds. <span class=\"d3-color-ffff0000\">(Crusader Only)</span></span><br /><span class=\"d3-color-ff00ff00\">(4) Set: <br />    <span class=\"tooltip-icon-bullet\"></span> You take 50% less damage for 20 seconds after damaging an enemy with Bombardment. <span class=\"d3-color-ffff0000\">(Crusader Only)</span></span><br /><span class=\"d3-color-ff00ff00\">(6) Set: <br />    <span class=\"tooltip-icon-bullet\"></span> The attack speed of Punish and Slash are increased by 50% and deal 5400% of your Thorns damage to the first enemy hit. <span class=\"d3-color-ffff0000\">(Crusader Only)</span></span><br />"
+    },
+    "seasonRequiredToDrop": -1,
+    "isSeasonRequiredToDrop": false
+  },
+  "legs": {
+    "id": "Unique_Pants_Set_12_x1",
+    "name": "Renewal of the Invoker",
+    "icon": "unique_pants_set_12_x1_demonhunter_male",
+    "displayColor": "green",
+    "tooltipParams": "/item/renewal-of-the-invoker-Unique_Pants_Set_12_x1",
+    "requiredLevel": 70,
+    "itemLevel": 1,
+    "stackSizeMax": 0,
+    "accountBound": true,
+    "flavorText": "\"The mists began to clear as the healing rituals mended the lost acolyte's mind and body. She wished her armor destroyed but it was all she had to survive the wilds. If it could also be purified, it would still be of use.\" -- Olenna's journal",
+    "typeName": "Set Pants",
+    "type": {
+      "twoHanded": false,
+      "id": "legs"
+    },
+    "armor": 662,
+    "attacksPerSecond": 0,
+    "minDamage": 0,
+    "maxDamage": 0,
+    "slots": "legs",
+    "attributes": {
+      "primary": [
+        "+492 Strength",
+        "+472 Vitality",
+        "+97 Resistance to All Elements"
+      ],
+      "secondary": [
+        "+2853 Thorns Damage",
+        "Increases Gold and Health Pickup by 1 Yards."
+      ]
+    },
+    "attributesHtml": {
+      "primary": [
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+492 Strength</span>",
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+472 Vitality</span>",
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+97 Resistance to All Elements</span>"
+      ],
+      "secondary": [
+        "<span class=\"tooltip-icon-enchant\"></span> <span class=\"d3-color-ff6969ff\">+2853 Thorns Damage</span>",
+        "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">Increases Gold and Health Pickup by 1 Yards.</span>"
+      ]
+    },
+    "openSockets": 0,
+    "gems": [
+      {
+        "item": {
+          "id": "x1_Diamond_10",
+          "slug": "flawless-royal-diamond",
+          "name": "Flawless Royal Diamond",
+          "icon": "x1_diamond_10_demonhunter_male",
+          "path": "item/flawless-royal-diamond-x1_Diamond_10"
+        },
+        "attributes": [
+          "+78 Resistance to All Elements"
+        ],
+        "isGem": true,
+        "isJewel": false
+      },
+      {
+        "item": {
+          "id": "x1_Diamond_10",
+          "slug": "flawless-royal-diamond",
+          "name": "Flawless Royal Diamond",
+          "icon": "x1_diamond_10_demonhunter_male",
+          "path": "item/flawless-royal-diamond-x1_Diamond_10"
+        },
+        "attributes": [
+          "+78 Resistance to All Elements"
+        ],
+        "isGem": true,
+        "isJewel": false
+      }
+    ],
+    "set": {
+      "name": "Thorns of the Invoker",
+      "slug": "thorns-of-the-invoker",
+      "description": "Thorns of the Invoker    Burden of the Invoker (Shoulders)    Renewal of the Invoker (Legs)    Zeal of the Invoker (Feet)    Shackles of the Invoker (Wrists)    Pride of the Invoker (Hands)    Crown of the Invoker (Head)(2) Set:     \n Your Thorns damage now hits all enemies in a 15 yard radius around you. Each time you hit an enemy with Punish, Slash, or block an attack your Thorns is increased by 140% for 2 seconds. (Crusader Only)(4) Set:     \n You take 50% less damage for 20 seconds after damaging an enemy with Bombardment. (Crusader Only)(6) Set:     \n The attack speed of Punish and Slash are increased by 50% and deal 5400% of your Thorns damage to the first enemy hit. (Crusader Only)",
+      "descriptionHtml": "<span class=\"d3-color-ff00ff00\">Thorns of the Invoker</span><br /><span class=\"d3-color-ffffffff\">    Burden of the Invoker (Shoulders)</span><br /><span class=\"d3-color-ffffffff\">    Renewal of the Invoker (Legs)</span><br /><span class=\"d3-color-ffffffff\">    Zeal of the Invoker (Feet)</span><br /><span class=\"d3-color-ffffffff\">    Shackles of the Invoker (Wrists)</span><br /><span class=\"d3-color-ffffffff\">    Pride of the Invoker (Hands)</span><br /><span class=\"d3-color-ffffffff\">    Crown of the Invoker (Head)</span><br /><span class=\"d3-color-ff00ff00\">(2) Set: <br />    <span class=\"tooltip-icon-bullet\"></span> Your Thorns damage now hits all enemies in a 15 yard radius around you. Each time you hit an enemy with Punish, Slash, or block an attack your Thorns is increased by 140% for 2 seconds. <span class=\"d3-color-ffff0000\">(Crusader Only)</span></span><br /><span class=\"d3-color-ff00ff00\">(4) Set: <br />    <span class=\"tooltip-icon-bullet\"></span> You take 50% less damage for 20 seconds after damaging an enemy with Bombardment. <span class=\"d3-color-ffff0000\">(Crusader Only)</span></span><br /><span class=\"d3-color-ff00ff00\">(6) Set: <br />    <span class=\"tooltip-icon-bullet\"></span> The attack speed of Punish and Slash are increased by 50% and deal 5400% of your Thorns damage to the first enemy hit. <span class=\"d3-color-ffff0000\">(Crusader Only)</span></span><br />"
+    },
+    "seasonRequiredToDrop": -1,
+    "isSeasonRequiredToDrop": false
+  },
+  "waist": {
+    "id": "P2_Unique_Belt_008",
+    "name": "Belt of the Trove",
+    "icon": "p2_unique_belt_008_demonhunter_male",
+    "displayColor": "orange",
+    "tooltipParams": "/item/belt-of-the-trove-P2_Unique_Belt_008",
+    "requiredLevel": 70,
+    "itemLevel": 1,
+    "stackSizeMax": 0,
+    "accountBound": true,
+    "flavorText": "Rumors have persisted for centuries that the crusaders maintain a secret bunker in Kehjistan, filled with ancient relics of unbelievable power. When the need is great, Crusaders are allowed to borrow one of these relics. The existence of this crusader belt would seem to confirm the existence of this bunker.",
+    "typeName": "Ancient Legendary Belt",
+    "type": {
+      "twoHanded": false,
+      "id": "genericbelt"
+    },
+    "armor": 664.6667,
+    "attacksPerSecond": 0,
+    "minDamage": 0,
+    "maxDamage": 0,
+    "slots": "waist",
+    "attributes": {
+      "primary": [
+        "+620 Strength",
+        "+620 Vitality",
+        "+112 Resistance to All Elements",
+        "+14% Life"
+      ],
+      "secondary": [
+        "Reduces damage from melee attacks by 6.0%",
+        "Every 8 seconds, call down Bombardment on a random nearby enemy. (Crusader Only)"
+      ]
+    },
+    "attributesHtml": {
+      "primary": [
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+620 Strength</span>",
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+620 Vitality</span>",
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+112 Resistance to All Elements</span>",
+        "<span class=\"tooltip-icon-enchant\"></span> <span class=\"d3-color-ff6969ff\">+14% Life</span>"
+      ],
+      "secondary": [
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">Reduces damage from melee attacks by 6.0%</span>",
+        "<span class=\"d3-color-ffff8000\"> Every <span class=\"d3-color-magic\">8</span> seconds, call down Bombardment on a random nearby enemy.</span> <span class=\"d3-color-ffff0000\">(Crusader Only)</span>"
+      ]
+    },
+    "openSockets": 0,
+    "seasonRequiredToDrop": 2,
+    "isSeasonRequiredToDrop": true
+  },
+  "hands": {
+    "id": "Unique_Gloves_Set_12_x1",
+    "name": "Pride of the Invoker",
+    "icon": "unique_gloves_set_12_x1_demonhunter_male",
+    "displayColor": "green",
+    "tooltipParams": "/item/pride-of-the-invoker-Unique_Gloves_Set_12_x1",
+    "requiredLevel": 70,
+    "itemLevel": 1,
+    "stackSizeMax": 0,
+    "accountBound": true,
+    "flavorText": "\"My opponent’s hands were fast. She quickly cast aside my shield and plunged her dagger toward my heart. As my armor broke her blade, her surprised look was just the opening I needed.\" -- Olenna's journal",
+    "typeName": "Ancient Set Gloves",
+    "type": {
+      "twoHanded": false,
+      "id": "gloves"
+    },
+    "armor": 554.3333,
+    "attacksPerSecond": 0,
+    "minDamage": 0,
+    "maxDamage": 0,
+    "slots": "hands",
+    "attributes": {
+      "primary": [
+        "+962 Strength",
+        "+825 Vitality",
+        "+119 Resistance to All Elements",
+        "Reduces cooldown of all skills by 8.0%."
+      ],
+      "secondary": [
+        "+3448 Thorns Damage",
+        "Ignores Durability Loss"
+      ]
+    },
+    "attributesHtml": {
+      "primary": [
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+962 Strength</span>",
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+825 Vitality</span>",
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+119 Resistance to All Elements</span>",
+        "<span class=\"tooltip-icon-enchant\"></span> <span class=\"d3-color-ff6969ff\">Reduces cooldown of all skills by 8.0%.</span>"
+      ],
+      "secondary": [
+        "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">+3448 Thorns Damage</span>",
+        "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">Ignores Durability Loss</span>"
+      ]
+    },
+    "openSockets": 0,
+    "set": {
+      "name": "Thorns of the Invoker",
+      "slug": "thorns-of-the-invoker",
+      "description": "Thorns of the Invoker    Burden of the Invoker (Shoulders)    Renewal of the Invoker (Legs)    Zeal of the Invoker (Feet)    Shackles of the Invoker (Wrists)    Pride of the Invoker (Hands)    Crown of the Invoker (Head)(2) Set:     \n Your Thorns damage now hits all enemies in a 15 yard radius around you. Each time you hit an enemy with Punish, Slash, or block an attack your Thorns is increased by 140% for 2 seconds. (Crusader Only)(4) Set:     \n You take 50% less damage for 20 seconds after damaging an enemy with Bombardment. (Crusader Only)(6) Set:     \n The attack speed of Punish and Slash are increased by 50% and deal 5400% of your Thorns damage to the first enemy hit. (Crusader Only)",
+      "descriptionHtml": "<span class=\"d3-color-ff00ff00\">Thorns of the Invoker</span><br /><span class=\"d3-color-ffffffff\">    Burden of the Invoker (Shoulders)</span><br /><span class=\"d3-color-ffffffff\">    Renewal of the Invoker (Legs)</span><br /><span class=\"d3-color-ffffffff\">    Zeal of the Invoker (Feet)</span><br /><span class=\"d3-color-ffffffff\">    Shackles of the Invoker (Wrists)</span><br /><span class=\"d3-color-ffffffff\">    Pride of the Invoker (Hands)</span><br /><span class=\"d3-color-ffffffff\">    Crown of the Invoker (Head)</span><br /><span class=\"d3-color-ff00ff00\">(2) Set: <br />    <span class=\"tooltip-icon-bullet\"></span> Your Thorns damage now hits all enemies in a 15 yard radius around you. Each time you hit an enemy with Punish, Slash, or block an attack your Thorns is increased by 140% for 2 seconds. <span class=\"d3-color-ffff0000\">(Crusader Only)</span></span><br /><span class=\"d3-color-ff00ff00\">(4) Set: <br />    <span class=\"tooltip-icon-bullet\"></span> You take 50% less damage for 20 seconds after damaging an enemy with Bombardment. <span class=\"d3-color-ffff0000\">(Crusader Only)</span></span><br /><span class=\"d3-color-ff00ff00\">(6) Set: <br />    <span class=\"tooltip-icon-bullet\"></span> The attack speed of Punish and Slash are increased by 50% and deal 5400% of your Thorns damage to the first enemy hit. <span class=\"d3-color-ffff0000\">(Crusader Only)</span></span><br />"
+    },
+    "seasonRequiredToDrop": -1,
+    "isSeasonRequiredToDrop": false
+  },
+  "bracers": {
+    "id": "Unique_Bracer_Set_12_x1",
+    "name": "Shackles of the Invoker",
+    "icon": "unique_bracer_set_12_x1_demonhunter_male",
+    "displayColor": "green",
+    "tooltipParams": "/item/shackles-of-the-invoker-Unique_Bracer_Set_12_x1",
+    "requiredLevel": 70,
+    "itemLevel": 1,
+    "stackSizeMax": 0,
+    "accountBound": true,
+    "flavorText": "\"I discovered my enemy was just a young Vizjerei apprentice, no older than twelve. Defeated, her armor began to turn against her. Cursed thorns dug deep into her arms and drew blood. I had to act quickly.\" -- Olenna's journal",
+    "typeName": "Ancient Set Bracers",
+    "type": {
+      "twoHanded": false,
+      "id": "bracers"
+    },
+    "armor": 397.66666,
+    "attacksPerSecond": 0,
+    "minDamage": 0,
+    "maxDamage": 0,
+    "slots": "bracers",
+    "attributes": {
+      "primary": [
+        "Physical skills deal 18% more damage.",
+        "+585 Strength",
+        "+642 Vitality",
+        "+129 Resistance to All Elements"
+      ],
+      "secondary": [
+        "+33% Extra Gold from Monsters",
+        "+3372 Thorns Damage"
+      ]
+    },
+    "attributesHtml": {
+      "primary": [
+        "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">Physical skills deal 18% more damage.</span>",
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+585 Strength</span>",
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+642 Vitality</span>",
+        "<span class=\"tooltip-icon-enchant\"></span> <span class=\"d3-color-ff6969ff\">+129 Resistance to All Elements</span>"
+      ],
+      "secondary": [
+        "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">+33% Extra Gold from Monsters</span>",
+        "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">+3372 Thorns Damage</span>"
+      ]
+    },
+    "openSockets": 0,
+    "set": {
+      "name": "Thorns of the Invoker",
+      "slug": "thorns-of-the-invoker",
+      "description": "Thorns of the Invoker    Burden of the Invoker (Shoulders)    Renewal of the Invoker (Legs)    Zeal of the Invoker (Feet)    Shackles of the Invoker (Wrists)    Pride of the Invoker (Hands)    Crown of the Invoker (Head)(2) Set:     \n Your Thorns damage now hits all enemies in a 15 yard radius around you. Each time you hit an enemy with Punish, Slash, or block an attack your Thorns is increased by 140% for 2 seconds. (Crusader Only)(4) Set:     \n You take 50% less damage for 20 seconds after damaging an enemy with Bombardment. (Crusader Only)(6) Set:     \n The attack speed of Punish and Slash are increased by 50% and deal 5400% of your Thorns damage to the first enemy hit. (Crusader Only)",
+      "descriptionHtml": "<span class=\"d3-color-ff00ff00\">Thorns of the Invoker</span><br /><span class=\"d3-color-ffffffff\">    Burden of the Invoker (Shoulders)</span><br /><span class=\"d3-color-ffffffff\">    Renewal of the Invoker (Legs)</span><br /><span class=\"d3-color-ffffffff\">    Zeal of the Invoker (Feet)</span><br /><span class=\"d3-color-ffffffff\">    Shackles of the Invoker (Wrists)</span><br /><span class=\"d3-color-ffffffff\">    Pride of the Invoker (Hands)</span><br /><span class=\"d3-color-ffffffff\">    Crown of the Invoker (Head)</span><br /><span class=\"d3-color-ff00ff00\">(2) Set: <br />    <span class=\"tooltip-icon-bullet\"></span> Your Thorns damage now hits all enemies in a 15 yard radius around you. Each time you hit an enemy with Punish, Slash, or block an attack your Thorns is increased by 140% for 2 seconds. <span class=\"d3-color-ffff0000\">(Crusader Only)</span></span><br /><span class=\"d3-color-ff00ff00\">(4) Set: <br />    <span class=\"tooltip-icon-bullet\"></span> You take 50% less damage for 20 seconds after damaging an enemy with Bombardment. <span class=\"d3-color-ffff0000\">(Crusader Only)</span></span><br /><span class=\"d3-color-ff00ff00\">(6) Set: <br />    <span class=\"tooltip-icon-bullet\"></span> The attack speed of Punish and Slash are increased by 50% and deal 5400% of your Thorns damage to the first enemy hit. <span class=\"d3-color-ffff0000\">(Crusader Only)</span></span><br />"
+    },
+    "seasonRequiredToDrop": -1,
+    "isSeasonRequiredToDrop": false
+  },
+  "feet": {
+    "id": "Unique_Boots_Set_12_x1",
+    "name": "Zeal of the Invoker",
+    "icon": "unique_boots_set_12_x1_demonhunter_male",
+    "displayColor": "green",
+    "tooltipParams": "/item/zeal-of-the-invoker-Unique_Boots_Set_12_x1",
+    "requiredLevel": 70,
+    "itemLevel": 1,
+    "stackSizeMax": 0,
+    "accountBound": true,
+    "flavorText": "\"Her thorned armor having been purified in the Light, my apprentice's new faith grew with each step. The feet that wandered lost in the mist now march with fervor as we leave these swamplands at long last and head north.\" -- Olenna's journal",
+    "typeName": "Ancient Set Boots",
+    "type": {
+      "twoHanded": false,
+      "id": "boots"
+    },
+    "armor": 557.3333,
+    "attacksPerSecond": 0,
+    "minDamage": 0,
+    "maxDamage": 0,
+    "slots": "feet",
+    "attributes": {
+      "primary": [
+        "+575 Strength",
+        "+550 Vitality",
+        "+121 Resistance to All Elements",
+        "+498 Armor"
+      ],
+      "secondary": [
+        "+3154 Thorns Damage",
+        "Increases Gold and Health Pickup by 1 Yards."
+      ]
+    },
+    "attributesHtml": {
+      "primary": [
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+575 Strength</span>",
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+550 Vitality</span>",
+        "<span class=\"tooltip-icon-enchant\"></span> <span class=\"d3-color-ff6969ff\">+121 Resistance to All Elements</span>",
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+498 Armor</span>"
+      ],
+      "secondary": [
+        "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">+3154 Thorns Damage</span>",
+        "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">Increases Gold and Health Pickup by 1 Yards.</span>"
+      ]
+    },
+    "openSockets": 0,
+    "set": {
+      "name": "Thorns of the Invoker",
+      "slug": "thorns-of-the-invoker",
+      "description": "Thorns of the Invoker    Burden of the Invoker (Shoulders)    Renewal of the Invoker (Legs)    Zeal of the Invoker (Feet)    Shackles of the Invoker (Wrists)    Pride of the Invoker (Hands)    Crown of the Invoker (Head)(2) Set:     \n Your Thorns damage now hits all enemies in a 15 yard radius around you. Each time you hit an enemy with Punish, Slash, or block an attack your Thorns is increased by 140% for 2 seconds. (Crusader Only)(4) Set:     \n You take 50% less damage for 20 seconds after damaging an enemy with Bombardment. (Crusader Only)(6) Set:     \n The attack speed of Punish and Slash are increased by 50% and deal 5400% of your Thorns damage to the first enemy hit. (Crusader Only)",
+      "descriptionHtml": "<span class=\"d3-color-ff00ff00\">Thorns of the Invoker</span><br /><span class=\"d3-color-ffffffff\">    Burden of the Invoker (Shoulders)</span><br /><span class=\"d3-color-ffffffff\">    Renewal of the Invoker (Legs)</span><br /><span class=\"d3-color-ffffffff\">    Zeal of the Invoker (Feet)</span><br /><span class=\"d3-color-ffffffff\">    Shackles of the Invoker (Wrists)</span><br /><span class=\"d3-color-ffffffff\">    Pride of the Invoker (Hands)</span><br /><span class=\"d3-color-ffffffff\">    Crown of the Invoker (Head)</span><br /><span class=\"d3-color-ff00ff00\">(2) Set: <br />    <span class=\"tooltip-icon-bullet\"></span> Your Thorns damage now hits all enemies in a 15 yard radius around you. Each time you hit an enemy with Punish, Slash, or block an attack your Thorns is increased by 140% for 2 seconds. <span class=\"d3-color-ffff0000\">(Crusader Only)</span></span><br /><span class=\"d3-color-ff00ff00\">(4) Set: <br />    <span class=\"tooltip-icon-bullet\"></span> You take 50% less damage for 20 seconds after damaging an enemy with Bombardment. <span class=\"d3-color-ffff0000\">(Crusader Only)</span></span><br /><span class=\"d3-color-ff00ff00\">(6) Set: <br />    <span class=\"tooltip-icon-bullet\"></span> The attack speed of Punish and Slash are increased by 50% and deal 5400% of your Thorns damage to the first enemy hit. <span class=\"d3-color-ffff0000\">(Crusader Only)</span></span><br />"
+    },
+    "seasonRequiredToDrop": -1,
+    "isSeasonRequiredToDrop": false
+  },
+  "leftFinger": {
+    "id": "Unique_Ring_013_x1",
+    "name": "The Compass Rose",
+    "icon": "unique_ring_013_x1_demonhunter_male",
+    "displayColor": "green",
+    "tooltipParams": "/item/the-compass-rose-Unique_Ring_013_x1",
+    "requiredLevel": 70,
+    "itemLevel": 1,
+    "stackSizeMax": 0,
+    "accountBound": true,
+    "flavorText": "The road goes ever on...",
+    "typeName": "Set Ring",
+    "type": {
+      "twoHanded": false,
+      "id": "ring"
+    },
+    "armor": 0,
+    "attacksPerSecond": 0,
+    "minDamage": 0,
+    "maxDamage": 0,
+    "slots": "leftFinger",
+    "attributes": {
+      "primary": [
+        "+430 Strength",
+        "+477 Vitality",
+        "Chance to Deal 20% Area Damage on Hit.",
+        "Reduces cooldown of all skills by 6.0%."
+      ],
+      "secondary": [
+        "Health Globes and Potions Grant +25,671 Life."
+      ]
+    },
+    "attributesHtml": {
+      "primary": [
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+430 Strength</span>",
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+477 Vitality</span>",
+        "<span class=\"tooltip-icon-enchant\"></span> <span class=\"d3-color-ff6969ff\">Chance to Deal 20% Area Damage on Hit.</span>",
+        "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">Reduces cooldown of all skills by 6.0%.</span>"
+      ],
+      "secondary": [
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">Health Globes and Potions Grant +25,671 Life.</span>"
+      ]
+    },
+    "openSockets": 0,
+    "gems": [
+      {
+        "item": {
+          "id": "Unique_Gem_018_x1",
+          "slug": "bane-of-the-stricken",
+          "name": "Bane of the Stricken",
+          "icon": "unique_gem_018_x1_demonhunter_male",
+          "path": "item/bane-of-the-stricken-Unique_Gem_018_x1"
+        },
+        "jewelRank": 83,
+        "jewelSecondaryUnlockRank": 25,
+        "attributes": [
+          "Bane of the Stricken - Rank 83\n\n Each attack you make against an enemy increases the damage it takes from your attacks by 1.63%.\n\n Gain 25% increased damage against bosses and Rift Guardians."
+        ],
+        "isGem": false,
+        "isJewel": true
+      }
+    ],
+    "set": {
+      "name": "Endless Walk",
+      "slug": "endless-walk",
+      "description": "Endless Walk    The Compass Rose (Finger)    The Traveler's Pledge (Neck)(2) Set:     \n While moving, damage taken is reduced by up to 50%.    \n While standing still, damage dealt is increased by up to 100%.",
+      "descriptionHtml": "<span class=\"d3-color-ff00ff00\">Endless Walk</span><br /><span class=\"d3-color-ffffffff\">    The Compass Rose (Finger)</span><br /><span class=\"d3-color-ffffffff\">    The Traveler's Pledge (Neck)</span><br /><span class=\"d3-color-ff00ff00\">(2) Set: <br />    <span class=\"tooltip-icon-bullet\"></span> While moving, damage taken is reduced by up to 50%.<br />    <span class=\"tooltip-icon-bullet\"></span> While standing still, damage dealt is increased by up to 100%.</span><br />"
+    },
+    "seasonRequiredToDrop": -1,
+    "isSeasonRequiredToDrop": false
+  },
+  "rightFinger": {
+    "id": "P4_Unique_Ring_03",
+    "name": "Justice Lantern",
+    "icon": "p4_unique_ring_03_demonhunter_male",
+    "displayColor": "orange",
+    "tooltipParams": "/item/justice-lantern-P4_Unique_Ring_03",
+    "requiredLevel": 70,
+    "itemLevel": 1,
+    "stackSizeMax": 0,
+    "accountBound": true,
+    "flavorText": "Once worn by the self-appointed guardians of Sanctuary, who were said to feel no fear.",
+    "typeName": "Ancient Legendary Ring",
+    "type": {
+      "twoHanded": false,
+      "id": "ring"
+    },
+    "armor": 0,
+    "attacksPerSecond": 0,
+    "minDamage": 0,
+    "maxDamage": 0,
+    "slots": "rightFinger",
+    "augmentation": "+250 Strength (Caldesann's Despair Rank 50)",
+    "attributes": {
+      "primary": [
+        "+615 Strength",
+        "+625 Vitality",
+        "+16% Chance to Block",
+        "Reduces cooldown of all skills by 8.0%.",
+        "+250 Strength (Caldesann's Despair Rank 50)"
+      ],
+      "secondary": [
+        "Reduces duration of control impairing effects by 41%",
+        "Gain damage reduction equal to 46% of your Block Chance."
+      ]
+    },
+    "attributesHtml": {
+      "primary": [
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+615 Strength</span>",
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+625 Vitality</span>",
+        "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">+16% Chance to Block</span>",
+        "<span class=\"tooltip-icon-enchant\"></span> <span class=\"d3-color-ff6969ff\">Reduces cooldown of all skills by 8.0%.</span>",
+        "<span class=\"d3-color-ff6969ff\"><span class=\"tooltip-icon-bullet\"></span> +250 Strength <span class=\"d3-color-blue\">(Caldesann's Despair Rank 50)</span></span>"
+      ],
+      "secondary": [
+        "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">Reduces duration of control impairing effects by 41%</span>",
+        "<span class=\"d3-color-ffff8000\"> Gain damage reduction equal to <span class=\"d3-color-magic\">46%</span> of your Block Chance.</span>"
+      ]
+    },
+    "openSockets": 0,
+    "gems": [
+      {
+        "item": {
+          "id": "Unique_Gem_020_x1",
+          "slug": "boyarskys-chip",
+          "name": "Boyarsky's Chip",
+          "icon": "unique_gem_020_x1_demonhunter_male",
+          "path": "item/boyarskys-chip-Unique_Gem_020_x1"
+        },
+        "jewelRank": 97,
+        "jewelSecondaryUnlockRank": 25,
+        "attributes": [
+          "Boyarsky's Chip - Rank 97\n\n Adds 93,600 Thorns.\n\n Taunt the first enemy hit by your Primary skills for 2 seconds."
+        ],
+        "isGem": false,
+        "isJewel": true
+      }
+    ],
+    "seasonRequiredToDrop": -1,
+    "isSeasonRequiredToDrop": false
+  },
+  "mainHand": {
+    "id": "Unique_Dagger_007_x1",
+    "name": "Pig Sticker",
+    "icon": "unique_dagger_007_x1_demonhunter_male",
+    "displayColor": "orange",
+    "tooltipParams": "/item/pig-sticker-Unique_Dagger_007_x1",
+    "requiredLevel": 70,
+    "itemLevel": 1,
+    "stackSizeMax": 0,
+    "accountBound": true,
+    "flavorText": "Slaughters man and beast alike.",
+    "typeName": "Ancient Legendary Dagger",
+    "type": {
+      "twoHanded": false,
+      "id": "dagger"
+    },
+    "armor": 0,
+    "damage": "107-321 Damage\n1.59 Attacks per Second",
+    "dps": "340.3",
+    "attacksPerSecond": 1.5899999,
+    "minDamage": 107,
+    "maxDamage": 321,
+    "slots": "mainHand",
+    "attributes": {
+      "primary": [
+        "+854 Strength",
+        "+921 Vitality",
+        "Increases Attack Speed by 6%",
+        "Chance to Deal 22% Area Damage on Hit.",
+        "Reduces all resource costs by 10.0%."
+      ],
+      "secondary": [
+        "+30% Damage to Beasts",
+        "+27% Damage to Humans",
+        "Squeal!"
+      ]
+    },
+    "attributesHtml": {
+      "primary": [
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+854 Strength</span>",
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+921 Vitality</span>",
+        "<span class=\"tooltip-icon-enchant\"></span> <span class=\"d3-color-ff6969ff\">Increases Attack Speed by 6%</span>",
+        "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">Chance to Deal 22% Area Damage on Hit.</span>",
+        "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">Reduces all resource costs by 10.0%.</span>"
+      ],
+      "secondary": [
+        "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">+30% Damage to Beasts</span>",
+        "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">+27% Damage to Humans</span>",
+        "<span class=\"d3-color-ffff8000\"><span class=\"tooltip-icon-utility\"></span> Squeal!</span>"
+      ]
+    },
+    "openSockets": 0,
+    "gems": [
+      {
+        "item": {
+          "id": "x1_Topaz_10",
+          "slug": "flawless-royal-topaz",
+          "name": "Flawless Royal Topaz",
+          "icon": "x1_topaz_10_demonhunter_male",
+          "path": "item/flawless-royal-topaz-x1_Topaz_10"
+        },
+        "attributes": [
+          "+38,000 Thorns Damage"
+        ],
+        "isGem": true,
+        "isJewel": false
+      }
+    ],
+    "seasonRequiredToDrop": -1,
+    "isSeasonRequiredToDrop": false
+  },
+  "offHand": {
+    "id": "Unique_CruShield_104_x1",
+    "name": "Akarat's Awakening",
+    "icon": "unique_crushield_104_x1_demonhunter_male",
+    "displayColor": "orange",
+    "tooltipParams": "/item/akarats-awakening-Unique_CruShield_104_x1",
+    "requiredLevel": 70,
+    "itemLevel": 1,
+    "stackSizeMax": 0,
+    "accountBound": true,
+    "flavorText": "\"And Yaerius appeared unto Akarat and showed him the Light that illuminates all souls with its blessed power. So long as we trust in this sacred force, we shall have strength everlasting and falter not in our trials.\" —Excerpt from a mystic’s account of the life of Akarat",
+    "typeName": "Legendary Crusader Shield",
+    "type": {
+      "twoHanded": false,
+      "id": "crusadershield"
+    },
+    "armor": 2173,
+    "attacksPerSecond": 0,
+    "minDamage": 0,
+    "maxDamage": 0,
+    "slots": "offHand",
+    "attributes": {
+      "primary": [
+        "+676 Strength",
+        "+11% Chance to Block",
+        "Reduces cooldown of all skills by 6.0%."
+      ],
+      "secondary": [
+        "+6847 Thorns Damage",
+        "Every successful block has a 24% chance to reduce all cooldowns by 1 second. (Crusader Only)"
+      ]
+    },
+    "attributesHtml": {
+      "primary": [
+        "<span class=\"tooltip-icon-bullet\"></span> <span class=\"d3-color-ff6969ff\">+676 Strength</span>",
+        "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">+11% Chance to Block</span>",
+        "<span class=\"tooltip-icon-utility\"></span> <span class=\"d3-color-ff6969ff\">Reduces cooldown of all skills by 6.0%.</span>"
+      ],
+      "secondary": [
+        "<span class=\"tooltip-icon-enchant\"></span> <span class=\"d3-color-ff6969ff\">+6847 Thorns Damage</span>",
+        "<span class=\"d3-color-ffff8000\"> Every successful block has a <span class=\"d3-color-magic\">24%</span> chance to reduce all cooldowns by 1 second.</span> <span class=\"d3-color-ffff0000\">(Crusader Only)</span>"
+      ]
+    },
+    "openSockets": 0,
+    "gems": [
+      {
+        "item": {
+          "id": "x1_Diamond_10",
+          "slug": "flawless-royal-diamond",
+          "name": "Flawless Royal Diamond",
+          "icon": "x1_diamond_10_demonhunter_male",
+          "path": "item/flawless-royal-diamond-x1_Diamond_10"
+        },
+        "attributes": [
+          "+78 Resistance to All Elements"
+        ],
+        "isGem": true,
+        "isJewel": false
+      }
+    ],
+    "seasonRequiredToDrop": -1,
+    "blockChance": "+27.0% Chance to Block\n18,089-23,510 Block Amount",
+    "isSeasonRequiredToDrop": false
+  }
+}
