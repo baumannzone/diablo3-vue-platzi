@@ -1,14 +1,15 @@
 <template>
   <div class="d-flex align-items-center mb-3">
     <div class="mr-2">
-      <img :src="skillUrl" :alt="skill.skill.name">
+      <span class="slot" :class="slotClass"/>
+      <img :src="skillUrl" :alt="skill.name">
     </div>
     <div>
-      <p class="skill-name m-0" :title="skill.skill.description">
-        {{ skill.skill.name }}
+      <p class="skill-name m-0" :title="skill.description">
+        {{ skill.name }}
       </p>
-      <small class="rune-name text-muted" :title="skill.rune.description">
-        {{ skill.rune.name }}
+      <small class="rune-name text-muted" :title="rune.description">
+        {{ rune.name }}
       </small>
     </div>
   </div>
@@ -20,13 +21,24 @@ export default {
     skill: {
       required: true,
       type: Object
+    },
+    rune: {
+      required: true,
+      type: Object
+    },
+    slot: {
+      required: true,
+      type: Number || String
     }
   },
   computed: {
     skillUrl () {
       const sizes = [21, 42, 64]
       const host = `http://media.blizzard.com/d3/icons/skills/${sizes[1]}/`
-      return `${host}${this.skill.skill.icon}.png`
+      return `${host}${this.skill.icon}.png`
+    },
+    slotClass () {
+      return `slot-${this.slot}`
     }
   }
 }

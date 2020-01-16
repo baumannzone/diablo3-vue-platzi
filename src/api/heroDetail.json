@@ -20,8 +20,8 @@
           "icon": "witchdoctor_poisondart",
           "level": 1,
           "tooltipUrl": "/class/witch-doctor/active/poison-dart",
-          "description": "This is a Signature spell. Signature spells are free to cast.\n\nShoot a deadly Poison Dart that deals 185% weapon damage as Poison and an additional 40% weapon damage as Poison over 2 seconds.",
-          "descriptionHtml": "<p><span class=\"d3-color-gold\">This is a Signature spell. Signature spells are free to cast.</span></p>\n\n<p>Shoot a deadly Poison Dart that deals <span class=\"d3-color-green\">185%</span> weapon damage as Poison and an additional <span class=\"d3-color-green\">40%</span> weapon damage as Poison over <span class=\"d3-color-green\">2</span> seconds.</p>"
+          "description": "This is a Sir 2 seconds.",
+          "descriptionHtml": "<p><span c"
         },
         "rune": {
           "slug": "spined dart",
@@ -77,8 +77,8 @@
           "icon": "witchdoctor_soulharvest",
           "level": 9,
           "tooltipUrl": "/class/witch-doctor/active/soul-harvest",
-          "description": "Cooldown: 12 seconds\n\nFeed on the life force of enemies within 18 yards. Gain 3% Intelligence for 30 seconds for each affected enemy. This effect stacks up to 5 times.",
-          "descriptionHtml": "<p><span class=\"d3-color-gold\">Cooldown:</span> <span class=\"d3-color-green\">12</span> seconds</p>\n\n<p>Feed on the life force of enemies within <span class=\"d3-color-green\">18</span> yards. Gain <span class=\"d3-color-green\">3%</span> Intelligence for <span class=\"d3-color-green\">30</span> seconds for each affected enemy. This effect stacks up to <span class=\"d3-color-green\">5</span> times.</p>"
+          "description": "Cooldown: 12 seconds\n\nFeed on the l",
+          "descriptionHtml": "<p><span class=\""
         },
         "rune": {
           "slug": "languish",
