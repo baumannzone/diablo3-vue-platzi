@@ -1,5 +1,5 @@
 <template>
-  <b-navbar-brand>
+  <b-navbar-brand @click="goHome()" class="hover-cursor-pointer">
     <span class="mr-1 font-diablo">{{ playerName }}</span>
     <small class="text-muted">
       <b>#{{playerNumber}}</b>
@@ -17,6 +17,11 @@ export default {
     playerNumber: {
       required: true,
       type: String
+    }
+  },
+  methods: {
+    goHome () {
+      this.$router.push({ name: 'Home' })
     }
   }
 }
