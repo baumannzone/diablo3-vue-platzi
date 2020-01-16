@@ -5,15 +5,20 @@
 
     <ActiveSkills :skills="skills.active"/>
 
+    <hr>
+
+    <PassiveSkills :skills="skills.passive"/>
+
   </div>
 </template>
 
 <script>
 import ActiveSkills from './ActiveSkills'
+import PassiveSkills from './PassiveSkills'
 
 export default {
   name: 'Skills',
-  components: { ActiveSkills },
+  components: { ActiveSkills, PassiveSkills },
   props: {
     skills: {
       required: true,

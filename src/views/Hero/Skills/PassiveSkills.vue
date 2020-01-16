@@ -1,10 +1,10 @@
 <template>
-  <div class="active-skills">
-    <h4 class="my-4">Active Skills</h4>
+  <div class="passive-skills">
+    <h4 class="my-4">Passive Skills</h4>
     <div class="skills">
       <b-row>
         <b-col v-for="(skill, idx) in skills" :key="idx" cols="6" lg="12">
-          <ActiveSkill :skill="skill.skill" :rune="skill.rune" :slot="idx+1"/>
+          <PassiveSkill :skill="skill.skill"/>
         </b-col>
       </b-row>
     </div>
@@ -12,11 +12,11 @@
 </template>
 
 <script>
-import ActiveSkill from './ActiveSkill'
+import PassiveSkill from './PassiveSkill'
 
 export default {
-  name: 'ActiveSkills',
-  components: { ActiveSkill },
+  name: 'PassiveSkills',
+  components: { PassiveSkill },
   props: {
     skills: {
       type: Array,
