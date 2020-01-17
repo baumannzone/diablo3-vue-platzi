@@ -41,7 +41,7 @@ export default {
       return `${host}${this.skill.icon}.png`
     },
     slotClass () {
-      return `slot-${this.slot}`
+      return `slot-${this.slotNum}`
     }
   }
 }
