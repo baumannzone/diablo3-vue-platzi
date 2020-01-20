@@ -20,14 +20,6 @@ export default {
     skill: {
       required: true,
       type: Object
-    },
-    rune: {
-      required: true,
-      type: Object
-    },
-    slot: {
-      required: true,
-      type: Number || String
     }
   },
   computed: {
