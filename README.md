@@ -7,6 +7,7 @@
 ## Diablo 3 Developer Portal
 - https://develop.battle.net/documentation/guides/getting-started
 
+- BattleTag: https://eu.battle.net/support/es/article/75767
 ---
 
 ## Project setup
