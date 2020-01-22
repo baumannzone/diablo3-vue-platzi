@@ -3,13 +3,14 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const routerOptions = [
+const routOptions = [
   { path: '/', name: 'Home' },
-  { path: '/hero/:heroId', name: 'Hero' },
+  { path: '/:region/profile/:battleTag', name: 'Profile' },
+  { path: '/:region/profile/:battleTag/hero/heroId', name: 'Hero' },
   { path: '/about', name: 'About' }
 ]
 
-const routes = routerOptions.map(r => {
+const routes = routOptions.map(r => {
   return {
     ...r,
     component: () => import(`@/views/${r.name}/Index.vue`)
