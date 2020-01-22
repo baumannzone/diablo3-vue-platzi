@@ -8,7 +8,7 @@ export default new Vuex.Store({
     isLoading: false,
     accessToken: null,
     config: {
-      battleTag: null, // BattleTag#1234
+      battleTag: null, // Profile#1234
       region: null,
       locale: null
     }
@@ -39,7 +39,7 @@ export default new Vuex.Store({
     playerName: (state) => state.config.battleTag.split('#')[0],
     playerNumber: (state) => state.config.battleTag.split('#')[1],
     /**
-     * Return the BattleTag for the account to retrieve, ready to use in the API
+     * Return the Profile for the account to retrieve, ready to use in the API
      * Replaces `#` for `-`
      * @param state
      * @returns {*}
