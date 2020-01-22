@@ -3,10 +3,14 @@
     <p class="text-muted">Powered by</p>
     <ul class="list-inline">
       <li class="list-inline-item">
-        <a href="#">Vuejs</a>
+        <a href="#">
+          <font-awesome-icon :icon="['fab', 'vuejs']" />
+        </a>
       </li>
       <li class="list-inline-item">
-        <a href="#">Vuejs</a>
+        <a href="#">
+          <font-awesome-icon :icon="['fab', 'bootstrap']" />
+        </a>
       </li>
     </ul>
   </footer>
