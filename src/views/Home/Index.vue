@@ -1,8 +1,7 @@
 <template>
   <div class="home-view">
 
-    <h1 class="my-5 font-diablo">Diablo 3 Profile Finder</h1>
-    <p class="lead text-muted">Enter your BattleTag and select your region to see your stats!</p>
+    <HomeTitle/>
 
     <MainForm/>
 
@@ -11,10 +10,11 @@
 
 <script>
 import MainForm from './MainForm'
+import HomeTitle from './HomeTitle'
 
 export default {
   name: 'HomeView',
-  components: { MainForm }
+  components: { HomeTitle, MainForm }
 }
 </script>
 
