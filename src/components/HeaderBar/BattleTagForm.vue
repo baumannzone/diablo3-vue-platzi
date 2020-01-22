@@ -25,7 +25,7 @@ export default {
   },
   methods: {
     submitForm () {
-      console.log('BattleTag::: ', this.searchText)
+      console.log('Profile::: ', this.searchText)
     }
   }
 }
