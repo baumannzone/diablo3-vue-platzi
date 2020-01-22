@@ -1,7 +1,9 @@
 <template>
   <div class="container">
     <HeaderBar/>
+
     <router-view/>
+
   </div>
 </template>
 
@@ -15,7 +17,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-</style>
