@@ -1,16 +1,18 @@
 <template>
-  <div class="search-form">
-    <b-form @submit="onSubmit">
+  <div class="search-form my-5">
+
+    <b-form @submit.prevent="onSubmit">
+
       <b-form-group
         id="input-group-1"
         label="BattleTag:"
         label-for="input-text"
-        description="Profile#1234"
+        description="Format: YourProfile#1234"
       >
         <b-form-input
           id="input-text"
           v-model="form.text"
-          type="email"
+          type="text"
           required
           placeholder="BattleTag"
         />
@@ -25,12 +27,18 @@
         />
       </b-form-group>
 
-      <b-button type="submit" variant="primary">Submit</b-button>
+      <div class="d-flex justify-content-end mt-5">
+        <b-button type="submit" variant="primary">Submit</b-button>
+      </div>
+
     </b-form>
+
   </div>
 </template>
 
 <script>
+const regions = ['us', 'eu', 'kr', 'tw']
+
 export default {
   name: 'MainForm',
   data () {
@@ -39,6 +47,11 @@ export default {
         region: 'eu',
         battleTag: ''
       }
+    }
+  },
+  computed: {
+    regions () {
+      return regions.map(region => ({ value: region, text: region.toUpperCase() }))
     }
   },
   methods: {
