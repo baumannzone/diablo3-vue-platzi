@@ -13,7 +13,7 @@
           >
             <b-form-input
               id="input-text"
-              v-model="form.text"
+              v-model="form.battleTag"
               type="text"
               size="lg"
               required
@@ -43,7 +43,9 @@
 </template>
 
 <script>
-const regions = ['us', 'eu', 'kr', 'tw']
+import { regions, defaultLocales } from '@/utils/regions'
+
+import { mapMutations } from 'vuex'
 
 export default {
   name: 'MainForm',
@@ -61,8 +63,12 @@ export default {
     }
   },
   methods: {
+    ...mapMutations([ 'SET_REGION', 'SET_LOCALE', 'SET_BATTLE_TAG' ]),
     onSubmit () {
-      console.log('buscar')
+      const locale = defaultLocales[regions.findIndex(r => r === this.form.region)]
+      this.SET_BATTLE_TAG(this.form.battleTag)
+      this.SET_REGION(this.form.region)
+      this.SET_LOCALE(locale)
     }
   }
 }
