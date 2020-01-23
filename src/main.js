@@ -3,7 +3,7 @@ import Vue from 'vue'
 // BootstrapVue
 import './plugins/bootstrapVue'
 
-// Font-awesome
+// Vue Font-Awesome
 import './plugins/fontAwesome'
 
 import App from './App.vue'
@@ -20,7 +20,7 @@ new Vue({
   store,
   methods: {
     init () {
-      store.dispatch('oauth/getToken')
+      store.dispatch('oauth/getToken', null, { root: true })
     }
   },
   created () {
