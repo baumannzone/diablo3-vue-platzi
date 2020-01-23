@@ -1,38 +1,17 @@
 import Vue from 'vue'
-import BootstrapVue from 'bootstrap-vue'
 
-// Vue font-awesome
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faSearch, faSkull, faCrown, faDungeon, faHatWizard, faHammer, faGem } from '@fortawesome/free-solid-svg-icons'
-import { faVuejs, faBootstrap } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+// BootstrapVue
+import './plugins/bootstrapVue'
+
+// Font-awesome
+import './plugins/fontAwesome'
 
 import App from './App.vue'
 import router from './router'
 import store from './store'
 
-import { getToken } from '@/api/oauth'
-
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-
+// Global CSS
 import './assets/css/main.styl'
-
-library.add(
-  faSearch,
-  faSkull,
-  faCrown,
-  faDungeon,
-  faHatWizard,
-  faHammer,
-  faGem,
-  faVuejs,
-  faBootstrap
-)
-
-Vue.component('font-awesome-icon', FontAwesomeIcon)
-
-Vue.use(BootstrapVue)
 
 Vue.config.productionTip = false
 
@@ -41,18 +20,7 @@ new Vue({
   store,
   methods: {
     init () {
-      store.commit('SET_LOADING', true)
-      getToken()
-        .then(({ data }) => {
-          // Save token
-          store.commit('SET_ACCESS_TOKEN', data.access_token)
-        })
-        .catch((err) => {
-          this.$bvToast.toast(err.message, { title: 'OAuth Error' })
-        })
-        .finally(() => {
-          store.commit('SET_LOADING', false)
-        })
+      store.dispatch('oauth/getToken')
     }
   },
   created () {
