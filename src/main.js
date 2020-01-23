@@ -10,7 +10,6 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import config from './config'
 
 import { getToken } from '@/api/oauth'
 
@@ -42,28 +41,19 @@ new Vue({
   store,
   methods: {
     init () {
-      store.dispatch('setLoading', true)
+      store.commit('setLoading', true)
       getToken()
-        .then(() => {
-          // OK
-          // console.log('OK')
+        .then((res) => {
+          console.log(res)
+          store.commit('setLoading', false)
         })
         .catch((err) => {
-          // KO
-          // console.log('KO')
-          console.log(err)
+          store.commit('setLoading', false)
+          this.$bvToast.toast(err.message, { title: 'OAuth Error' })
         })
-        .finally(() => {
-          // Loaded
-          store.dispatch('setLoading', false)
-        })
-    },
-    saveConfig () {
-      store.commit('SET_CONFIG', config)
     }
   },
   created () {
-    this.saveConfig()
     this.init()
   },
   render: h => h(App)
