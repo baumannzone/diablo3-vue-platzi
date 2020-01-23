@@ -24,7 +24,7 @@ export default {
     BaseLoading
   },
   computed: {
-    ...mapState({
+    ...mapState('loading', {
       isLoading: 'isLoading'
     })
   }
