@@ -1,4 +1,5 @@
 export default {
+  namespaced: true,
   state: {
     isLoading: false
   },
@@ -6,13 +7,5 @@ export default {
     SET_LOADING (state, payload) {
       state.isLoading = payload
     }
-  },
-  actions: {
-    setLoading ({ commit }, payload) {
-      commit('SET_LOADING', payload)
-    }
-  },
-  getters: {
-    // account: (state) => state.config.battleTag.replace('#', '-')
   }
 }
