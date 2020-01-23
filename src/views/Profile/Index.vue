@@ -2,7 +2,7 @@
   <div class="home">
     <div class="profile-body">
       <GridContainer />
-      <ArtisansBlock artisans="{}"/>
+      <ArtisansBlock />
     </div>
   </div>
 </template>
@@ -15,17 +15,6 @@ import ArtisansBlock from './ArtisansBlock/Index'
 
 export default {
   name: 'HomeView',
-  components: { ArtisansBlock, GridContainer },
-  created () {
-    // getAccount()
-    //   .then(res => {
-    //     console.log('""""""""""""res""""""""""""')
-    //     console.log(res)
-    //   })
-    //   .catch(err => {
-    //     console.log('""""""""""""err""""""""""""')
-    //     console.log(err)
-    //   })
-  }
+  components: { ArtisansBlock, GridContainer }
 }
 </script>
