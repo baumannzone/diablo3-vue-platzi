@@ -13,7 +13,7 @@
 
     <p class="text-muted">
       <small>
-        Made by:
+        Made by
         <a href="https://twitter.com/baumannzone" target="_blank">Jorge Baumann</a>
         for
         <a href="https://platzi.com/" target="_blank">Platzi</a>

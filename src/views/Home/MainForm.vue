@@ -1,37 +1,41 @@
 <template>
   <div class="search-form my-5">
 
-    <b-form @submit.prevent="onSubmit">
+    <div class="row">
+      <div class="col-12 col-md-8 offset-md-2">
+        <b-form @submit.prevent="onSubmit">
 
-      <b-form-group
-        id="input-group-1"
-        label="BattleTag:"
-        label-for="input-text"
-        description="Format: YourProfile#1234"
-      >
-        <b-form-input
-          id="input-text"
-          v-model="form.text"
-          type="text"
-          required
-          placeholder="BattleTag"
-        />
-      </b-form-group>
+          <b-form-group
+            id="input-group-1"
+            label="BattleTag:"
+            label-for="input-text"
+            description="Format: YourProfile#1234"
+          >
+            <b-form-input
+              id="input-text"
+              v-model="form.text"
+              type="text"
+              required
+              placeholder="BattleTag"
+            />
+          </b-form-group>
 
-      <b-form-group id="input-group-3" label="Region:" label-for="input-region">
-        <b-form-select
-          id="input-region"
-          v-model="form.region"
-          :options="regions"
-          required
-        />
-      </b-form-group>
+          <b-form-group id="input-group-3" label="Region:" label-for="input-region">
+            <b-form-select
+              id="input-region"
+              v-model="form.region"
+              :options="regions"
+              required
+            />
+          </b-form-group>
 
-      <div class="d-flex justify-content-end mt-5">
-        <b-button type="submit" variant="primary">Submit</b-button>
+          <div class="d-flex justify-content-end mt-5">
+            <b-button type="submit" variant="primary">Submit</b-button>
+          </div>
+
+        </b-form>
       </div>
-
-    </b-form>
+    </div>
 
   </div>
 </template>
