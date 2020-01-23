@@ -1,4 +1,5 @@
 export default {
+  namespaced: true,
   state: {
     region: null,
     locale: null,
@@ -17,6 +18,18 @@ export default {
     },
     SET_HERO_ID (state, payload) {
       state.heroId = payload
+    }
+  },
+  getters: {
+    /**
+     * Replaces '#' for '-' in the battleTag. Return the account ready to be used in the requests
+     * @param state
+     * @returns {string} Account
+     */
+    account: (state) => {
+      if (state.battleTag) {
+        return state.battleTag.replace('#', '-')
+      }
     }
   }
 }
