@@ -43,10 +43,9 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
+import { mapMutations, mapActions } from 'vuex'
 
 import { regions, defaultLocales } from '@/utils/regions'
-import { getAccount } from '@/api/search'
 
 export default {
   name: 'MainForm',
@@ -64,9 +63,10 @@ export default {
     }
   },
   methods: {
-    ...mapMutations([ 'SET_REGION', 'SET_LOCALE', 'SET_BATTLE_TAG' ]),
+    ...mapActions('profile', [ 'getApiAccount' ]),
+    ...mapMutations('search', [ 'SET_REGION', 'SET_LOCALE', 'SET_BATTLE_TAG' ]),
     onSubmit () {
-      const locale = defaultLocales[regions.findIndex(r => r === this.form.region)]
+      const locale = defaultLocales[ regions.findIndex(r => r === this.form.region) ]
 
       // Set Data
       this.SET_BATTLE_TAG(this.form.battleTag)
@@ -74,14 +74,7 @@ export default {
       this.SET_LOCALE(locale)
 
       // Fetch data from Blizzard APIs
-      console.log('GUARDADO....=?')
-      getAccount()
-        .then((res) => {
-          console.log(res)
-        })
-        .catch((err) => {
-          console.log(err)
-        })
+      this.getApiAccount()
     }
   }
 }
