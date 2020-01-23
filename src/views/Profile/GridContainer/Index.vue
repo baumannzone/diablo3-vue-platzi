@@ -6,16 +6,23 @@
 
       <HeroesList v-if="hasHeroesList" :heroes="heroesList"/>
 
-      <ProgressBosses :acts="data.progression"/>
+      <ProgressBosses :acts="account.progression"/>
+
     </div>
+
+    <!-- Right Bar-->
     <div class="grid-item item-right">
+
       <MultiStats :stats="statsData"/>
+
     </div>
+
   </div>
 </template>
 
 <script>
-import data from '../../../api/data'
+import { mapState } from 'vuex'
+
 import TopHeroes from './TopHeroes/Index'
 import HeroesList from './HeroesList/Index'
 import ProgressBosses from './ProgressBoss'
@@ -24,26 +31,22 @@ import MultiStats from './MultiStats/Index'
 export default {
   name: 'GridContainer',
   components: { MultiStats, ProgressBosses, HeroesList, TopHeroes },
-  data () {
-    return {
-      data: data
-    }
-  },
   computed: {
+    ...mapState('profile', [ 'account' ]),
     hasHeroes () {
-      return data.heroes.length > 0
+      return this.account.heroes.length > 0
     },
     hasHeroesList () {
-      return data.heroes.length > 3
+      return this.account.heroes.length > 3
     },
     topHeroes () {
-      return this.data.heroes.slice(0, 3)
+      return this.account.heroes.slice(0, 3)
     },
     heroesList () {
-      return this.data.heroes.slice(3, this.data.heroes.length)
+      return this.account.heroes.slice(3, this.account.heroes.length)
     },
     statsData () {
-      const { paragonLevel, kills, timePlayed } = this.data
+      const { paragonLevel, kills, timePlayed } = this.account
       return { paragonLevel, kills, timePlayed }
     }
   }
