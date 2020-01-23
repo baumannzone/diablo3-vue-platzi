@@ -41,15 +41,17 @@ new Vue({
   store,
   methods: {
     init () {
-      store.commit('setLoading', true)
+      store.commit('SET_LOADING', true)
       getToken()
-        .then((res) => {
-          console.log(res)
-          store.commit('setLoading', false)
+        .then(({ data }) => {
+          // Save token
+          store.commit('SET_ACCESS_TOKEN', data.access_token)
         })
         .catch((err) => {
-          store.commit('setLoading', false)
           this.$bvToast.toast(err.message, { title: 'OAuth Error' })
+        })
+        .finally(() => {
+          store.commit('SET_LOADING', false)
         })
     }
   },

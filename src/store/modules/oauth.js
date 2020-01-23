@@ -1,9 +1,4 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-
-Vue.use(Vuex)
-
-export default new Vuex.Store({
+export default {
   state: {
     accessToken: null
   },
@@ -11,10 +6,5 @@ export default new Vuex.Store({
     SET_ACCESS_TOKEN (state, payload) {
       state.accessToken = payload
     }
-  },
-  actions: {
-    setAccessToken ({ commit }, payload) {
-      commit('SET_ACCESS_TOKEN', payload)
-    }
   }
-})
+}
