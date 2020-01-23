@@ -14,7 +14,7 @@ export default {
     }
   },
   actions: {
-    getToken ({ getters, commit }) {
+    getToken ({ commit, getters }) {
       commit('loading/SET_LOADING', true, { root: true })
 
       const body = new FormData()
@@ -24,11 +24,12 @@ export default {
         auth: { username: clientId, password: clientSecret }
       }
 
-      post(`${getters.API_URL}`, body, config)
+      post(`${getters.tokenUrl}`, body, config)
         .then(({ data }) => {
           commit('SET_ACCESS_TOKEN', data.access_token)
         })
         .catch((err) => {
+          commit('SET_ACCESS_TOKEN', null)
           console.log('GET TOKEN ERR: ')
           console.log(err.message)
           // this.$bvToast.toast(err.message, { title: 'OAuth Error' })
@@ -40,6 +41,6 @@ export default {
   },
   getters: {
     region: (state, getters, rootState) => rootState.region || 'eu',
-    API_URL: (state, getters) => `https://${getters.region}.battle.net/oauth/token`
+    tokenUrl: (state, getters) => `https://${getters.region}.battle.net/oauth/token`
   }
 }
