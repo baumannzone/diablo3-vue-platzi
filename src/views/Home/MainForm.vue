@@ -15,6 +15,7 @@
               id="input-text"
               v-model="form.text"
               type="text"
+              size="lg"
               required
               placeholder="BattleTag"
             />
@@ -24,13 +25,14 @@
             <b-form-select
               id="input-region"
               v-model="form.region"
+              size="lg"
               :options="regions"
               required
             />
           </b-form-group>
 
           <div class="d-flex justify-content-end mt-5">
-            <b-button type="submit" variant="primary">Submit</b-button>
+            <b-button type="submit" variant="primary" size="lg">Submit</b-button>
           </div>
 
         </b-form>
@@ -48,8 +50,8 @@ export default {
   data () {
     return {
       form: {
-        region: 'eu',
-        battleTag: ''
+        battleTag: '',
+        region: 'eu'
       }
     }
   },
