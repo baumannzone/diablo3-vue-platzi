@@ -11,15 +11,19 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
 
 import ArtisanItem from './ArtisanItem'
 
 export default {
   name: 'ArtisansBlock',
   components: { ArtisanItem },
+  props: {
+    artisansData: {
+      type: Object,
+      required: true
+    }
+  },
   computed: {
-    ...mapState('profile', [ 'accountData' ]),
     artisansInfo () {
       return [
         {
@@ -27,30 +31,27 @@ export default {
           icon: 'hammer',
           emoji: '⚒️',
           color: '#ffb74d',
-          normal: this.accountData.blacksmith,
-          hardcore: this.accountData.blacksmithHardcore
+          normal: this.artisansData.blacksmith,
+          hardcore: this.artisansData.blacksmithHardcore
         },
         {
           name: 'jeweler',
           icon: 'gem',
           emoji: '💎',
           color: '#4dd0e1',
-          normal: this.accountData.jeweler,
-          hardcore: this.accountData.jewelerHardcore
+          normal: this.artisansData.jeweler,
+          hardcore: this.artisansData.jewelerHardcore
         },
         {
           name: 'mystic',
           icon: 'hat-wizard',
           emoji: '🔮',
           color: '#ba68c8',
-          normal: this.accountData.mystic,
-          hardcore: this.accountData.mysticHardcore
+          normal: this.artisansData.mystic,
+          hardcore: this.artisansData.mysticHardcore
         }
       ]
     }
   }
 }
 </script>
-
-<style lang="stylus">
-</style>
