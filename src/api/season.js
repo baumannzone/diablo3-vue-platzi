@@ -12,14 +12,14 @@ const host = '.api.blizzard.com/'
  * @returns {Promise}
  */
 function listSeasons (region) {
-  const resource = `data/d3/season`
+  const resource = `data/d3/season/`
   const API_URL = `${protocol}${region}${host}${resource}`
 
   const params = {
     'access_token': store.state.oauth.accessToken
   }
 
-  return get(`${API_URL}`, { params })
+  return get(API_URL, { params })
 }
 
 export {
