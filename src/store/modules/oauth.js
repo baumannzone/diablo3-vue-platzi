@@ -40,8 +40,8 @@ export default {
     }
   },
   getters: {
-    tokenUrl: (state, getters, rootState) => {
-      const region = rootState.region || 'eu'
+    tokenUrl: () => {
+      const region = 'eu'
       return `https://${region}.battle.net/oauth/token`
     }
   }
