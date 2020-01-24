@@ -19,7 +19,7 @@ export default {
   name: 'ArtisansBlock',
   components: { ArtisanItem },
   computed: {
-    ...mapState('profile', [ 'account' ]),
+    ...mapState('profile', [ 'accountData' ]),
     artisansInfo () {
       return [
         {
@@ -27,24 +27,24 @@ export default {
           icon: 'hammer',
           emoji: '⚒️',
           color: '#ffb74d',
-          normal: this.account.blacksmith,
-          hardcore: this.account.blacksmithHardcore
+          normal: this.accountData.blacksmith,
+          hardcore: this.accountData.blacksmithHardcore
         },
         {
           name: 'jeweler',
           icon: 'gem',
           emoji: '💎',
           color: '#4dd0e1',
-          normal: this.account.jeweler,
-          hardcore: this.account.jewelerHardcore
+          normal: this.accountData.jeweler,
+          hardcore: this.accountData.jewelerHardcore
         },
         {
           name: 'mystic',
           icon: 'hat-wizard',
           emoji: '🔮',
           color: '#ba68c8',
-          normal: this.account.mystic,
-          hardcore: this.account.mysticHardcore
+          normal: this.accountData.mystic,
+          hardcore: this.accountData.mysticHardcore
         }
       ]
     }
