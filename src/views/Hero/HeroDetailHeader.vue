@@ -5,7 +5,7 @@
         <div class="hero-detail-avatar" :class="heroClass"></div>
       </div>
       <div class="text-center">
-        <h1 class="font-diablo text-truncate">{{ detail.name }}</h1>
+        <h1 class="font-diablo text-truncate text-bone">{{ detail.name }}</h1>
         <div class="text-monospace">
           <small>
             <span>{{ detail.level }}</span>
@@ -60,4 +60,8 @@ export default {
   .hero-detail-avatar
     width 138px
     height 105px
+    background-size 280px
+
+  .text-bone
+    color #e8dcc2
 </style>
