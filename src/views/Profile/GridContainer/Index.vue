@@ -6,7 +6,7 @@
 
       <HeroesList v-if="hasHeroesList" :heroes="heroesList"/>
 
-      <ProgressBosses :acts="accountData.progression"/>
+      <ProgressBosses :acts="profileData.progression"/>
 
     </div>
 
@@ -21,7 +21,6 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
 
 import TopHeroes from './TopHeroes/Index'
 import HeroesList from './HeroesList/Index'
@@ -31,22 +30,27 @@ import MultiStats from './MultiStats/Index'
 export default {
   name: 'GridContainer',
   components: { MultiStats, ProgressBosses, HeroesList, TopHeroes },
+  props: {
+    profileData: {
+      type: Object,
+      required: true
+    }
+  },
   computed: {
-    ...mapState('profile', [ 'accountData' ]),
     hasHeroes () {
-      return this.accountData.heroes.length > 0
+      return this.profileData.heroes.length > 0
     },
     hasHeroesList () {
-      return this.accountData.heroes.length > 3
+      return this.profileData.heroes.length > 3
     },
     topHeroes () {
-      return this.accountData.heroes.slice(0, 3)
+      return this.profileData.heroes.slice(0, 3)
     },
     heroesList () {
-      return this.accountData.heroes.slice(3, this.accountData.heroes.length)
+      return this.profileData.heroes.slice(3, this.profileData.heroes.length)
     },
     statsData () {
-      const { paragonLevel, kills, timePlayed } = this.accountData
+      const { paragonLevel, kills, timePlayed } = this.profileData
       return { paragonLevel, kills, timePlayed }
     }
   }
