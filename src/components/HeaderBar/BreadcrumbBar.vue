@@ -14,6 +14,9 @@ export default {
     }
   },
   watch: {
+    /**
+     * Update breadcrumbs items when route changes
+     */
     $route (to, from) {
       this.items = []
       this.updateBreadcrumbs()
