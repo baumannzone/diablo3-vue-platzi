@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import TopHero from './HeroItem'
+import TopHero from './TopHero'
 
 export default {
   name: 'TopHeroes',
