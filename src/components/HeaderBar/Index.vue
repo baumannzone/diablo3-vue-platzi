@@ -1,28 +1,20 @@
 <template>
   <div class="header-bar">
-    <div>
+    <div class="navigation-bar">
       <b-navbar toggleable="lg" type="dark" variant="dark">
         <BrandTitle/>
-
-        <b-navbar-toggle target="nav-collapse"/>
-
-        <b-collapse id="nav-collapse" is-nav>
-
-          <!-- Right aligned nav items -->
-          <!--<b-navbar-nav class="ml-auto">
-            Hi
-          </b-navbar-nav>-->
-        </b-collapse>
       </b-navbar>
     </div>
+    <BreadcrumbBar/>
   </div>
 </template>
 
 <script>
 import BrandTitle from './BrandTitle'
+import BreadcrumbBar from './BreadcrumbBar'
 
 export default {
   name: 'HeaderBar',
-  components: { BrandTitle }
+  components: { BreadcrumbBar, BrandTitle }
 }
 </script>
