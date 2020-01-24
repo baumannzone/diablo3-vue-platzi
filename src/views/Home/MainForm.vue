@@ -43,9 +43,8 @@
 </template>
 
 <script>
-import { mapMutations, mapActions } from 'vuex'
 
-import { regions, defaultLocales } from '@/utils/regions'
+import { regions } from '@/utils/regions'
 
 export default {
   name: 'MainForm',
@@ -63,18 +62,9 @@ export default {
     }
   },
   methods: {
-    ...mapActions('profile', [ 'getApiAccount' ]),
-    ...mapMutations('search', [ 'SET_REGION', 'SET_LOCALE', 'SET_BATTLE_TAG' ]),
     onSubmit () {
-      const locale = defaultLocales[ regions.findIndex(r => r === this.form.region) ]
-
-      // Set Data
-      this.SET_BATTLE_TAG(this.form.battleTag)
-      this.SET_REGION(this.form.region)
-      this.SET_LOCALE(locale)
-
-      // Fetch data from Blizzard APIs
-      this.getApiAccount()
+      const { region, battleTag } = this.form
+      this.$router.push({ name: 'Profile', params: { region, battleTag: battleTag.replace('#', '-') } })
     }
   }
 }
