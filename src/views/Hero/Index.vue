@@ -10,7 +10,7 @@
 
       <b-col md="12" lg="4" order-lg="1">
         <GearBonuses :stats="detailStats"/>
-        <Skills :skills="h.skills"/>
+        <Skills :skills="hero.skills"/>
       </b-col>
 
     </b-row>
@@ -19,7 +19,9 @@
 </template>
 
 <script>
-import h from '@/api/heroDetail.json'
+import { mapState } from 'vuex'
+
+// import h from '@/api/heroDetail.json'
 import items from '@/api/heroItems.json'
 
 import HeroDetailHeader from './HeroDetailHeader'
@@ -32,13 +34,13 @@ export default {
   components: { Skills, GearBonuses, HeroDetailHeader, HeroItems },
   data () {
     return {
-      h,
       items
     }
   },
   computed: {
+    ...mapState('profile', ['hero']),
     detailHeader () {
-      const { name, class: classSlug, gender, level, hardcore, seasonal, paragonLevel, alive, seasonCreated } = h
+      const { name, class: classSlug, gender, level, hardcore, seasonal, paragonLevel, alive, seasonCreated } = this.hero
       return {
         name,
         classSlug,
@@ -52,7 +54,7 @@ export default {
       }
     },
     detailStats () {
-      return { ...h.stats, classSlug: h.class }
+      return { ...this.hero.stats, classSlug: this.hero.class }
     }
   }
 }
