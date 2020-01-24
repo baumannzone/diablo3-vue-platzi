@@ -25,9 +25,9 @@ export default {
      */
     getApiAccount ({ commit, getters, rootState, rootGetters }) {
       const { apiUrl } = getters
+      const locale = rootGetters[ 'search/locale' ]
       const account = rootGetters[ 'search/account' ]
       const resource = `d3/profile/${account}/`
-      const locale = rootState.search.locale
 
       const params = {
         'access_token': rootState.oauth.accessToken,
@@ -49,9 +49,9 @@ export default {
      */
     getApiHero ({ commit, getters, rootState, rootGetters }) {
       const { apiUrl } = getters
+      const locale = rootGetters[ 'search/locale' ]
       const account = rootGetters[ 'search/account' ]
       const heroId = rootState.search.heroId
-      const locale = rootState.search.locale
       const resource = `d3/profile/${account}/hero/${heroId}`
 
       const params = {
