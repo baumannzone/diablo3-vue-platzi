@@ -5,7 +5,7 @@
       <em>
         <a href="https://eu.battle.net/support/es/article/75767" target="_blank">battle-tag</a>
       </em>
-      and select your region to see your stats!</p>
+      and select your region to see your profile!</p>
     <hr class="mt-5">
   </div>
 </template>
