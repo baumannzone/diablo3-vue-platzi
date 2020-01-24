@@ -1,7 +1,12 @@
 export default {
   methods: {
+    /**
+     * Go to hero Id
+     * @param heroId {String | Number}
+     */
     goToHero (heroId) {
-      this.$router.push({ name: 'Hero', params: { heroId } })
+      const { region, battleTag } = this.$route.params
+      this.$router.push({ name: 'Hero', params: { region, battleTag, heroId } })
     }
   }
 }
