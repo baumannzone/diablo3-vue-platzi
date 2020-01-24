@@ -1,26 +1,29 @@
 import { get } from 'axios'
 import store from '../store/index'
+import { locales } from '../utils/regions'
 
-const region = store.state.region
-const locale = store.state.locale
-
-const API_URL = `https://${region}.api.blizzard.com/`
+const protocol = 'https://'
+const host = '.api.blizzard.com/'
 
 /**
  * Returns the specified account profile.
- * @returns {*}
+ * @param region {String}
+ * @param account {String}
+ * @returns {Promise}
  */
-function getAccount () {
-  const account = store.getters.account
+function getApiAccount ({ region, account }) {
   const resource = `d3/profile/${account}/`
+  const API_URL = `${protocol}${region}${host}${resource}`
+  const locale = locales[region]
 
   const params = {
-    'access_token': store.state.accessToken,
+    'access_token': store.state.oauth.accessToken,
     locale
   }
-  return get(`${API_URL}${resource}`, { params })
+
+  return get(`${API_URL}`, { params })
 }
 
 export {
-  getAccount
+  getApiAccount
 }
