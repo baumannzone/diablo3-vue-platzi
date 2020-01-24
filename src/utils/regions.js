@@ -1,9 +1,15 @@
 // More info: https://develop.battle.net/documentation/guides/regionality-and-apis
 
-const regions = ['us', 'eu', 'kr', 'tw']
-const defaultLocales = ['en_US', 'en_GB', 'ko_KR', 'zh_TW']
+const regions = [ 'us', 'eu', 'kr', 'tw' ]
+
+const locales = {
+  us: 'en_US',
+  eu: 'en_GB',
+  kr: 'ko_KR',
+  tw: 'zh_TW'
+}
 
 export {
   regions,
-  defaultLocales
+  locales
 }
