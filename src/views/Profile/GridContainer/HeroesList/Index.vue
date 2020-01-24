@@ -58,7 +58,7 @@ export default {
         {
           key: 'kills',
           label: 'Elite Kills',
-          sortable: false
+          sortable: true
         }
       ]
     }
