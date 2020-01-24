@@ -9,7 +9,7 @@
       <p class="skill-name m-0" :title="skill.description">
         {{ skill.name }}
       </p>
-      <small class="rune-name text-muted" :title="rune.description">
+      <small v-if="rune" class="rune-name text-muted" :title="rune.description">
         {{ rune.name }}
       </small>
     </div>
@@ -26,7 +26,7 @@ export default {
       type: Object
     },
     rune: {
-      required: true,
+      required: false,
       type: Object
     },
     slotNum: {
