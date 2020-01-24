@@ -5,21 +5,21 @@
       <BaseLoading/>
     </LoadLayout>
 
-    <v-layout v-else/>
+    <main-layout v-else/>
 
   </div>
 </template>
 
 <script>
 import { mapState } from 'vuex'
-import VLayout from '@/layouts/Main.vue'
 import LoadLayout from '@/layouts/Load.vue'
+import MainLayout from '@/layouts/Main.vue'
 import BaseLoading from '@/components/BaseLoading.vue'
 
 export default {
   name: 'App',
   components: {
-    VLayout,
+    MainLayout,
     LoadLayout,
     BaseLoading
   },
