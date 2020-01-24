@@ -21,12 +21,14 @@
 </template>
 
 <script>
-import goToHero from '@/mixins/goToHero'
+// import goToHero from '@/mixins/goToHero'
+import { mapState, mapGetters, mapMutations, mapActions } from 'vuex'
+
 import { formatNumber } from '@/filters/numeral'
 
 export default {
   name: 'TopHero',
-  mixins: [goToHero],
+  // mixins: [goToHero],
   filters: {
     formatNumber
   },
@@ -37,9 +39,20 @@ export default {
     }
   },
   computed: {
+    ...mapState('search', ['region']),
+    ...mapGetters('search', ['account']),
     heroClass () {
       const gender = this.hero.gender === 0 ? 'male' : 'female'
       return `hero-${this.hero.class} ${gender}`
+    }
+  },
+  methods: {
+    ...mapMutations('search', ['SET_HERO_ID']),
+    ...mapActions('profile', ['getApiHero']),
+    goToHero (heroId) {
+      this.SET_HERO_ID(heroId)
+      this.getApiHero()
+      // this.$router.push({ name: 'Hero', params: { region: this.region, battleTag: this.account, heroId } })
     }
   }
 }
