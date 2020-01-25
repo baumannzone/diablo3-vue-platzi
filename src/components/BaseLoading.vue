@@ -11,10 +11,31 @@
 export default {
   name: 'Loading',
   props: {
-    size: {
-      type: Number,
+    variant: {
       required: false,
-      default: 80
+      type: String,
+      default: 'info',
+      validator: (value) => {
+        // Value must match one of these strings
+        return [
+          'primary',
+          'secondary',
+          'danger',
+          'warning',
+          'success',
+          'info',
+          'light',
+          'dark'
+        ].indexOf(value) !== -1
+      }
+    },
+    type: {
+      required: false,
+      type: String,
+      default: 'border',
+      validator: (value) => {
+        return ['border', 'grow'].indexOf(value) !== -1
+      }
     }
   }
 }
