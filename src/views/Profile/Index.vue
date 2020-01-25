@@ -1,25 +1,33 @@
 <template>
   <div class="home">
+
     <div class="profile-body">
+
+      <BaseLoading v-if="isLoading"/>
+
       <template v-if="profileData !== null">
         <GridContainer :profile-data="profileData"/>
         <ArtisansBlock :artisans-data="artisansData"/>
       </template>
+
     </div>
+
   </div>
 </template>
 
 <script>
 import { getApiAccount } from '@/api/search'
 
+import BaseLoading from '@/components/BaseLoading'
 import GridContainer from './GridContainer/Index'
 import ArtisansBlock from './ArtisansBlock/Index'
 
 export default {
   name: 'HomeView',
-  components: { ArtisansBlock, GridContainer },
+  components: { BaseLoading, ArtisansBlock, GridContainer },
   data () {
     return {
+      isLoading: false,
       profileData: null
     }
   },
@@ -36,6 +44,7 @@ export default {
     }
   },
   created () {
+    this.isLoading = true
     const { region, battleTag: account } = this.$route.params
     // Fetch Data
     getApiAccount({ region, account })
@@ -58,6 +67,9 @@ export default {
         }
         console.log(err.config)
         this.$bvToast.toast(err.message, { title: 'Error' })
+      })
+      .finally(() => {
+        this.isLoading = false
       })
   }
 }
