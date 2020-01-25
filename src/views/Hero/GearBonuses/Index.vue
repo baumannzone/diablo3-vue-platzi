@@ -28,6 +28,7 @@
 </template>
 
 <script>
+
 import AttributeList from './AttributeList'
 import HeroResources from './HeroResources'
 
