@@ -9,7 +9,7 @@
         Diablo III is a genre-defining action-RPG set in Sanctuary, a world ravaged by the eternal conflict between angels and demons.
       </p>
       <p class="lead">
-        D3PF allows you to enter your battle-tag to see your profile, your last played heroes, your items, skills and more.
+        <span class="font-weight-bold">D3PF</span> allows you to enter your battle-tag to see your profile, your last played heroes, your items, skills and more.
       </p>
     </div>
 
@@ -48,7 +48,7 @@
         <li>Understand how Blizzard APIs work with OAuth.</li>
       </ol>
 
-      <p>Read more here:
+      <p class="text-break">Read more here:
         <a href="https://develop.battle.net/documentation/guides/getting-started">https://develop.battle.net/documentation/guides/getting-started</a>
       </p>
     </div>

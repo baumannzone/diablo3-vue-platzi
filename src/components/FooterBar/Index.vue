@@ -5,7 +5,7 @@
     <hr class="my-5">
 
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-6 mb-sm-0 mb-5">
         <FootLinks/>
       </div>
       <div class="col-sm-6">
