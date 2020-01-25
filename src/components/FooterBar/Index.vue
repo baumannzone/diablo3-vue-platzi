@@ -1,31 +1,29 @@
 <template>
-  <footer class="footer-bar text-center mt-5">
-    <p class="text-muted">Powered by</p>
+  <footer class="footer-bar mt-5">
+    <PoweredByFoot :icons="icons"/>
 
-    <ul class="list-inline">
-      <li class="list-inline-item mx-2" v-for="(icon, idx) in icons" :key="idx">
-        <a :href="icon.href" target="_blank" :title="icon.href">
-          <font-awesome-icon :icon="icon.classes" class="fa-lg" :style="{'color': icon.color}"/>
-        </a>
-      </li>
-    </ul>
+    <hr class="my-5">
 
-    <hr>
+    <div class="row">
+      <div class="col-sm-6">
+        <FootLinks/>
+      </div>
+      <div class="col-sm-6">
+        <MadeByFoot/>
+      </div>
+    </div>
 
-    <p class="text-muted">
-      <small>
-        Made by
-        <a href="https://twitter.com/baumannzone" target="_blank">Jorge Baumann</a>
-        for
-        <a href="https://platzi.com/" target="_blank">Platzi</a>
-      </small>
-    </p>
   </footer>
 </template>
 
 <script>
+import MadeByFoot from './MadeByFoot'
+import PoweredByFoot from './PoweredByFoot'
+import FootLinks from './FootLinks'
+
 export default {
   name: 'FooterBar',
+  components: { FootLinks, PoweredByFoot, MadeByFoot },
   data () {
     return {
       icons: [
@@ -58,7 +56,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-</style>
