@@ -1,12 +1,17 @@
 <template>
   <b-row class="hero-detail-header my-5">
     <b-col cols="12">
+
       <div class="d-flex justify-content-center mb-3">
         <div class="hero-detail-avatar" :class="heroClass"></div>
       </div>
+
       <div class="text-center">
+
         <h1 class="font-diablo text-truncate text-bone">{{ detail.name }}</h1>
+
         <div class="text-monospace">
+
           <small>
             <span>{{ detail.level }}</span>
 
@@ -22,16 +27,22 @@
             <span v-if="detail.hardcore" class="text-danger"> · Hardcore </span>
 
           </small>
+
           <div>
             <small class="text-muted">
               Season created:
             </small>
             <b-badge>{{ detail.seasonCreated }}</b-badge>
           </div>
+
         </div>
+
         <hr>
+
       </div>
+
     </b-col>
+
   </b-row>
 </template>
 
