@@ -1,5 +1,5 @@
 <template>
-  <div class="breadcrumbs-bar" v-if="!isAboutPage">
+  <div class="breadcrumbs-bar" v-if="!showComponent">
     <b-breadcrumb :items="items" class="bg-transparent"/>
   </div>
 </template>
@@ -15,8 +15,9 @@ export default {
     }
   },
   computed: {
-    isAboutPage () {
-      return this.$route.name === 'About'
+    // Show breadcrumbs if the route is not /About or /NotFound
+    showComponent () {
+      return this.$route.name === 'About' || this.$route.name === 'NotFound'
     }
   },
   watch: {

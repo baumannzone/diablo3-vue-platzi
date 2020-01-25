@@ -7,7 +7,8 @@ const routOptions = [
   { path: '/', name: 'Home' },
   { path: '/region/:region/profile/:battleTag', name: 'Profile' },
   { path: '/region/:region/profile/:battleTag/hero/:heroId', name: 'Hero' },
-  { path: '/about', name: 'About' }
+  { path: '/about', name: 'About' },
+  { path: '/404', name: 'NotFound' }
 ]
 
 const routes = routOptions.map(r => {
