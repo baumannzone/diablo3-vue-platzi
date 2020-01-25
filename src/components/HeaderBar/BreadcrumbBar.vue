@@ -1,8 +1,9 @@
 <template>
-  <div class="breadcrumbs-bar">
+  <div class="breadcrumbs-bar" v-if="!isAboutPage">
     <b-breadcrumb :items="items" class="bg-transparent"/>
   </div>
 </template>
+
 <script>
 const home = { text: 'Home', to: { name: 'Home' } }
 
@@ -11,6 +12,11 @@ export default {
   data () {
     return {
       items: []
+    }
+  },
+  computed: {
+    isAboutPage () {
+      return this.$route.name === 'About'
     }
   },
   watch: {

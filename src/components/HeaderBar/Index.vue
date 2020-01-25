@@ -17,7 +17,9 @@
 
       </b-navbar>
     </div>
+
     <BreadcrumbBar/>
+
   </div>
 </template>
 
@@ -31,15 +33,13 @@ export default {
   components: { BreadcrumbBar, BrandTitle },
   data () {
     return {
-      currentSeason: null,
-      seasonStatus: null
+      currentSeason: null
     }
   },
   created () {
     const region = 'eu'
     listSeasons(region)
       .then(({ data }) => {
-        console.log(data)
         this.currentSeason = data.current_season
       })
       .catch((err) => {
