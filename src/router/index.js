@@ -8,7 +8,8 @@ const routOptions = [
   { path: '/region/:region/profile/:battleTag', name: 'Profile' },
   { path: '/region/:region/profile/:battleTag/hero/:heroId', name: 'Hero' },
   { path: '/about', name: 'About' },
-  { path: '/404', name: 'NotFound' }
+  { path: '/error', name: 'Error' },
+  { path: '*', redirect: { name: 'Home' } }
 ]
 
 const routes = routOptions.map(r => {
