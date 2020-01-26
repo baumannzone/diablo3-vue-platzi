@@ -1,6 +1,6 @@
 <template>
   <div class="passive-skills">
-    <h4 class="my-4">Passive Skills</h4>
+    <h4 class="my-5">Passive</h4>
     <div class="skills">
       <b-row>
         <b-col v-for="(skill, idx) in skills" :key="idx" cols="6" lg="12">
