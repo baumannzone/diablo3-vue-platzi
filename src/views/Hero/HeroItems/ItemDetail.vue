@@ -2,11 +2,11 @@
   <div class="text-center bg-dark h-100 pt-3 d3-icon-item" :class="itemClassColor">
 
     <div class="d-flex flex-column justify-content-between h-100">
-      <template v-if="item">
+      <template v-if="item.id">
         <div>
           <div v-if="item" class="item-image">
             <p class="text-muted">{{ item.name }}</p>
-            <img :src="itemUrl" alt="Img">
+            <img :src="itemUrl" :alt="item.slotName + ' ' + item.name ">
           </div>
         </div>
 
@@ -14,18 +14,16 @@
           <template v-if="itemHasGems">
             <small>{{ gemOrJewel }}:</small>
             <ul class="list-inline">
-              <li v-for="(gem, index) in item.gems" :key="index" class="list-inline-item">
-                <GemItem :gem="gem"/>
+              <li v-for="(gem, index) in item.gems" :key="'gem-'+index" class="list-inline-item">
+                <ItemDetailGem :gem="gem"/>
               </li>
             </ul>
           </template>
         </div>
       </template>
-      <template v-else>
-        <p class="text-secondary">
-          {{slotName}}
-        </p>
-      </template>
+      <p v-else class="text-secondary">
+        <b-badge class="text-dark"> {{item.slotName}} </b-badge>
+      </p>
     </div>
 
   </div>
@@ -33,19 +31,15 @@
 </template>
 
 <script>
-import GemItem from './GemItem'
+import ItemDetailGem from './ItemDetailGem'
 
 export default {
   name: 'ItemDetail',
-  components: { GemItem },
+  components: { ItemDetailGem },
   props: {
     item: {
-      type: Object,
+      type: Object || undefined,
       required: true
-    },
-    slotName: {
-      required: true,
-      type: String
     }
   },
   computed: {
@@ -60,7 +54,7 @@ export default {
       return this.item.gems[0].isGem ? 'Gems' : 'Jewel'
     },
     itemClassColor () {
-      if (this.item) {
+      if (this.item.hasOwnProperty('displayColor')) {
         return `item-${this.item.displayColor}`
       }
       return 'item-none'
