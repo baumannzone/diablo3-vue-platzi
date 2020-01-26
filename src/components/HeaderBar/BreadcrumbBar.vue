@@ -1,5 +1,5 @@
 <template>
-  <div class="breadcrumbs-bar" v-if="!showComponent">
+  <div class="breadcrumbs-bar" v-if="showComponent">
     <b-breadcrumb :items="items" class="bg-transparent"/>
   </div>
 </template>
@@ -15,9 +15,9 @@ export default {
     }
   },
   computed: {
-    // Show breadcrumbs if the route is not /About or /Error
+    // Show breadcrumbs according to Router MetaParams
     showComponent () {
-      return this.$route.name === 'About' || this.$route.name === 'Error'
+      return this.$route.meta.showBreadcrumb
     }
   },
   watch: {
