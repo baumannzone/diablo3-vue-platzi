@@ -16,6 +16,7 @@
 </template>
 
 <script>
+import notFoundErr from '@/mixins/notFoundErr'
 import { getApiAccount } from '@/api/search'
 
 import BaseLoading from '@/components/BaseLoading'
@@ -24,6 +25,7 @@ import ArtisansBlock from './ArtisansBlock/Index'
 
 export default {
   name: 'HomeView',
+  mixins: [ notFoundErr ],
   components: { BaseLoading, ArtisansBlock, GridContainer },
   data () {
     return {
@@ -53,20 +55,16 @@ export default {
       })
       .catch((err) => {
         this.profileData = null
-        if (err.response) {
-          // The request was made and the server responded with a status code (2xx)
-          console.log(err.response.data)
-          console.log(err.response.status)
-          console.log(err.response.headers)
-        } else if (err.request) {
-          // The request was made but no response was received
-          console.log(err.request)
-        } else {
-          // Something happened in setting up the request that triggered an Error
-          console.log('Error', err.message)
+        const errObj = {
+          routeParams: this.$route.params,
+          message: err.message
         }
-        console.log(err.config)
-        this.$bvToast.toast(err.message, { title: 'Error' })
+        if (err.response) {
+          errObj.data = err.response.data
+          errObj.status = err.response.status
+        }
+        this.setNotFound(errObj)
+        this.$router.push({ name: 'Error' })
       })
       .finally(() => {
         this.isLoading = false
