@@ -126,6 +126,7 @@ export default {
   },
   computed: {
     itemsData () {
+      // Merge Objects
       return {
         ...defaultItems,
         ...this.items

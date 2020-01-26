@@ -21,7 +21,7 @@
           </template>
         </div>
       </template>
-      <p v-else class="text-secondary">
+      <p v-else>
         <b-badge class="text-dark"> {{item.slotName}} </b-badge>
       </p>
     </div>
