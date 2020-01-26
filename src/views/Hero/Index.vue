@@ -24,9 +24,9 @@
 </template>
 
 <script>
+import notFoundErr from '@/mixins/notFoundErr'
 import BaseLoading from '@/components/BaseLoading'
 import { getApiHero, getApiDetailedHeroItems } from '@/api/search'
-
 import HeroDetailHeader from './HeroDetailHeader'
 import GearBonuses from './GearBonuses/Index'
 import HeroItems from './HeroItems/Index'
@@ -34,6 +34,7 @@ import Skills from './Skills/Index'
 
 export default {
   name: 'HeroView',
+  mixins: [notFoundErr],
   components: { BaseLoading, Skills, GearBonuses, HeroDetailHeader, HeroItems },
   data () {
     return {
@@ -84,7 +85,16 @@ export default {
       })
       .catch((err) => {
         this.hero = null
-        console.log(err)
+        const errObj = {
+          routeParams: this.$route.params,
+          message: err.message
+        }
+        if (err.response) {
+          errObj.data = err.response.data
+          errObj.status = err.response.status
+        }
+        this.setNotFound(errObj)
+        this.$router.push({ name: 'Error' })
       })
       .finally(() => {
         this.isLoadingHero = false
