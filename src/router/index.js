@@ -4,9 +4,9 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 const routOptions = [
-  { path: '/', name: 'Home' },
-  { path: '/region/:region/profile/:battleTag', name: 'Profile' },
-  { path: '/region/:region/profile/:battleTag/hero/:heroId', name: 'Hero' },
+  { path: '/', name: 'Home', meta: { showBreadcrumb: true } },
+  { path: '/region/:region/profile/:battleTag', name: 'Profile', meta: { showBreadcrumb: true } },
+  { path: '/region/:region/profile/:battleTag/hero/:heroId', name: 'Hero', meta: { showBreadcrumb: true } },
   { path: '/about', name: 'About' },
   { path: '/error', name: 'Error' },
   { path: '*', redirect: { name: 'Home' } }
