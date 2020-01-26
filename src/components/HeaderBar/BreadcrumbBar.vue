@@ -24,7 +24,7 @@ export default {
     /**
      * Update breadcrumbs items when route changes
      */
-    $route (to, from) {
+    $route () {
       this.items = []
       this.updateBreadcrumbs()
     }
@@ -56,7 +56,15 @@ export default {
     heroCase () {
       this.profileCase()
       const { battleTag, region, heroId } = this.$route.params
-      this.items.push({ text: heroId, to: { name: 'Profile', params: { region, battleTag, heroId } } })
+      this.items.push(
+        {
+          text: heroId.toString(),
+          to: {
+            name: 'Profile',
+            params: { region, battleTag, heroId }
+          }
+        }
+      )
     }
   }
 }
