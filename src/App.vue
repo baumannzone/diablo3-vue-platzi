@@ -12,6 +12,7 @@
 
 <script>
 import { mapState } from 'vuex'
+
 import LoadLayout from './layouts/LoadLayout'
 import MainLayout from './layouts/MainLayout'
 import BaseLoading from '@/components/BaseLoading.vue'
