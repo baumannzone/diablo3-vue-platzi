@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import MainForm from './MainForm'
+import MainForm from './HomeForm'
 import HomeTitle from './HomeTitle'
 
 export default {
