@@ -2,23 +2,30 @@
   <div class="text-center bg-dark h-100 pt-3 d3-icon-item" :class="itemClassColor">
 
     <div class="d-flex flex-column justify-content-between h-100">
-      <div>
-        <div v-if="item" class="item-image">
-          <p class="text-muted">{{ item.name }}</p>
-          <img :src="itemUrl" alt="Img">
+      <template v-if="item">
+        <div>
+          <div v-if="item" class="item-image">
+            <p class="text-muted">{{ item.name }}</p>
+            <img :src="itemUrl" alt="Img">
+          </div>
         </div>
-      </div>
 
-      <div>
-        <template v-if="itemHasGems">
-          <small>{{ gemOrJewel }}:</small>
-          <ul class="list-inline">
-            <li v-for="(gem, index) in item.gems" :key="index" class="list-inline-item">
-              <GemItem :gem="gem"/>
-            </li>
-          </ul>
-        </template>
-      </div>
+        <div>
+          <template v-if="itemHasGems">
+            <small>{{ gemOrJewel }}:</small>
+            <ul class="list-inline">
+              <li v-for="(gem, index) in item.gems" :key="index" class="list-inline-item">
+                <GemItem :gem="gem"/>
+              </li>
+            </ul>
+          </template>
+        </div>
+      </template>
+      <template v-else>
+        <p class="text-secondary">
+          {{slotName}}
+        </p>
+      </template>
     </div>
 
   </div>
@@ -35,6 +42,10 @@ export default {
     item: {
       type: Object,
       required: true
+    },
+    slotName: {
+      required: true,
+      type: String
     }
   },
   computed: {
@@ -49,7 +60,10 @@ export default {
       return this.item.gems[0].isGem ? 'Gems' : 'Jewel'
     },
     itemClassColor () {
-      return `item-${this.item.displayColor}`
+      if (this.item) {
+        return `item-${this.item.displayColor}`
+      }
+      return 'item-none'
     }
   }
 }
@@ -57,8 +71,12 @@ export default {
 
 <style lang="stylus">
   .d3-icon-item
+    min-height 100px
     border-top-style solid
     border-top-width 4px
+
+    &.item-none
+      border-color transparent
 
     &.item-green
       border-color #8bc34a
