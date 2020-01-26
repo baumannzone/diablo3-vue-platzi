@@ -6,7 +6,7 @@
 
     <b-row>
       <b-col cols="4" offset="4">
-        <ItemDetail :item="items.head" slot-name="head"/>
+        <ItemDetail :item="itemsData.head"/>
       </b-col>
     </b-row>
 
@@ -14,27 +14,13 @@
 
     <b-row>
       <b-col>
-        <ItemDetail :item="items.shoulders" slot-name="Shoulders"/>
+        <ItemDetail :item="itemsData.shoulders"/>
       </b-col>
       <b-col>
-        <ItemDetail :item="items.torso" slot-name="Torso"/>
+        <ItemDetail :item="itemsData.torso"/>
       </b-col>
       <b-col>
-        <ItemDetail :item="items.neck" slot-name="Neck"/>
-      </b-col>
-    </b-row>
-
-    <hr>
-
-    <b-row>
-      <b-col>
-        <ItemDetail :item="items.hands" slot-name="Hands"/>
-      </b-col>
-      <b-col>
-        <ItemDetail :item="items.waist" slot-name="Waist"/>
-      </b-col>
-      <b-col>
-        <ItemDetail :item="items.bracers" slot-name="Bracers"/>
+        <ItemDetail :item="itemsData.neck"/>
       </b-col>
     </b-row>
 
@@ -42,13 +28,13 @@
 
     <b-row>
       <b-col>
-        <ItemDetail :item="items.leftFinger" slot-name="Left Finger"/>
+        <ItemDetail :item="itemsData.hands"/>
       </b-col>
       <b-col>
-        <ItemDetail :item="items.legs" slot-name="Legs"/>
+        <ItemDetail :item="itemsData.waist"/>
       </b-col>
       <b-col>
-        <ItemDetail :item="items.rightFinger" slot-name="Right Finger"/>
+        <ItemDetail :item="itemsData.bracers"/>
       </b-col>
     </b-row>
 
@@ -56,13 +42,27 @@
 
     <b-row>
       <b-col>
-        <ItemDetail :item="items.mainHand" slot-name="Main Hand"/>
+        <ItemDetail :item="itemsData.leftFinger"/>
       </b-col>
       <b-col>
-        <ItemDetail :item="items.feet" slot-name="Feet"/>
+        <ItemDetail :item="itemsData.legs"/>
       </b-col>
       <b-col>
-        <ItemDetail :item="items.offHand" slot-name="Off Hand"/>
+        <ItemDetail :item="itemsData.rightFinger"/>
+      </b-col>
+    </b-row>
+
+    <hr>
+
+    <b-row>
+      <b-col>
+        <ItemDetail :item="itemsData.mainHand"/>
+      </b-col>
+      <b-col>
+        <ItemDetail :item="itemsData.feet"/>
+      </b-col>
+      <b-col>
+        <ItemDetail :item="itemsData.offHand"/>
       </b-col>
     </b-row>
 
@@ -73,6 +73,48 @@
 <script>
 import ItemDetail from './ItemDetail'
 
+const defaultItems = {
+  head: {
+    slotName: 'head'
+  },
+  shoulders: {
+    slotName: 'Shoulders'
+  },
+  torso: {
+    slotName: 'Torso'
+  },
+  neck: {
+    slotName: 'Neck'
+  },
+  hands: {
+    slotName: 'Hands'
+  },
+  waist: {
+    slotName: 'Waist'
+  },
+  bracers: {
+    slotName: 'Bracers'
+  },
+  leftFinger: {
+    slotName: 'Left Finger'
+  },
+  legs: {
+    slotName: 'Legs'
+  },
+  rightFinger: {
+    slotName: 'Right Finger'
+  },
+  mainHand: {
+    slotName: 'Main Hand'
+  },
+  feet: {
+    slotName: 'Feet'
+  },
+  offHand: {
+    slotName: 'Off Hand'
+  }
+}
+
 export default {
   name: 'HeroItems',
   components: { ItemDetail },
@@ -80,6 +122,14 @@ export default {
     items: {
       type: Object,
       required: true
+    }
+  },
+  computed: {
+    itemsData () {
+      return {
+        ...defaultItems,
+        ...this.items
+      }
     }
   }
 }
