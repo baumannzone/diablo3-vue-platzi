@@ -2,7 +2,9 @@
   <div class="container">
     <HeaderBar/>
 
-    <router-view/>
+    <transition name="fade">
+      <router-view/>
+    </transition>
 
     <FooterBar/>
 
@@ -21,3 +23,14 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus">
+  .fade-enter-active {
+    transition: transform 1s, opacity 2s
+  }
+
+  .fade-enter {
+    opacity 0
+    transform: translateY(-40px)
+  }
+</style>
