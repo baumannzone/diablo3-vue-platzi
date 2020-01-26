@@ -15,9 +15,9 @@ export default {
     }
   },
   computed: {
-    // Show breadcrumbs if the route is not /About or /NotFound
+    // Show breadcrumbs if the route is not /About or /Error
     showComponent () {
-      return this.$route.name === 'About' || this.$route.name === 'NotFound'
+      return this.$route.name === 'About' || this.$route.name === 'Error'
     }
   },
   watch: {
