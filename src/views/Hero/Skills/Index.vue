@@ -12,11 +12,11 @@
       <component :is="activeComponent" v-bind:skills="componentProps"/>
     </keep-alive>
 
-    <!--<ActiveSkills :skills="skills.active"/>
-
+    <!--
+    <ActiveSkills :skills="skills.active"/>
     <hr>
-
-    <PassiveSkills :skills="skills.passive"/>-->
+    <PassiveSkills :skills="skills.passive"/>
+    -->
 
   </div>
 </template>
@@ -27,8 +27,8 @@ export default {
   name: 'Skills',
   components: {
     // Dynamic Components
-    ActiveSkills: () => import(/* webpackChunkName: "ACTIVE" */'./ActiveSkills'),
-    PassiveSkills: () => import(/* webpackChunkName: "PASSIVE" */'./PassiveSkills')
+    ActiveSkills: () => import(/* webpackChunkName: "skills_active" */'./ActiveSkills'),
+    PassiveSkills: () => import(/* webpackChunkName: "skills_passive" */'./PassiveSkills')
   },
   props: {
     skills: {
@@ -42,6 +42,10 @@ export default {
     }
   },
   computed: {
+    /**
+     * Dinamyc props for async dynamic components
+     * @returns {String}
+     */
     componentProps () {
       return this.activeComponent === 'ActiveSkills' ? this.skills.active : this.skills.passive
     },
