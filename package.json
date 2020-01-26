@@ -70,6 +70,11 @@
     "last 2 versions"
   ],
   "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js,vue}"
+    ],
     "preset": "@vue/cli-plugin-unit-jest"
   },
   "gitHooks": {
