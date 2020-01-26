@@ -14,6 +14,7 @@
             <b-form-input
               id="input-text"
               v-model="form.battleTag"
+              v-focus
               type="text"
               size="lg"
               required
