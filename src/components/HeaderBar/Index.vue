@@ -38,13 +38,18 @@ export default {
   },
   created () {
     const region = 'eu'
-    listSeasons(region)
-      .then(({ data }) => {
-        this.currentSeason = data.current_season
-      })
-      .catch((err) => {
-        console.log(err)
-      })
+    this.fetchSeasons(region)
+  },
+  methods: {
+    fetchSeasons (region) {
+      listSeasons(region)
+        .then(({ data }) => {
+          this.currentSeason = data.current_season
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+    }
   }
 }
 </script>
