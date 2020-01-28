@@ -4,7 +4,7 @@ import { listSeasons } from '@/api/season'
 
 jest.mock('axios')
 
-describe('API / search.js', () => {
+describe('API/season.js', () => {
   afterEach(() => {
     jest.clearAllMocks()
   })

@@ -3,7 +3,7 @@ import { getToken } from '@/api/oauth'
 
 jest.mock('axios')
 
-describe('API / Oauth.js', () => {
+describe('API/oauth.js', () => {
   test('getToken', async () => {
     const data = {
       access_token: 'EUNj8xPOH5DBzsuvleFjg3omsEX9wtmO0T',
@@ -18,6 +18,6 @@ describe('API / Oauth.js', () => {
     // console.log('axios.post.mock.calls')
     // First call arguments array
     // console.log(JSON.stringify(axios.post.mock.calls[0]))
-    expect(axios.post).toHaveBeenCalled()
+    expect(axios.post).toBeCalledTimes(1)
   })
 })

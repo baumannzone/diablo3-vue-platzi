@@ -5,7 +5,7 @@ import * as regionUtils from '@/utils/regions'
 
 jest.mock('axios')
 
-describe('API / search.js', () => {
+describe('API/search.js', () => {
   afterEach(() => {
     jest.clearAllMocks()
   })
