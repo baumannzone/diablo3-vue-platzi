@@ -1,4 +1,5 @@
 import { post } from 'axios'
+import router from '@/router'
 
 const clientId = '7958e6cf4d9d4cb6b0d1db97ae284df1'
 const clientSecret = '6eGrIFuSGWb3Zgi0H9EctYPVE6fscbNP'
@@ -30,9 +31,15 @@ export default {
         })
         .catch((err) => {
           commit('SET_ACCESS_TOKEN', null)
-          console.log('GET TOKEN ERR: ')
-          console.log(err.message)
-          // this.$bvToast.toast(err.message, { title: 'OAuth Error' })
+          const errObj = {
+            message: err.message
+          }
+          if (err.response) {
+            errObj.data = err.response.data
+            errObj.status = err.response.status
+          }
+          commit('error/SET_ERROR', errObj, { root: true })
+          router.push({ name: 'Error' })
         })
         .finally(() => {
           commit('loading/SET_LOADING', false, { root: true })
