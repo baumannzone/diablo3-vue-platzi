@@ -14,7 +14,9 @@ describe('API / Oauth.js', () => {
     axios.post.mockImplementationOnce(() => Promise.resolve(data))
 
     await expect(getToken()).resolves.toEqual(data)
+    // All call's array
     // console.log('axios.post.mock.calls')
+    // First call arguments array
     // console.log(JSON.stringify(axios.post.mock.calls[0]))
     expect(axios.post).toHaveBeenCalled()
   })
