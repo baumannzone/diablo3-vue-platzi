@@ -27,7 +27,7 @@ describe('API/search.js', () => {
       }
     }
 
-    await expect(getApiAccount({ region, account }))
+    await getApiAccount({ region, account })
 
     expect(axios.get).toBeCalledTimes(1)
     expect(axios.get).toHaveBeenCalledWith(url, params)
@@ -51,7 +51,7 @@ describe('API/search.js', () => {
       }
     }
 
-    await expect(getApiHero({ region, account, heroId }))
+    await getApiHero({ region, account, heroId })
 
     expect(axios.get).toBeCalledTimes(1)
     expect(axios.get).toHaveBeenCalledWith(url, params)
@@ -75,7 +75,7 @@ describe('API/search.js', () => {
       }
     }
 
-    await expect(getApiDetailedHeroItems({ region, account, heroId }))
+    await getApiDetailedHeroItems({ region, account, heroId })
 
     expect(axios.get).toBeCalledTimes(1)
     expect(axios.get).toHaveBeenCalledWith(url, params)
