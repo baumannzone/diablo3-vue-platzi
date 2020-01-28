@@ -16,7 +16,7 @@
 
       <div v-if="err.data">
         <p class="display-4">
-          <small>😐</small> {{ err.data.reason }}
+          <small>😐</small> {{ err.data.reason || err.message }}
         </p>
       </div>
       <div v-else>
