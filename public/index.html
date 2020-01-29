@@ -1,17 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>Diablo III - Vue · Platzi</title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but diablo3-vue-platzi doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+
+  <title>Diablo III Profile Finder</title>
+  <meta name="author" content="Jorge Baumann · @baumannzone">
+  <meta name="description"
+        content="Diablo 3 Profile Finder - Buscador de perfiles de Diablo 3. Aprende Vue.js con las APIs de Diablo 3">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Diablo 3 Profile Finder - By Baumannzone">
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://diablo3.netlify.com/">
+  <meta property="og:description"
+        content="Diablo 3 Profile Finder - Buscador de perfiles de Diablo 3. Aprende Vue.js con las APIs de Diablo 3"/>
+  <meta property="og:image"
+        content="https://user-images.githubusercontent.com/5422102/73399595-d06e7580-42e7-11ea-93a3-276164ff88b8.png">
+  <meta property="og:site_name" content="https://diablo3.netlify.com"/>
+
+  <!-- Twitter -->
+  <meta property="twitter:account_id" content="1019585395"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@baumannzone">
+  <meta name="twitter:title" content="👾 D3PF - Vue.js + Diablo III APIs">
+  <meta name="twitter:description"
+        content="Diablo 3 Profile Finder - Buscador de perfiles de Diablo 3. Aprende Vue.js con las APIs de Diablo 3">
+  <meta name="twitter:creator" content="@baumannzone"/>
+  <meta name="twitter:image:src"
+        content="https://user-images.githubusercontent.com/5422102/73403843-9fdf0980-42f0-11ea-975a-749c9918559b.png"/>
+  <meta name="twitter:domain" content="https://diablo3.netlify.com"/>
+
+</head>
+
+<body>
+<noscript>
+  <strong>We're sorry but D3PF doesn't work properly without JavaScript enabled. Please enable it to
+    continue.</strong>
+</noscript>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org/",
+    "@type": "Person",
+    "name": "Jorge Baumann (@baumannzone)",
+    "jobTitle": "Web Developer",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Madrid",
+      "addressRegion": "Spain"
+    }
+  }
+</script>
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org/",
+    "@type": "SoftwareApplication",
+    "name": "Diablo 3 Profile Finder (D3PF)",
+    "applicationCategory": "Web",
+    "operatingSystem": "Web",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "ratingCount": "300"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "price": "0.00"
+    }
+  }
+</script>
+</body>
 </html>
