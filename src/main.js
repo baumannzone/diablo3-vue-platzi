@@ -28,6 +28,8 @@ new Vue({
   },
   created () {
     this.init()
+    // console.log('process.env:')
+    // console.log(process.env)
   },
   render: h => h(App)
 }).$mount('#app')
