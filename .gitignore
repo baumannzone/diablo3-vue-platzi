@@ -22,4 +22,3 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
-coverage
