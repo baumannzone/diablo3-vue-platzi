@@ -1,6 +1,7 @@
 # Curso Vue: Diablo 3 APIs
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9157d0d0-2fb7-42ad-9d89-9ebe7d077f9b/deploy-status)](https://app.netlify.com/sites/diablo3/deploys)
+![Node.js CI](https://github.com/baumannzone/diablo3-vue-platzi/workflows/Node.js%20CI/badge.svg)
 
 ---
 
