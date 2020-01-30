@@ -23,3 +23,6 @@ jobs:
 
     - name: Coveralls GitHub Action
       uses: coverallsapp/github-action@v1.0.1
+      with:
+        # Hi
+        github-token: ${{ secrets.SuperSecret }}
