@@ -1,7 +1,7 @@
 // Diablo 3 font-like
 // Binding.Argument: Color ['white', 'bone']
 // Binding.Modifiers: Border line position ['bottom','top']
-// Binding.Value:  Border line size (default 1)
+// Binding.Value: Border line size (default 1)
 
 // Usage: <h1 v-diablo:white.bottom>Hi!</h1>
 
