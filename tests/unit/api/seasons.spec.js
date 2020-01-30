@@ -22,7 +22,7 @@ describe('API/season.js', () => {
 
     store.state.oauth.accessToken = token
 
-    await expect(listSeasons(region))
+    await listSeasons(region)
 
     expect(axios.get).toBeCalledTimes(1)
     expect(axios.get).toHaveBeenCalledWith(url, params)
