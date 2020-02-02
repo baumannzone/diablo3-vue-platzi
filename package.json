@@ -72,7 +72,7 @@
   ],
   "jest": {
     "verbose": true,
-    "collectCoverage": true,
+    "collectCoverage": false,
     "collectCoverageFrom": [
       "src/**/*.{js,vue}"
     ],
