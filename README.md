@@ -1,7 +1,10 @@
-# 👾 D3PF 🕹
-> Diablo 3 Profile Finder. Repositorio del curso de **Vue.js de Platzi**. https://diablo3.netlify.com/
+# Diablo 3 Profile Finder
+> 👾D3PF. Repositorio del curso de **Vue.js de Platzi**
 
 [D3PF](https://diablo3.netlify.com/) es una aplicación creada desde 0 con el [CLI de vue](https://cli.vuejs.org/) que consume las APIs oficiales de **Diablo III**, el famoso juego de Blizzard.
+
+## DEMO
+https://diablo3.netlify.com/
 
 ---
 
