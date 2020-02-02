@@ -8,7 +8,6 @@ https://diablo3.netlify.com/
 
 ---
 
-
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9157d0d0-2fb7-42ad-9d89-9ebe7d077f9b/deploy-status)](https://app.netlify.com/sites/diablo3/deploys)
 [![Node.js CI](https://github.com/baumannzone/diablo3-vue-platzi/workflows/Node.js%20CI/badge.svg)](https://github.com/baumannzone/diablo3-vue-platzi/actions)
 
@@ -22,9 +21,14 @@ https://diablo3.netlify.com/
 ---
 
 ## Diablo 3 Developer Portal
-- https://develop.battle.net/documentation/guides/getting-started
 
-- BattleTag: https://eu.battle.net/support/es/article/75767
+- Blizzard Developer Portal: https://develop.battle.net/
+- Blizzard Authenticator: https://play.google.com/store/apps/details?id=com.blizzard.bma
+
+## Libraries
+- [Axios](https://github.com/axios/axios): Promise based HTTP client for the browser and node.js
+- [Bootstrap-vue](https://bootstrap-vue.js.org/): Quickly integrate Bootstrap v4 components with Vue.js
+- [numeral.js](http://numeraljs.com/): A javascript library for formatting and manipulating numbers
 
 ---
 
@@ -58,15 +62,19 @@ yarn test:e2e
 yarn lint
 ```
 
-
+--
 
 ## Author
+<img src="https://avatars0.githubusercontent.com/u/5422102?v=4" width="100px;" alt="Jorge Baumann (Baumannzone)"/>
 
-![rambitojs](https://res.cloudinary.com/practicaldev/image/fetch/s--Bggcc0Sf--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/we78jp2ozy8iv8i7di95.png)
+### Jorge Baumann 🦄
+Web developer. Passionate about technology in general and web development in particular.  
+Organizer of [Open Source Weekends](https://www.meetup.com/es-ES/Open-Source-Weekends) technology meetup in Madrid.
+He writes technical posts in Medium (Spanish) and Dev (English)  
+In addition, he has a YouTube channel ([rambitoJS](https://www.youtube.com/channel/UCTTj5ztXnGeDRPFVsBp7VMA)) that honors his dog, called Rambo.
 
-### Jorge Baumann
-> Desarrollador web Full-Stack. Apasionado de la tecnología en general y del desarrollo web en particular.  
-Organizador de [OSWeekends](https://www.meetup.com/es-ES/Open-Source-Weekends), meetup de tecnología en Madrid.
+[![RambitoJS](./assets/rambito.jpg)](https://www.youtube.com/channel/UCTTj5ztXnGeDRPFVsBp7VMA)
+
 
 - Github: https://github.com/baumannzone
 - Twitter: https://twitter.com/baumannzone
