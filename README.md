@@ -17,7 +17,7 @@ Vue.js app created from scratch through Vue CLI that consumes official Diablo II
 
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/baumannzone/diablo3-vue-platzi)
-![License](https://img.shields.io/github/license/baumannzone/diablo3-vue-platzi?color=blue)
+[![License](https://img.shields.io/github/license/baumannzone/diablo3-vue-platzi?color=blue)](./LICENSE)
 ![code-style](https://img.shields.io/badge/code%20style-standard-yellow)
 
 ![D3PF](assets/main.png)
