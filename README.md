@@ -1,9 +1,10 @@
 # Diablo 3 Profile Finder
 > 👾 D3PF. Vue.js course repository
 
-[D3PF](https://diablo3.netlify.com/): Vue.js app created from scratch through Vue's [CLI](https://cli.vuejs.org/) that consume official Diablo III API's, a Blizzard's game.
+Vue.js app created from scratch through Vue CLI that consumes official Diablo III APIs, a Blizzard's game.
+[D3PF](https://diablo3.netlify.com/): Vue.js app created from scratch through [Vue CLI](https://cli.vuejs.org/) that consume official Diablo III APIs, a Blizzard's game.
 
-## DEMO
+## App Live Demo
 👉 https://diablo3.netlify.com/
 
 ---
@@ -68,15 +69,14 @@ yarn lint
 ### Jorge Baumann 🦄
 Web developer. Passionate about technology in general and web development in particular.  
 Organizer of [Open Source Weekends](https://www.meetup.com/es-ES/Open-Source-Weekends), technology meetup in Madrid.
-He writes technical posts in Medium (Spanish) and Dev (English)  
-In addition, he has a YouTube channel ([rambitoJS](https://www.youtube.com/channel/UCTTj5ztXnGeDRPFVsBp7VMA)) that honors his dog, called Rambo.
+He writes technical posts (about css, js, testing, etc) in Medium (Spanish) and Dev (English). In addition, he has a YouTube channel ([rambitoJS](https://www.youtube.com/channel/UCTTj5ztXnGeDRPFVsBp7VMA)) that honors his dog, called Rambo.
 
 [![RambitoJS](./assets/rambito.jpg)](https://www.youtube.com/channel/UCTTj5ztXnGeDRPFVsBp7VMA)
 
 
 - Github: https://github.com/baumannzone
 - Twitter: https://twitter.com/baumannzone
-- Dev: https://dev.com/baumannzone
+- Dev: https://dev.to/baumannzone
 - Medium: [https://medium.com/baumannsito](https://medium.com/@baumannsito)
 - Youtube: [https://www.youtube.com/rambitoJS](https://www.youtube.com/channel/UCTTj5ztXnGeDRPFVsBp7VMA)
 
