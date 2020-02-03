@@ -1,10 +1,10 @@
 # Diablo 3 Profile Finder
-> 👾D3PF. Repositorio del curso de **Vue.js de Platzi**
+> 👾 D3PF. Vue.js course repository
 
-[D3PF](https://diablo3.netlify.com/) es una aplicación creada desde 0 con el [CLI de vue](https://cli.vuejs.org/) que consume las APIs oficiales de **Diablo III**, el famoso juego de Blizzard.
+[D3PF](https://diablo3.netlify.com/): Vue.js app created from scratch through Vue's [CLI](https://cli.vuejs.org/) that consume official Diablo III API's, a Blizzard's game.
 
 ## DEMO
-https://diablo3.netlify.com/
+👉 https://diablo3.netlify.com/
 
 ---
 
@@ -20,56 +20,54 @@ https://diablo3.netlify.com/
 
 ---
 
-## Diablo 3 Developer Portal
-
+## Blizzard Developer Portal
 - Blizzard Developer Portal: https://develop.battle.net/
 - Blizzard Authenticator: https://play.google.com/store/apps/details?id=com.blizzard.bma
+- Client Credentials Flow: https://develop.battle.net/documentation/guides/using-oauth/client-credentials-flow
+- Regionality and APIs: https://develop.battle.net/documentation/guides/regionality-and-apis
+- Community APIs: https://develop.battle.net/documentation/guides/community-apis
+
+## Diablo 3 APIs
+- Diablo III Community APIs (player profiles): https://develop.battle.net/documentation/diablo-3/community-apis
+- Diablo III Game Data APIs (seasons & leaderboards): https://develop.battle.net/documentation/diablo-3/game-data-apis
 
 ## Libraries
 - [Axios](https://github.com/axios/axios): Promise based HTTP client for the browser and node.js
 - [Bootstrap-vue](https://bootstrap-vue.js.org/): Quickly integrate Bootstrap v4 components with Vue.js
 - [numeral.js](http://numeraljs.com/): A javascript library for formatting and manipulating numbers
+- [Font Awesome](): https://fontawesome.com/
 
 ---
 
 ## Project setup
-```
+```markdown
+# Install
 yarn install
-```
 
-### Compiles and hot-reloads for development
-```
+# Compiles and hot-reloads for development
 yarn serve
-```
 
-### Compiles and minifies for production
-```
+# Compiles and minifies for production
 yarn build
-```
 
-### Run your unit tests
-```
+# Run your unit tests
 yarn test:unit
-```
 
-### Run your end-to-end tests
-```
+# Run your end-to-end tests
 yarn test:e2e
-```
 
-### Lints and fixes files
-```
+# Lints and fixes files
 yarn lint
 ```
 
---
+---
 
 ## Author
 <img src="https://avatars0.githubusercontent.com/u/5422102?v=4" width="100px;" alt="Jorge Baumann (Baumannzone)"/>
 
 ### Jorge Baumann 🦄
 Web developer. Passionate about technology in general and web development in particular.  
-Organizer of [Open Source Weekends](https://www.meetup.com/es-ES/Open-Source-Weekends) technology meetup in Madrid.
+Organizer of [Open Source Weekends](https://www.meetup.com/es-ES/Open-Source-Weekends), technology meetup in Madrid.
 He writes technical posts in Medium (Spanish) and Dev (English)  
 In addition, he has a YouTube channel ([rambitoJS](https://www.youtube.com/channel/UCTTj5ztXnGeDRPFVsBp7VMA)) that honors his dog, called Rambo.
 
@@ -81,3 +79,4 @@ In addition, he has a YouTube channel ([rambitoJS](https://www.youtube.com/chann
 - Dev: https://dev.com/baumannzone
 - Medium: [https://medium.com/baumannsito](https://medium.com/@baumannsito)
 - Youtube: [https://www.youtube.com/rambitoJS](https://www.youtube.com/channel/UCTTj5ztXnGeDRPFVsBp7VMA)
+
