@@ -24,11 +24,11 @@
 ---
 
 ## Blizzard Developer Portal
+- Account creation: https://us.battle.net/account/creation/es/
 - Blizzard Developer Portal: https://develop.battle.net/
 - Blizzard Authenticator: https://play.google.com/store/apps/details?id=com.blizzard.bma
 - Client Credentials Flow: https://develop.battle.net/documentation/guides/using-oauth/client-credentials-flow
 - Regionality and APIs: https://develop.battle.net/documentation/guides/regionality-and-apis
-- Community APIs: https://develop.battle.net/documentation/guides/community-apis
 
 ## Diablo 3 APIs
 - Diablo III Community APIs (player profiles): https://develop.battle.net/documentation/diablo-3/community-apis
