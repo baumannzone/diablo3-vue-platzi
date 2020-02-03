@@ -4,7 +4,6 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 > 👾 D3PF. Vue.js course repository
 
-Vue.js app created from scratch through Vue CLI that consumes official Diablo III APIs, a Blizzard's game.
 [D3PF](https://diablo3.netlify.com/): Vue.js app created from scratch through [Vue CLI](https://cli.vuejs.org/) that consume official Diablo III APIs, a Blizzard's game.
 
 ## App Live Demo
