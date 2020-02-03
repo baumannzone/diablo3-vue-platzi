@@ -1,0 +1,29 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "baumannzone",
+      "name": "Jorge Baumann",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/5422102?v=4",
+      "profile": "https://twitter.com/baumannzone",
+      "contributions": [
+        "code",
+        "maintenance",
+        "test",
+        "design",
+        "doc",
+        "infra"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "diablo3-vue-platzi",
+  "projectOwner": "baumannzone",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}

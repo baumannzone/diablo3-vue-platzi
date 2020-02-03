@@ -1,4 +1,7 @@
 # Diablo 3 Profile Finder
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 > 👾 D3PF. Vue.js course repository
 
 Vue.js app created from scratch through Vue CLI that consumes official Diablo III APIs, a Blizzard's game.
@@ -80,3 +83,22 @@ He writes technical posts (about css, js, testing, etc) in Medium (Spanish) and 
 - Medium: [https://medium.com/baumannsito](https://medium.com/@baumannsito)
 - Youtube: [https://www.youtube.com/rambitoJS](https://www.youtube.com/channel/UCTTj5ztXnGeDRPFVsBp7VMA)
 
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://twitter.com/baumannzone"><img src="https://avatars0.githubusercontent.com/u/5422102?v=4" width="100px;" alt=""/><br /><sub><b>Jorge Baumann</b></sub></a><br /><a href="https://github.com/baumannzone/diablo3-vue-platzi/commits?author=baumannzone" title="Code">💻</a> <a href="#maintenance-baumannzone" title="Maintenance">🚧</a> <a href="https://github.com/baumannzone/diablo3-vue-platzi/commits?author=baumannzone" title="Tests">⚠️</a> <a href="#design-baumannzone" title="Design">🎨</a> <a href="https://github.com/baumannzone/diablo3-vue-platzi/commits?author=baumannzone" title="Documentation">📖</a> <a href="#infra-baumannzone" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
