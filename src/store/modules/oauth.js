@@ -1,8 +1,5 @@
-import { post } from 'axios'
 import router from '@/router'
-
-const clientId = process.env.VUE_APP_CLIENT_ID
-const clientSecret = process.env.VUE_APP_CLIENT_SECRET
+import * as oauth from '@/api/oauth'
 
 export default {
   namespaced: true,
@@ -18,14 +15,7 @@ export default {
     getToken ({ commit, getters }) {
       commit('loading/SET_LOADING', true, { root: true })
 
-      const body = new FormData()
-      body.append('grant_type', 'client_credentials')
-      const config = {
-        headers: { 'Content-Type': 'multipart/form-data' },
-        auth: { username: clientId, password: clientSecret }
-      }
-
-      post(`${getters.tokenUrl}`, body, config)
+      oauth.getToken()
         .then(({ data }) => {
           commit('SET_ACCESS_TOKEN', data.access_token)
         })
@@ -44,12 +34,6 @@ export default {
         .finally(() => {
           commit('loading/SET_LOADING', false, { root: true })
         })
-    }
-  },
-  getters: {
-    tokenUrl: () => {
-      const region = 'eu'
-      return `https://${region}.battle.net/oauth/token`
     }
   }
 }
