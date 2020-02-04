@@ -4,7 +4,6 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 > 👾 D3PF. Vue.js course repository
 
-Vue.js app created from scratch through Vue CLI that consumes official Diablo III APIs, a Blizzard's game.
 [D3PF](https://diablo3.netlify.com/): Vue.js app created from scratch through [Vue CLI](https://cli.vuejs.org/) that consume official Diablo III APIs, a Blizzard's game.
 
 ## App Live Demo
@@ -17,7 +16,7 @@ Vue.js app created from scratch through Vue CLI that consumes official Diablo II
 
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/baumannzone/diablo3-vue-platzi)
-![GitHub](https://img.shields.io/github/license/baumannzone/diablo3-vue-platzi?color=blue)
+[![License](https://img.shields.io/github/license/baumannzone/diablo3-vue-platzi?color=blue)](./LICENSE)
 ![code-style](https://img.shields.io/badge/code%20style-standard-yellow)
 
 ![D3PF](assets/main.png)
@@ -25,11 +24,11 @@ Vue.js app created from scratch through Vue CLI that consumes official Diablo II
 ---
 
 ## Blizzard Developer Portal
+- Account creation: https://us.battle.net/account/creation/es/
 - Blizzard Developer Portal: https://develop.battle.net/
 - Blizzard Authenticator: https://play.google.com/store/apps/details?id=com.blizzard.bma
 - Client Credentials Flow: https://develop.battle.net/documentation/guides/using-oauth/client-credentials-flow
 - Regionality and APIs: https://develop.battle.net/documentation/guides/regionality-and-apis
-- Community APIs: https://develop.battle.net/documentation/guides/community-apis
 
 ## Diablo 3 APIs
 - Diablo III Community APIs (player profiles): https://develop.battle.net/documentation/diablo-3/community-apis
