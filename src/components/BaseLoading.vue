@@ -1,7 +1,7 @@
 <template>
   <div class="loading-wrapper text-center py-5">
     <div class="spinner-wrapper w-100">
-      <b-spinner class="spinner" label="Loading..." type="grow" variant="info"/>
+      <b-spinner class="spinner" label="Loading..." :type="type" :variant="variant"/>
     </div>
     <h1 class="my-5">Loading...</h1>
   </div>
