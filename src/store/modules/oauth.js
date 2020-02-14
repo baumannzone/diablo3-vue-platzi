@@ -12,7 +12,7 @@ export default {
     }
   },
   actions: {
-    getToken ({ commit, getters }) {
+    getToken ({ commit }) {
       commit('loading/SET_LOADING', true, { root: true })
 
       oauth.getToken()
