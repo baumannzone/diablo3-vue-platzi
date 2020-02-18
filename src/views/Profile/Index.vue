@@ -24,7 +24,7 @@ import GridContainer from './GridContainer/Index'
 import ArtisansBlock from './ArtisansBlock/Index'
 
 export default {
-  name: 'HomeView',
+  name: 'ProfileView',
   mixins: [ notFoundErr ],
   components: { BaseLoading, ArtisansBlock, GridContainer },
   data () {

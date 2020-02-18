@@ -17,9 +17,3 @@ export default {
   components: { HomeTitle, MainForm }
 }
 </script>
-
-<style lang="stylus" scoped>
-  .home-view
-    color white
-
-</style>
