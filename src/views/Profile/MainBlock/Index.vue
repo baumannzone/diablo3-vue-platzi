@@ -6,14 +6,14 @@
 
       <HeroesList v-if="hasHeroesList" :heroes="heroesList"/>
 
-      <ProgressBosses :acts="profileData.progression"/>
+      <ActProgressList :acts="profileData.progression"/>
 
     </div>
 
     <!-- Right Bar-->
     <div class="grid-item item-right">
 
-      <MultiStats :stats="statsData"/>
+      <PlayerStats :stats="statsData"/>
 
     </div>
 
@@ -24,12 +24,12 @@
 
 import TopHeroes from './TopHeroes/Index'
 import HeroesList from './HeroesList/Index'
-import ProgressBosses from './ProgressBoss'
-import MultiStats from './MultiStats/Index'
+import ActProgressList from './ActProgressList/Index'
+import PlayerStats from './PlayerStats/Index'
 
 export default {
-  name: 'GridContainer',
-  components: { MultiStats, ProgressBosses, HeroesList, TopHeroes },
+  name: 'MainBlock',
+  components: { PlayerStats, ActProgressList, HeroesList, TopHeroes },
   props: {
     profileData: {
       type: Object,

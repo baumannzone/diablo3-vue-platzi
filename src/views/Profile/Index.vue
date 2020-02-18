@@ -6,7 +6,7 @@
       <BaseLoading v-if="isLoading"/>
 
       <template v-if="profileData !== null">
-        <GridContainer :profile-data="profileData"/>
+        <MainBlock :profile-data="profileData"/>
         <ArtisansBlock :artisans-data="artisansData"/>
       </template>
 
@@ -20,13 +20,13 @@ import notFoundErr from '@/mixins/notFoundErr'
 import { getApiAccount } from '@/api/search'
 
 import BaseLoading from '@/components/BaseLoading'
-import GridContainer from './GridContainer/Index'
+import MainBlock from './MainBlock/Index'
 import ArtisansBlock from './ArtisansBlock/Index'
 
 export default {
   name: 'ProfileView',
   mixins: [ notFoundErr ],
-  components: { BaseLoading, ArtisansBlock, GridContainer },
+  components: { BaseLoading, ArtisansBlock, MainBlock },
   data () {
     return {
       isLoading: false,

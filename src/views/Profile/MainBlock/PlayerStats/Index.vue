@@ -33,7 +33,7 @@ import SingleStat from './SingleStat'
 import TimePlayed from './TimePlayed'
 
 export default {
-  name: 'MultiStats',
+  name: 'PlayerStats',
   mixins: [heroName],
   components: { TimePlayed, SingleStat },
   props: {
