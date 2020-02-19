@@ -61,7 +61,7 @@ function getApiDetailedHeroItems ({ region, account, heroId }) {
   const locale = locales[region]
 
   const params = {
-    'access_token': store.state.oauth.accessToken,
+    access_token: store.state.oauth.accessToken,
     locale
   }
 
