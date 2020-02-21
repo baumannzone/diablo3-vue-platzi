@@ -1,21 +1,31 @@
+const names = {
+  BARBARIAN: 'barbarian',
+  CRUSADER: 'crusader',
+  MONK: 'monk',
+  WIZARD: 'wizard',
+  WITCHDOCTOR: 'witch-doctor',
+  NECROMANCER: 'necromancer',
+  DEMONHUNTER: 'demon-hunter'
+}
+
 const resourceClassName = {
-  barbarian: 'fury',
-  crusader: 'wrath',
-  monk: 'spirit',
-  wizard: 'arcane-power',
-  'witch-doctor': 'mana',
-  necromancer: 'essence',
-  'demon-hunter': 'hatred-discipline'
+  [names.BARBARIAN]: 'fury',
+  [names.CRUSADER]: 'wrath',
+  [names.MONK]: 'spirit',
+  [names.WIZARD]: 'arcane-power',
+  [names.WITCHDOCTOR]: 'mana',
+  [names.NECROMANCER]: 'essence',
+  [names.DEMONHUNTER]: 'hatred-discipline'
 }
 
 const resourceDisplayName = {
-  barbarian: 'Fury',
-  crusader: 'Wrath',
-  monk: 'Spirit',
-  wizard: 'Arcane Power',
-  'witch-doctor': 'Mana',
-  necromancer: 'Essence',
-  'demon-hunter': 'Hatred / Discipline'
+  [names.BARBARIAN]: 'Fury',
+  [names.CRUSADER]: 'Wrath',
+  [names.MONK]: 'Spirit',
+  [names.WIZARD]: 'Arcane Power',
+  [names.WITCHDOCTOR]: 'Mana',
+  [names.NECROMANCER]: 'Essence',
+  [names.DEMONHUNTER]: 'Hatred / Discipline'
 }
 
 export default {
