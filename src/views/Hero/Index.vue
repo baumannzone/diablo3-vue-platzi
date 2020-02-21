@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import notFoundErr from '@/mixins/notFoundErr'
+import setError from '@/mixins/setError'
 import BaseLoading from '@/components/BaseLoading'
 import { getApiHero, getApiDetailedHeroItems } from '@/api/search'
 import HeroDetailHeader from './HeroDetailHeader'
@@ -34,7 +34,7 @@ import Skills from './Skills/Index'
 
 export default {
   name: 'HeroView',
-  mixins: [notFoundErr],
+  mixins: [setError],
   components: { BaseLoading, Skills, GearBonuses, HeroDetailHeader, HeroItems },
   data () {
     return {
@@ -93,7 +93,7 @@ export default {
           errObj.data = err.response.data
           errObj.status = err.response.status
         }
-        this.setNotFound(errObj)
+        this.setApiErr(errObj)
         this.$router.push({ name: 'Error' })
       })
       .finally(() => {

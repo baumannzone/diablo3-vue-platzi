@@ -33,11 +33,11 @@
 
 <script>
 import { mapState } from 'vuex'
-import notFoundErr from '@/mixins/notFoundErr'
+import setError from '@/mixins/setError'
 
 export default {
   name: 'ErrorView',
-  mixins: [notFoundErr],
+  mixins: [setError],
   computed: {
     ...mapState('error', {
       err: 'error'
@@ -45,7 +45,7 @@ export default {
   },
   beforeRouteLeave (to, from, next) {
     // called when the route that renders this component is about to be navigated away from.
-    this.setNotFound(null)
+    this.setApiErr(null)
     next()
   }
 }

@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import notFoundErr from '@/mixins/notFoundErr'
+import setError from '@/mixins/setError'
 import { getApiAccount } from '@/api/search'
 
 import BaseLoading from '@/components/BaseLoading'
@@ -25,7 +25,7 @@ import ArtisansBlock from './ArtisansBlock/Index'
 
 export default {
   name: 'ProfileView',
-  mixins: [ notFoundErr ],
+  mixins: [ setError ],
   components: { BaseLoading, ArtisansBlock, MainBlock },
   data () {
     return {
@@ -63,7 +63,7 @@ export default {
           errObj.data = err.response.data
           errObj.status = err.response.status
         }
-        this.setNotFound(errObj)
+        this.setApiErr(errObj)
         this.$router.push({ name: 'Error' })
       })
       .finally(() => {

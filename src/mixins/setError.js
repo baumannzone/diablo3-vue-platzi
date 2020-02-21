@@ -6,10 +6,10 @@ export default {
       setError: 'SET_ERROR'
     }),
     /**
-     * Not found error.
+     * API response error.
      * @param params {Object || null} Route params
      */
-    setNotFound (params) {
+    setApiErr (params) {
       this.setError(params)
     }
   }
