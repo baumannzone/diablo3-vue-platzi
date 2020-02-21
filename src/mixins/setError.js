@@ -7,7 +7,7 @@ export default {
     }),
     /**
      * API response error.
-     * @param params {Object || null} Route params
+     * @param params {Object || null} Error Object
      */
     setApiErr (params) {
       this.setError(params)
