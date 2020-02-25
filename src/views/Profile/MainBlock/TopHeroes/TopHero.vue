@@ -1,13 +1,13 @@
 <template>
   <div class="hero-portrait-wrapper mb-5 mb-sm-0 hover-cursor-pointer" @click="goToHero(hero.id)">
-    <div class="avatar bg-secondary d-flex justify-content-center p-3 p-sm-0">
+    <div class="bg-secondary d-flex justify-content-center p-3 p-sm-0">
       <!-- Bg Img -->
       <div :class="heroClass"></div>
     </div>
     <div class="p-2 bg-dark">
       <h5 class="text-truncate m-0 text-center title-name font-diablo" :class="{'bg-danger': hero.hardcore}">
         {{ hero.name }}
-        <img v-if="hero.seasonal" src="@/assets/img/leaf.png" width="12px" class="">
+        <img v-if="hero.seasonal" src="@/assets/img/leaf.png" width="12px">
       </h5>
       <div class="d-flex justify-content-between border-top border-secondary pt-2 align-items-center mt-2">
         <small class="elite-kills">
