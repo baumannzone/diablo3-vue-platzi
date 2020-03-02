@@ -47,8 +47,7 @@ export default {
       fields: [
         {
           key: 'name',
-          label: 'Name',
-          stickyColumn: true
+          label: 'Name'
         },
         {
           key: 'class',
