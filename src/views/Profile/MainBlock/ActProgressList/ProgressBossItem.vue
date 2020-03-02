@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex flex-column">
+  <div class="d-flex flex-column" :title="actTitle">
     <div class="boss-img pt-2">
       <div class="act" :class="actClass"></div>
     </div>
@@ -34,6 +34,11 @@ export default {
     actClass () {
       const done = this.act.value ? 'done' : 'pending'
       return `${this.act.actNum} ${done}`
+    },
+    actTitle () {
+      return this.act.value
+        ? 'Act completed! 💃'
+        : 'Act uncompleted 🙈'
     }
   }
 }

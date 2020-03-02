@@ -14,7 +14,7 @@
       </template>
 
       <template v-slot:cell(class)="data">
-        <HeroNameLevel :hero="{ class: data.item.class, level: data.item.level}"/>
+        <HeroClassLevel :hero="{ class: data.item.class, level: data.item.level}"/>
       </template>
 
       <template v-slot:cell(kills)="data">
@@ -28,14 +28,14 @@
 import { formatNumber } from '@/filters/numeral'
 
 import HeroIco from './HeroIco'
-import HeroNameLevel from './HeroName'
+import HeroClassLevel from './HeroClassLevel'
 
 export default {
   name: 'HeroesList',
   filters: {
     formatNumber
   },
-  components: { HeroNameLevel, HeroIco },
+  components: { HeroClassLevel, HeroIco },
   props: {
     heroes: {
       required: true,
