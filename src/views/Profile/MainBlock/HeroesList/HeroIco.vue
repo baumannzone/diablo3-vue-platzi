@@ -4,7 +4,7 @@
     <span class="hero-name ml-2 font-weight-bold" :class="{'text-danger': hero.hardcore}">
       {{ hero.name }}
     </span>
-    <img v-if="hero.seasonal" src="@/assets/img/leaf.png" width="12px" class="ml-2">
+    <img v-if="hero.seasonal" src="@/assets/img/leaf.png" width="12px" class="ml-2" alt="seasonal_leaf">
   </div>
 
 </template>
@@ -24,8 +24,8 @@ export default {
   computed: {
     heroClassImg () {
       const gender = this.hero.gender === 1 ? 'female' : 'male'
-      const dead = this.hero.hardcore ? 'border-danger' : ''
-      return `hero-${this.hero.class} ${gender} ${dead}`
+      const hardcore = this.hero.hardcore ? 'border-danger' : ''
+      return `hero-${this.hero.classSlug} ${gender} ${hardcore}`
     }
   }
 }
