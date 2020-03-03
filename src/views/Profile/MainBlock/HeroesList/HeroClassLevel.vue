@@ -1,6 +1,6 @@
 <template>
   <div class="hero-name-level">
-    <span class=""> {{ classToName(hero.class) }} </span>
+    <span> {{ classToName(hero.classSlug) }} </span>
     <span>·</span>
     <span class="text-monospace font-weight-bold"> {{ hero.level }} </span>
   </div>
