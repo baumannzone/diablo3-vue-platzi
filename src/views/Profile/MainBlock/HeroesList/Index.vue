@@ -14,7 +14,7 @@
       </template>
 
       <template v-slot:cell(class)="data">
-        <HeroClassLevel :hero="{ class: data.item.class, level: data.item.level}"/>
+        <HeroClassLevel :hero="{ class: data.item.classSlug, level: data.item.level}"/>
       </template>
 
       <template v-slot:cell(kills)="data">
