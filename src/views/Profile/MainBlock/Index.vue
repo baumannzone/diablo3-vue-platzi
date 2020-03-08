@@ -24,7 +24,7 @@
 
 import TopHeroes from './TopHeroes/Index'
 import HeroesList from './HeroesList/Index'
-import ActProgressList from './ActProgressList/Index'
+import ActProgressList from './ProgressList/Index'
 import PlayerStats from './PlayerStats/Index'
 
 export default {

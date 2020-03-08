@@ -4,7 +4,7 @@
     <b-row>
       <b-col v-for="(val, key) in sortedActs" :key="key" class="col-12 col-md-2">
         <div class="bg-dark rounded mb-2">
-          <ProgressBossItem :act="{actNum: key, value: val}"/>
+          <ProgressItem :act="{actNum: key, value: val}"/>
         </div>
       </b-col>
     </b-row>
@@ -12,11 +12,11 @@
 </template>
 
 <script>
-import ProgressBossItem from './ProgressBossItem'
+import ProgressItem from './ProgressItem'
 
 export default {
   name: 'ProgressBosses',
-  components: { ProgressBossItem },
+  components: { ProgressItem },
   props: {
     acts: {
       required: true,
@@ -24,6 +24,10 @@ export default {
     }
   },
   computed: {
+    /**
+     * Order acts from 1 to 5
+     * @returns {Object} Ordered acts
+     */
     sortedActs () {
       return Object.keys(this.acts)
         .sort()

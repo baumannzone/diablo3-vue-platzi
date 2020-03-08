@@ -17,7 +17,7 @@ const acts = {
 }
 
 export default {
-  name: 'ProgressBossItem',
+  name: 'ProgressItem',
   props: {
     act: {
       required: true,
