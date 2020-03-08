@@ -6,7 +6,7 @@
 
       <HeroesList v-if="hasHeroesList" :heroes="heroesList"/>
 
-      <ActProgressList :acts="profileData.progression"/>
+      <ProgressList :acts="profileData.progression"/>
 
     </div>
 
@@ -24,12 +24,12 @@
 
 import TopHeroes from './TopHeroes/Index'
 import HeroesList from './HeroesList/Index'
-import ActProgressList from './ProgressList/Index'
+import ProgressList from './ProgressList/Index'
 import PlayerStats from './PlayerStats/Index'
 
 export default {
   name: 'MainBlock',
-  components: { PlayerStats, ActProgressList, HeroesList, TopHeroes },
+  components: { PlayerStats, ProgressList, HeroesList, TopHeroes },
   props: {
     profileData: {
       type: Object,
