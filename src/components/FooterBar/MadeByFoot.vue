@@ -4,7 +4,7 @@
       Made by
       <a href="https://twitter.com/baumannzone" target="_blank">Jorge Baumann</a>
       for
-      <a href="https://platzi.com/" target="_blank">Platzi</a>
+      <a href="https://platzi.com/cursos/avanzado-vue/" target="_blank">Platzi</a>
     </small>
   </p>
 </template>
