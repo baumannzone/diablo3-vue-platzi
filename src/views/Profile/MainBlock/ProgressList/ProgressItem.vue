@@ -32,8 +32,8 @@ export default {
       return `Act ${acts[this.act.actNum]}`
     },
     actClass () {
-      const done = this.act.value ? 'done' : 'pending'
-      return `${this.act.actNum} ${done}`
+      const status = this.act.value ? 'done' : 'pending'
+      return `${this.act.actNum} ${status}`
     },
     actTitle () {
       return this.act.value
