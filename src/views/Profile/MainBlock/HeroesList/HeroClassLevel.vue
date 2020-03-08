@@ -10,7 +10,7 @@
 import heroName from '@/mixins/heroName.js'
 
 export default {
-  name: 'HeroNameLevel',
+  name: 'HeroClassLevel',
   mixins: [heroName],
   props: {
     hero: {
