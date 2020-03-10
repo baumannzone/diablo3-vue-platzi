@@ -3,12 +3,12 @@
     <div class="d-flex justify-content-between">
       <h5 class="mb-0 font-weight-lighter"> {{heroTime.hero}} </h5>
       <span>
-        <b-badge class="w-50p">{{(heroTime.time * 100).toFixed(2)}}</b-badge>
+        <b-badge class="w-50p">{{ (heroTime.time * 100).toFixed(2) }}</b-badge>
       </span>
     </div>
     <b-progress :max="1" height="14px" class="mb-3 rounded-0">
       <b-progress-bar :value="heroTime.time" :class="classHeroBg">
-        {{heroTime.hero}}
+        {{ heroTime.hero }}
       </b-progress-bar>
     </b-progress>
   </div>
@@ -57,8 +57,8 @@ export default {
       border-bottom-left-radius 0
       border-bottom-right-radius 0
 
-    for hero, bg in $heroesBg
+    for hero, bgColor in $heroesBg
       .hero-bg-color-{hero}
-        background-color bg
+        background-color bgColor
 
 </style>
