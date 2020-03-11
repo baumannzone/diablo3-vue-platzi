@@ -6,7 +6,6 @@
     </span>
     <img v-if="hero.seasonal" src="@/assets/img/leaf.png" width="12px" class="ml-2" alt="seasonal_leaf">
   </div>
-
 </template>
 
 <script>
