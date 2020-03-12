@@ -1,17 +1,13 @@
 <template>
-  <div class="home">
-
+  <div class="profile-view">
     <div class="profile-body">
-
-      <BaseLoading v-if="isLoading"/>
+      <BaseLoading v-if="isLoading" />
 
       <template v-if="profileData !== null">
-        <MainBlock :profile-data="profileData"/>
-        <ArtisansBlock :artisans-data="artisansData"/>
+        <MainBlock :profile-data="profileData" />
+        <ArtisansBlock :artisans-data="artisansData" />
       </template>
-
     </div>
-
   </div>
 </template>
 
@@ -26,7 +22,11 @@ import ArtisansBlock from './ArtisansBlock/Index'
 export default {
   name: 'ProfileView',
   mixins: [ setError ],
-  components: { BaseLoading, ArtisansBlock, MainBlock },
+  components: {
+    BaseLoading,
+    ArtisansBlock,
+    MainBlock
+  },
   data () {
     return {
       isLoading: false,
