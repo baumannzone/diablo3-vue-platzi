@@ -1,6 +1,7 @@
 <template>
   <div class="artisan-item d-flex bg-dark p-3 mb-2 rounded">
 
+    <!-- Icono / Emoji -->
     <div class="icon d-flex justify-content-center align-items-center rounded-circle mr-2">
       <!--<font-awesome-icon :icon="artisan.icon" class="fa-2x" :style="{color: artisan.color}"/>-->
       <span class="display-4">{{ artisan.emoji}}</span>
