@@ -13,8 +13,8 @@
 
       <b-col md="12" lg="4" order-lg="1">
         <template v-if="hero">
-          <GearBonuses :stats="detailStats"/>
-          <Skills :skills="hero.skills"/>
+          <HeroAttributes :attributes="detailStats"/>
+          <HeroSkills :skills="hero.skills"/>
         </template>
       </b-col>
 
@@ -28,14 +28,14 @@ import setError from '@/mixins/setError'
 import BaseLoading from '@/components/BaseLoading'
 import { getApiHero, getApiDetailedHeroItems } from '@/api/search'
 import HeroDetailHeader from './HeroDetailHeader'
-import GearBonuses from './GearBonuses/Index'
+import HeroAttributes from './HeroAttributes/Index'
 import HeroItems from './HeroItems/Index'
-import Skills from './Skills/Index'
+import HeroSkills from './HeroSkills/Index'
 
 export default {
   name: 'HeroView',
   mixins: [setError],
-  components: { BaseLoading, Skills, GearBonuses, HeroDetailHeader, HeroItems },
+  components: { BaseLoading, HeroSkills, HeroAttributes, HeroDetailHeader, HeroItems },
   data () {
     return {
       isLoadingHero: false,

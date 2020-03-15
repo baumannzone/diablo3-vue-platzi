@@ -1,5 +1,5 @@
 <template>
-  <div class="gear-bonuses">
+  <div class="h-attriubutes">
     <h2 class="font-diablo">Attributes</h2>
 
     <hr class="bg-white">
@@ -7,13 +7,13 @@
     <div class="attributes">
 
       <div class="core">
-        <AttributeList :attributes="coreAttributes"/>
+        <HeroAttributeList :attributes="coreAttributes"/>
       </div>
 
       <hr>
 
       <div class="secondary">
-        <AttributeList :attributes="secondaryAttributes"/>
+        <HeroAttributeList :attributes="secondaryAttributes"/>
       </div>
 
     </div>
@@ -29,7 +29,7 @@
 
 <script>
 
-import AttributeList from './AttributeList'
+import HeroAttributeList from './HeroAttributeList'
 import HeroResources from './HeroResources'
 
 const coreAttributes = ['strength', 'dexterity', 'vitality', 'intelligence']
@@ -37,28 +37,28 @@ const secondaryAttributes = ['damage', 'toughness', 'healing']
 const resources = ['life', 'primaryResource', 'secondaryResource']
 
 export default {
-  name: 'GearBonuses',
-  components: { HeroResources, AttributeList },
+  name: 'HeroAttributes',
+  components: { HeroResources, HeroAttributeList },
   props: {
-    stats: {
+    attributes: {
       type: Object,
       required: true
     }
   },
   computed: {
     coreAttributes () {
-      return coreAttributes.map(item => ({ name: item, val: this.stats[item] }))
+      return coreAttributes.map(item => ({ name: item, val: this.attributes[item] }))
     },
     secondaryAttributes () {
-      return secondaryAttributes.map(item => ({ name: item, val: this.stats[item] }))
+      return secondaryAttributes.map(item => ({ name: item, val: this.attributes[item] }))
     },
     resources () {
       const data = {
-        classSlug: this.stats.classSlug,
+        classSlug: this.attributes.classSlug,
         resources: {}
       }
       resources.forEach(item => {
-        data.resources[item] = { name: item, val: this.stats[item] }
+        data.resources[item] = { name: item, val: this.attributes[item] }
       })
       return data
     }

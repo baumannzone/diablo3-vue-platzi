@@ -24,7 +24,7 @@
 <script>
 
 export default {
-  name: 'Skills',
+  name: 'HeroSkills',
   components: {
     // Dynamic Components
     ActiveSkills: () => import(/* webpackChunkName: "skills_active" */'./ActiveSkills'),
