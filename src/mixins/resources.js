@@ -39,7 +39,7 @@ export default {
       return resourceClassName[classSlug]
     },
     /**
-     *
+     * Resource Normalized name
      * @param classSlug {String}
      * @returns {String}
      */
