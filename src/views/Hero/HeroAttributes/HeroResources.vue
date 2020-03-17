@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="resource-wrapper">
     <div class="resource">
       <div class="d-flex justify-content-start align-items-center">
         <div class="resource-icon resource-life"/>
