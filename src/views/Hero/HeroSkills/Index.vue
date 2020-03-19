@@ -9,7 +9,7 @@
     </b-nav>
 
     <keep-alive>
-      <component :is="activeComponent" v-bind:skills="componentProps"/>
+      <component :is="activeComponent" :skills="componentProps"/>
     </keep-alive>
 
     <!--
@@ -27,8 +27,8 @@ export default {
   name: 'HeroSkills',
   components: {
     // Dynamic Components
-    ActiveSkills: () => import(/* webpackChunkName: "skills_active" */'./ActiveSkills'),
-    PassiveSkills: () => import(/* webpackChunkName: "skills_passive" */'./PassiveSkills')
+    ActiveSkills: () => import(/* webpackChunkName: "ActiveSkills" */'./ActiveSkills'),
+    PassiveSkills: () => import(/* webpackChunkName: "PassiveSkills" */'./PassiveSkills')
   },
   props: {
     skills: {
