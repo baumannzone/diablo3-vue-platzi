@@ -48,13 +48,13 @@ export default {
       return `${host}${this.item.icon}.png`
     },
     itemHasGems () {
-      return this.item.hasOwnProperty('gems')
+      return Object.prototype.hasOwnProperty.call(this.item, 'gems')
     },
     gemOrJewel () {
       return this.item.gems[0].isGem ? 'Gems' : 'Jewel'
     },
     itemClassColor () {
-      if (this.item.hasOwnProperty('displayColor')) {
+      if (Object.prototype.hasOwnProperty.call(this.item, 'displayColor')) {
         return `item-${this.item.displayColor}`
       }
       return 'item-none'
