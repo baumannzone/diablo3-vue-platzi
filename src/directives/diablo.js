@@ -3,15 +3,16 @@
 // Binding.Modifiers: Border line position ['bottom','top']
 // Binding.Value: Border line size (default 1)
 
-// Usage: <h1 v-diablo:white.bottom>Hi!</h1>
+// Usage: <h1 v-diablo:white.bottom="20">Hi!</h1>
+// Usage: <h1 v-diablo:white.top>Hi!</h1>
+// Usage: <h1 v-diablo>Hi!</h1>
 
 export default {
   /**
    * @param el - HTML Element
    * @param binding - Bound (passed) data
-   * @param vNode - Virtual Node
    */
-  bind (el, binding, vNode) {
+  bind (el, binding) {
     const color = { bone: '#e8dcc2', white: '#ffffff' }
 
     // Diablo font-like
@@ -35,7 +36,8 @@ export default {
       if (binding.modifiers.bottom) {
         el.style.borderBottom = borderExp
         el.style.paddingBottom = '10px'
-      } else if (binding.modifiers.top) {
+      }
+      if (binding.modifiers.top) {
         el.style.borderTop = borderExp
         el.style.paddingTop = '10px'
       }
