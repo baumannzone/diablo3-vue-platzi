@@ -71,7 +71,7 @@ yarn lint
 ### Jorge Baumann 🦄
 Web developer. Passionate about technology in general and web development in particular.  
 Organizer of [Open Source Weekends](https://www.meetup.com/es-ES/Open-Source-Weekends), technology meetup in Madrid.
-He writes technical posts (about css, js, testing, etc) in Medium (Spanish) and Dev (English). In addition, he has a YouTube channel ([rambitoJS](https://www.youtube.com/channel/UCTTj5ztXnGeDRPFVsBp7VMA)) that honors his dog, called Rambo.
+He writes technical posts (about CSS, javascript, testing, firebase, etc) in Medium (Spanish) and Dev (English). In addition, he has a YouTube channel ([rambitoJS](https://www.youtube.com/channel/UCTTj5ztXnGeDRPFVsBp7VMA)) that honors his dog, called Rambo.
 
 [![RambitoJS](./assets/rambito.jpg)](https://www.youtube.com/channel/UCTTj5ztXnGeDRPFVsBp7VMA)
 
