@@ -23,25 +23,6 @@
 
 ---
 
-## Blizzard Developer Portal
-- Account creation: https://us.battle.net/account/creation/es/
-- Blizzard Developer Portal: https://develop.battle.net/
-- Blizzard Authenticator: https://play.google.com/store/apps/details?id=com.blizzard.bma
-- Client Credentials Flow: https://develop.battle.net/documentation/guides/using-oauth/client-credentials-flow
-- Regionality and APIs: https://develop.battle.net/documentation/guides/regionality-and-apis
-
-## Diablo 3 APIs
-- Diablo III Community APIs (player profiles): https://develop.battle.net/documentation/diablo-3/community-apis
-- Diablo III Game Data APIs (seasons & leaderboards): https://develop.battle.net/documentation/diablo-3/game-data-apis
-
-## Libraries
-- [Axios](https://github.com/axios/axios): Promise based HTTP client for the browser and node.js
-- [Bootstrap-vue](https://bootstrap-vue.js.org/): Quickly integrate Bootstrap v4 components with Vue.js
-- [numeral.js](http://numeraljs.com/): A javascript library for formatting and manipulating numbers
-- [Font Awesome](): https://fontawesome.com/
-
----
-
 ## Project setup
 ```markdown
 # Install
