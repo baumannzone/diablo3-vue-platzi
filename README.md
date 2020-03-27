@@ -9,6 +9,9 @@
 ## App Live Demo
 👉 https://diablo3.netlify.com/
 
+> - User: `SuperRambo#2613`
+> - Region: `EU`
+
 ---
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9157d0d0-2fb7-42ad-9d89-9ebe7d077f9b/deploy-status)](https://app.netlify.com/sites/diablo3/deploys)
