@@ -1,13 +1,13 @@
 <template>
   <div class="hero-view">
 
-    <BaseLoading v-if="isLoadingHero"/>
+    <BaseLoading v-if="isLoading"/>
 
     <HeroDetailHeader v-if="hero" :detail="detailHeader"/>
 
     <b-row>
       <b-col md="12" lg="8" order-lg="2">
-        <BaseLoading v-if="isLoadingItems"/>
+        <BaseLoading v-if="isLoading"/>
         <HeroItems v-if="items" :items="items"/>
       </b-col>
 
@@ -38,8 +38,7 @@ export default {
   components: { BaseLoading, HeroSkills, HeroAttributes, HeroDetailHeader, HeroItems },
   data () {
     return {
-      isLoadingHero: false,
-      isLoadingItems: false,
+      isLoading: false,
       hero: null,
       items: null
     }
@@ -75,41 +74,36 @@ export default {
     }
   },
   created () {
-    this.isLoadingHero = true
-    this.isLoadingItems = true
+    this.isLoading = true
     const { region, battleTag: account, heroId } = this.$route.params
 
-    getApiHero({ region, account, heroId })
-      .then(({ data }) => {
-        this.hero = data
+    Promise.all([
+      getApiHero({ region, account, heroId }),
+      getApiDetailedHeroItems({ region, account, heroId })
+    ])
+      .then(([{ data: hero }, { data: items }]) => {
+        this.hero = hero
+        this.items = items
       })
       .catch((err) => {
         this.hero = null
+        this.items = null
+
         const errObj = {
           routeParams: this.$route.params,
           message: err.message
         }
+
         if (err.response) {
           errObj.data = err.response.data
           errObj.status = err.response.status
         }
+
         this.setApiErr(errObj)
         this.$router.push({ name: 'Error' })
       })
       .finally(() => {
-        this.isLoadingHero = false
-      })
-
-    getApiDetailedHeroItems({ region, account, heroId })
-      .then(({ data }) => {
-        this.items = data
-      })
-      .catch((err) => {
-        this.items = null
-        console.log(err)
-      })
-      .finally(() => {
-        this.isLoadingItems = false
+        this.isLoading = false
       })
   }
 }
