@@ -1,6 +1,6 @@
 # Diablo 3 Profile Finder
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 > 👾 D3PF. Vue.js course repository
 
@@ -77,6 +77,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://twitter.com/baumannzone"><img src="https://avatars0.githubusercontent.com/u/5422102?v=4" width="100px;" alt=""/><br /><sub><b>Jorge Baumann</b></sub></a><br /><a href="https://github.com/baumannzone/diablo3-vue-platzi/commits?author=baumannzone" title="Code">💻</a> <a href="#maintenance-baumannzone" title="Maintenance">🚧</a> <a href="https://github.com/baumannzone/diablo3-vue-platzi/commits?author=baumannzone" title="Tests">⚠️</a> <a href="#design-baumannzone" title="Design">🎨</a> <a href="https://github.com/baumannzone/diablo3-vue-platzi/commits?author=baumannzone" title="Documentation">📖</a> <a href="#infra-baumannzone" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+    <td align="center"><a href="https://github.com/ludmartinez"><img src="https://avatars1.githubusercontent.com/u/7889981?v=4" width="100px;" alt=""/><br /><sub><b>Diego Martínez</b></sub></a><br /><a href="https://github.com/baumannzone/diablo3-vue-platzi/commits?author=ludmartinez" title="Code">💻</a></td>
   </tr>
 </table>
 
