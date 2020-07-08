@@ -62,6 +62,7 @@ He writes technical posts (about CSS, javascript, testing, firebase, etc) in Med
 
 - Github: https://github.com/baumannzone
 - Twitter: https://twitter.com/baumannzone
+- Twitch: https://twitch.tv/baumannzone
 - Dev: https://dev.to/baumannzone
 - Medium: [https://medium.com/baumannsito](https://medium.com/@baumannsito)
 - Youtube: [https://www.youtube.com/rambitoJS](https://www.youtube.com/channel/UCTTj5ztXnGeDRPFVsBp7VMA)
