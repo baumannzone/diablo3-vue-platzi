@@ -1,0 +1,33 @@
+# Compose file format
+version: '3.7'
+
+services:
+  web:
+    # Self-explanatory
+    container_name: diablo3-vue-platzi
+    build:
+      # Setting current path to make the image and dockerfile to use
+      context: .
+      dockerfile: Dockerfile
+
+    volumes:
+      # Volumes between current path and app path inside the container
+      # to be able to make changes in the host machine and at the same time it will
+      # change in the container, and prevent to restart the container with each change
+      - '.:/app'
+
+      # We want to use the container version of node_modules, so we make an anonymous
+      # volume to not override container's node_modules with host's node_modules
+      - '/app/node_modules'
+      # Note 1: If you want to install new packages, you can do it with docker-compose exec 
+      # once the container is created, example: docker-compose exec web yarn add vuetify,
+      # then run "docker-compose down" and rebuild "docker-compose up -d --build"
+      #
+      # Note 2: If you have problems running the app in the container, just
+      # run yarn upgrade (docker-compose exec yarn upgrade), and restart
+      # the container "docker-compose restart"
+
+    ports:
+      # Exporting container port 8080 in the host port 8081, so you can access the app in
+      # your browser with localhost:8081, although you can put the same port (8080:8080)
+      - '8081:8080'
