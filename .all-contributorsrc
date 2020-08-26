@@ -45,6 +45,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "dmunoz-10",
+      "name": "Daniel Muñoz",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/20992899?v=4",
+      "profile": "https://github.com/dmunoz-10",
+      "contributions": [
+        "code",
+        "infra"
+      ]
     }
   ],
   "contributorsPerLine": 7,
