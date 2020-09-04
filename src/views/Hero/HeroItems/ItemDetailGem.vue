@@ -1,5 +1,5 @@
 <template>
-  <img :src="gemUrl" :alt="gem.item.name" :title="gem.item.name">
+  <img :src="gemUrl" :alt="gem.item.name" :title="gemTitle">
 </template>
 
 <script>
@@ -15,6 +15,9 @@ export default {
     gemUrl () {
       const host = 'http://media.blizzard.com/d3/icons/items/small/'
       return `${host}${this.gem.item.icon}.png`
+    },
+    gemTitle () {
+      return `${this.gem.item.name}\n\n${this.gem.attributes}`
     }
   }
 }

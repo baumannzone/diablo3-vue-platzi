@@ -1,0 +1,14 @@
+# Ignoring these files will speed up the build context
+
+# Host's node_modules
+node_modules
+
+# We don't need git in the container
+.git
+.gitignore
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
