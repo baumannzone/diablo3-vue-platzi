@@ -82,7 +82,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://linkedin.com/in/angel-cabrera/"><img src="https://avatars1.githubusercontent.com/u/27207751?v=4" width="100px;" alt=""/><br /><sub><b>Angel Cabrera</b></sub></a><br /><a href="https://github.com/baumannzone/diablo3-vue-platzi/commits?author=AngelCabrera" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/alexanderjanke"><img src="https://avatars2.githubusercontent.com/u/33967771?v=4" width="100px;" alt=""/><br /><sub><b>Alexander Janke</b></sub></a><br /><a href="https://github.com/baumannzone/diablo3-vue-platzi/commits?author=alexanderjanke" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/dmunoz-10"><img src="https://avatars1.githubusercontent.com/u/20992899?v=4" width="100px;" alt=""/><br /><sub><b>Daniel Muñoz</b></sub></a><br /><a href="https://github.com/baumannzone/diablo3-vue-platzi/commits?author=dmunoz-10" title="Code">💻</a> <a href="#infra-dmunoz-10" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
-    <td align="center"><a href="https://www.facebook.com/RetaxMaster/"><img src="https://avatars3.githubusercontent.com/u/48848312?v=4" width="100px;" alt=""/><br /><sub><b>RetaxMaster</b></sub></a><br /><a href="https://github.com/baumannzone/diablo3-vue-platzi/commits?author=RetaxMaster" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.youtube.com/RetaxMaster/"><img src="https://avatars3.githubusercontent.com/u/48848312?v=4" width="100px;" alt=""/><br /><sub><b>RetaxMaster</b></sub></a><br /><a href="https://github.com/baumannzone/diablo3-vue-platzi/commits?author=RetaxMaster" title="Code">💻</a></td>
   </tr>
 </table>
 

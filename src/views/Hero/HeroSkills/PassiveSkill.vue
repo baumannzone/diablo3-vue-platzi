@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex align-items-center mb-3">
     <div class="mr-2">
-      <img :src="skillUrl" :alt="skill.name">
+      <cors-image :src="skillUrl" :alt="skill.name" />
     </div>
 
     <div>
