@@ -61,11 +61,11 @@ Software engineer 👨‍💻 and content creator 🦄. Passionate about Open So
 
 
 - Github: https://github.com/baumannzone
+- Instagram: https://instagram.com/baumannzone
 - Twitter: https://twitter.com/baumannzone
 - Twitch: https://twitch.tv/baumannzone
 - Dev: https://dev.to/baumannzone
-- Medium: [https://medium.com/baumannsito](https://medium.com/@baumannsito)
-- Youtube: [https://www.youtube.com/rambitoJS](https://www.youtube.com/channel/UCTTj5ztXnGeDRPFVsBp7VMA)
+- Youtube: https://youtube.com/c/RambitoJS
 
 
 ## Contributors ✨
