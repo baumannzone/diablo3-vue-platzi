@@ -52,20 +52,20 @@ yarn lint
 ## Author
 <img src="https://avatars0.githubusercontent.com/u/5422102?v=4" width="100px;" alt="Jorge Baumann (Baumannzone)"/>
 
-### Jorge Baumann 🦄
-Web developer. Passionate about technology in general and web development in particular.  
-Organizer of [Open Source Weekends](https://www.meetup.com/es-ES/Open-Source-Weekends), technology meetup in Madrid.
-He writes technical posts (about CSS, javascript, testing, firebase, etc) in Medium (Spanish) and Dev (English). In addition, he has a YouTube channel ([rambitoJS](https://www.youtube.com/channel/UCTTj5ztXnGeDRPFVsBp7VMA)) that honors his dog, called Rambo.
+### Jorge Baumann 🔥
 
-[![RambitoJS](./assets/rambito.jpg)](https://www.youtube.com/channel/UCTTj5ztXnGeDRPFVsBp7VMA)
+Senior full-stack developer at GuideSmiths.  
+Software engineer 👨‍💻 and content creator 🦄. Passionate about Open Source and communities. OSWeekends meetup organizer.
+
+[![RambitoJS](./assets/rambito.jpg)](https://youtube.com/c/RambitoJS)
 
 
 - Github: https://github.com/baumannzone
+- Instagram: https://instagram.com/baumannzone
 - Twitter: https://twitter.com/baumannzone
 - Twitch: https://twitch.tv/baumannzone
 - Dev: https://dev.to/baumannzone
-- Medium: [https://medium.com/baumannsito](https://medium.com/@baumannsito)
-- Youtube: [https://www.youtube.com/rambitoJS](https://www.youtube.com/channel/UCTTj5ztXnGeDRPFVsBp7VMA)
+- Youtube: https://youtube.com/c/RambitoJS
 
 
 ## Contributors ✨
