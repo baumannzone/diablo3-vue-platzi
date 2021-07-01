@@ -24,6 +24,10 @@
 
 ![D3PF](assets/main.png)
 
+## Items Image Bug 🐛
+Open an item image, like this one https://media.blizzard.com/d3/icons/items/large/unique_helm_set_14_x1_demonhunter_male.png with **https**, accept it. 
+Then, reload your page.
+
 ---
 
 ## Project setup
@@ -60,11 +64,9 @@ Software engineer 👨‍💻 and content creator 🦄. Passionate about Open So
 [![RambitoJS](./assets/rambito.jpg)](https://youtube.com/c/RambitoJS)
 
 
-- Github: https://github.com/baumannzone
 - Instagram: https://instagram.com/baumannzone
 - Twitter: https://twitter.com/baumannzone
 - Twitch: https://twitch.tv/baumannzone
-- Dev: https://dev.to/baumannzone
 - Youtube: https://youtube.com/c/RambitoJS
 
 
