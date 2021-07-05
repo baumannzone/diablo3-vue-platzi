@@ -54,7 +54,6 @@ yarn lint
 ---
 
 ## Author
-<img src="https://avatars0.githubusercontent.com/u/5422102?v=4" width="100px;" alt="Jorge Baumann (Baumannzone)"/>
 
 ### Jorge Baumann 🔥
 
