@@ -6,11 +6,11 @@
         <div>
           <div v-if="item" class="item-image">
             <p class="text-muted">{{ item.name }}</p>
-            <img
+            <cors-image
               :src="itemUrl"
-              :alt="slotName + ' ' + item.name "
+              :alt="slotName + ' ' + item.name"
               :title="attributes"
-            >
+            />
           </div>
         </div>
 

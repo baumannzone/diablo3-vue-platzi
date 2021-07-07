@@ -1,5 +1,5 @@
 <template>
-  <img :src="gemUrl" :alt="gem.item.name" :title="gemTitle">
+  <cors-image :src="gemUrl" :alt="gem.item.name" :title="gemTitle" />
 </template>
 
 <script>

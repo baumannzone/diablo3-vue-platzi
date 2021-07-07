@@ -6,6 +6,9 @@ import './plugins/bootstrapVue'
 // Vue Font-Awesome
 import './plugins/fontAwesome'
 
+// Cors Image
+import './plugins/corsImage'
+
 // Custom directives
 import './directives'
 

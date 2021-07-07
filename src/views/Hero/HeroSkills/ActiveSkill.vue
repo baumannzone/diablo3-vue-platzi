@@ -2,7 +2,7 @@
   <div class="d-flex align-items-center mb-3">
     <div class="mr-2">
       <span class="slot" :class="slotClass"/>
-      <img :src="skillUrl" :alt="skill.name">
+      <cors-image :src="skillUrl" :alt="skill.name" />
     </div>
 
     <div>
