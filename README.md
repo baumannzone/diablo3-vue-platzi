@@ -58,7 +58,9 @@ yarn lint
 ### Jorge Baumann 🔥
 
 Senior full-stack developer at GuideSmiths.  
-Software engineer 👨‍💻 and content creator 🦄. Passionate about Open Source and communities. OSWeekends meetup organizer.
+Software engineer 👨‍💻 and content creator 🦄. Passionate about Open Source and communities.
+
+More about me: https://baumannzone.dev
 
 [![RambitoJS](./assets/rambito.jpg)](https://youtube.com/c/RambitoJS)
 
