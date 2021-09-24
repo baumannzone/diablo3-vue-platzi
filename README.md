@@ -2,7 +2,26 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-> 👾 D3PF. Vue.js course repository
+
+
+## Jorge Baumann 🔥
+
+Senior full-stack developer at DCSL GuideSmiths.  
+Software engineer 👨‍💻 and content creator 🦄. Passionate about Open Source and communities.
+
+### https://baumannzone.dev
+
+[![RambitoJS](./assets/rambito.jpg)](https://youtube.com/c/RambitoJS)
+
+
+- Instagram: https://instagram.com/baumannzone
+- Twitter: https://twitter.com/baumannzone
+- Twitch: https://twitch.tv/baumannzone
+- Youtube: https://youtube.com/c/RambitoJS
+
+---
+
+# 👾 D3PF. Vue.js course repository
 
 [D3PF](https://diablo3.netlify.com/): Vue.js app created from scratch through [Vue CLI](https://cli.vuejs.org/) that consume official Diablo III APIs, a Blizzard's game.
 
@@ -52,23 +71,6 @@ yarn lint
 ```
 
 ---
-
-## Author
-
-### Jorge Baumann 🔥
-
-Senior full-stack developer at GuideSmiths.  
-Software engineer 👨‍💻 and content creator 🦄. Passionate about Open Source and communities.
-
-More about me: https://baumannzone.dev
-
-[![RambitoJS](./assets/rambito.jpg)](https://youtube.com/c/RambitoJS)
-
-
-- Instagram: https://instagram.com/baumannzone
-- Twitter: https://twitter.com/baumannzone
-- Twitch: https://twitch.tv/baumannzone
-- Youtube: https://youtube.com/c/RambitoJS
 
 
 ## Contributors ✨
