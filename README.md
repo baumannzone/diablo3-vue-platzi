@@ -6,7 +6,7 @@
 
 ## Jorge Baumann 🔥
 
-Senior full-stack developer at DCSL GuideSmiths.  
+Senior full-stack developer.  
 Software engineer 👨‍💻 and content creator 🦄. Passionate about Open Source and communities.
 
 ### https://baumannzone.dev
