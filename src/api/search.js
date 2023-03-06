@@ -1,4 +1,4 @@
-import { get } from 'axios'
+import axios from 'axios'
 import store from '../store/index'
 import { locales } from '../utils/regions'
 
@@ -23,7 +23,7 @@ function getApiAccount ({ region, account }) {
     locale
   }
 
-  return get(API_URL, { params })
+  return axios.get(API_URL, { params })
 }
 
 /**
@@ -44,7 +44,7 @@ function getApiHero ({ region, account, heroId }) {
     locale
   }
 
-  return get(API_URL, { params })
+  return axios.get(API_URL, { params })
 }
 
 /**
@@ -65,7 +65,7 @@ function getApiDetailedHeroItems ({ region, account, heroId }) {
     locale
   }
 
-  return get(API_URL, { params })
+  return axios.get(API_URL, { params })
 }
 
 export {

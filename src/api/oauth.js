@@ -1,4 +1,4 @@
-import { post } from 'axios'
+import axios from 'axios'
 
 // Env
 const clientId = process.env.VUE_APP_CLIENT_ID
@@ -20,9 +20,7 @@ function getToken () {
     auth: { username: clientId, password: clientSecret }
   }
 
-  return post(`${API_URL}`, body, config)
+  return axios.post(`${API_URL}`, body, config)
 }
 
-export {
-  getToken
-}
+export { getToken }

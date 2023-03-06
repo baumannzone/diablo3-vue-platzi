@@ -1,4 +1,4 @@
-import { get } from 'axios'
+import axios from 'axios'
 import store from '../store/index'
 
 // https://{region}.api.blizzard.com, where {region} is one of us | eu | kr | tw
@@ -19,7 +19,7 @@ function listSeasons (region) {
     'access_token': store.state.oauth.accessToken
   }
 
-  return get(API_URL, { params })
+  return axios.get(API_URL, { params })
 }
 
 export {
