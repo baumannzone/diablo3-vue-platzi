@@ -26,9 +26,9 @@ Software engineer 👨‍💻 and content creator 🦄. Passionate about Open So
 [D3PF](https://diablo3-vue.vercel.app/): Learn Vue.js with this app created from scratch through [Vue CLI](https://cli.vuejs.org/) that consume official Diablo III APIs, a Blizzard's game.
 
 ## App Live Demo
-👉 https://diablo3.netlify.com/
+👉 https://diablo3-vue.vercel.app/
 
-> - User: `SuperRambo#2613`
+> - User: `MADman#2102`
 > - Region: `EU`
 
 ---
