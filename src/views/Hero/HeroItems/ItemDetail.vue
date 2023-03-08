@@ -48,7 +48,7 @@ export default {
   },
   computed: {
     itemUrl () {
-       // const baseUrl = 'http://media.blizzard.com/'
+      // const baseUrl = 'http://media.blizzard.com/'
       // La nueva url tiene certificado SSL (https),
       // así que el navegador las muestra sin problemas en producción.
       const baseUrl = 'https://blzmedia-a.akamaihd.net/'
