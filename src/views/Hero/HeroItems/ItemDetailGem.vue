@@ -13,7 +13,12 @@ export default {
   },
   computed: {
     gemUrl () {
-      const host = 'http://media.blizzard.com/d3/icons/items/small/'
+      // Cambio de 'large' por 'small'
+      // const baseUrl = 'http://media.blizzard.com/'
+      // La nueva url tiene certificado SSL (https),
+      // así que el navegador las muestra sin problemas en producción.
+      const baseUrl = 'https://blzmedia-a.akamaihd.net/'
+      const host = `${baseUrl}d3/icons/items/small/`
       return `${host}${this.gem.item.icon}.png`
     },
     gemTitle () {
